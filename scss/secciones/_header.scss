@@ -42,7 +42,7 @@ a.nav-link{
 }
 
 .contenedor-azul{
-    margin: 10px;
+    @extend %barra-azul;
 }
 
 .blanco{
@@ -52,8 +52,6 @@ a.nav-link{
     color: blue;
     margin: 0 auto;
     text-decoration: none;
-    
-    
 }
 
 // .fondo-gris{
@@ -87,6 +85,11 @@ a.nav-link{
     // background-color: aqua;
     @extend %caja-form;   
 }
+
+.caja-superior{
+    @extend %caja-superior;
+}
+
 .pos-center{
     justify-content: center;
     //@extend %caja-form;  
@@ -139,10 +142,22 @@ a.nav-link{
 }
 
 .card{
-    padding: 2px;
+    padding: 4px;
     margin: 3px;
 }
 
 .card-text{
     font-size: 12px;
+}
+
+.cotenedor-icons{
+    border: 2px solid blue;
+}
+
+.tipo-letra{
+    @extend %tipo-de-letra;
+}
+
+.titulo-card{
+    color: white;
 }

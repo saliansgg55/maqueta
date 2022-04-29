@@ -13,8 +13,8 @@
 }
 
 .icon-cli-sidebar{
-    font-size: 25px;
-    
+    font-size: 25px;    
+    color: $color-celeste-sidebar;    
 }
 
 hr {
@@ -31,3 +31,11 @@ hr {
 .cliente-contenedor{
     padding-top: 10px;
 }
+
+/* Texto Celeste sidebar */
+.color-text{
+    color: $color-celeste-sidebar;
+    font-weight: bold;
+    font-size: 10px;
+}
+

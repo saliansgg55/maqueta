@@ -4,14 +4,42 @@
     margin: 4px;
     //padding: 1px;
     border-radius:  4px;
-    border: 1px solid #ccc;
+    border: 1px solid blue;
     padding: 10px;
     // -webkit-box-shadow: 4px 4px 5px 0px rgb(236, 233, 233);
     // -moz-box-shadow: 4px 4px 5px 0px rgb(236, 233, 233);
     // box-shadow: 4px 4px 5px 0px rgb(236, 233, 233);
 }
 
+%caja-superior{
+    margin-top: 0.5;
+    background-color: white;
+    margin: 4px;
+    //padding: 1px;
+    border-radius:  4px;
+    border: 1px solid red;
+    padding: 10px;
+    // -webkit-box-shadow: 4px 4px 5px 0px rgb(236, 233, 233);
+    // -moz-box-shadow: 4px 4px 5px 0px rgb(236, 233, 233);
+    // box-shadow: 4px 4px 5px 0px rgb(236, 233, 233);
+}
+
+
 %tipo-de-letra{
     font-size: 11px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: $color-celeste-sidebar;
+}
+
+/* BARRA AZUL */
+%barra-azul{
+    margin: 10px;
+    background-color: #0C0B71;
+    color: white;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-box-shadow: 4px 4px 5px 0px #ccc;
+    -moz-box-shadow: 4px 4px 5px 0px #ccc;
+    box-shadow: 4px 4px 5px 0px #ccc;
 }

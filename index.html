@@ -11,15 +11,26 @@
 
 
 <style>
-.btn-salir{
-    background-color: #0C0B71;
-}
+
+
+    .boton{
+    font-size: 14px;
+    border-radius: 4px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgb(186, 226, 252);
+    -moz-box-shadow: 4px 4px 5px 0px rgb(186, 226, 252);
+    box-shadow: 4px 4px 5px 0px rgb(186, 226, 252);
+    }
+
+    .card-header{
+   background-color: #3552D1;
+    }
+
 </style>
 
 <body>
 
 
-    <header class="header d-flex justify-content-center contenedor-principal"">
+    <header class="header d-flex justify-content-center contenedor-principal mt-3">
             <nav className=" navbar navbar-expand-sm navbar-light fixed-top text-center ">
                 <div className=" container-fluid d-flex">
         <div class="d-flex ">
@@ -27,8 +38,7 @@
                 <!-- flex-fill -->
                 <!-- Logo -->
                 <a className="navbar-brand " href="./index.html">
-                    <img src="http://82.159.210.31/desarrollo/img/logo_pacc.png" width="200px"
-                        class="img-fluid float-end img-logo" alt="imagen logo">
+                    <img src="icons/logo_pacc.png" width="200px" class="img-fluid float-end img-logo" alt="imagen logo">
                     <!-- <img src="https://png.pngtree.com/element_pic/00/16/07/115783931601b5c.jpg" alt="logo" width="100"
                         height="100" class="img-logo"></img> -->
                 </a>
@@ -103,8 +113,7 @@
             <div class="p-2 flex-fill align-self-center container-usuario">
                 <li class="nav-item dropdown d-flex">
 
-                    <img src="http://assets.stickpng.com/images/585e4beacb11b227491c3399.png" alt="foto usuario"
-                        class="img-user">
+                    <img src="icons/fotousuario.png" alt="foto usuario" class="img-user">
 
                     <div>
                         <a class="nav-link active dropdown-toggle link-user" data-bs-toggle="dropdown"
@@ -131,9 +140,9 @@
     </header>
 
     <!-- BARRA AZUL -->
-    <div class="container-fluid contenedor-azul">
-        <div class="row d-flex justify-content-center a cont-barra-azul">
-            <div class="col-xl-11 barra-azul">
+    <div class="container-fluid ">
+        <div class="row d-flex justify-content-center ">
+            <div class="col-xl-12 p-3 ms-3 me-3 mt-3 mb-3 contenedor-azul">
                 <span>Home > Polizas Hogar</span>
             </div>
         </div>
@@ -141,134 +150,155 @@
     <!-- BARRA AZUL -->
 
     <!-- ICONOS  -->
-    <div class="container-fluid">
-        <div class="d-flex align-items-center mb-3" >
+    <div class="container-fluid mb-4">
+        <div class="d-flex align-items-center ">
 
-            <div class="card d-flex align-items-center" style="width:400px">
-                <img class=" icon blanco" src="icons/imprimir.png" alt="Imprimir">
-                    <a href="#" class="text-a-icon">
-                        <p class="card-text"><span>Imprimir</span></p>
-                    </a>
+            <div class="card border-0 d-flex align-items-center" style="width:400px">
+                <img class=" icon blanco mb-2" src="icons/imprimir.png" alt="Imprimir">
+                <a href="#" class="text-a-icon">
+                    <p class="card-text"><span>Imprimir</span></p>
+                </a>
             </div>
 
 
-            <div class="card d-flex align-items-center" style="width:400px">
-                <img class=" icon blanco" src="icons/Guardar.png" alt="Guardar">
-                    <a href="#" class="text-a-icon">
-                        <p class="card-text"><span>Guardar</span></p>
-                    </a>
+            <div class="card border-0 d-flex align-items-center" style="width:400px">
+                <img class=" icon blanco mb-2" src="icons/Guardar.png" alt="Guardar">
+                <a href="#" class="text-a-icon">
+                    <p class="card-text"><span>Guardar</span></p>
+                </a>
             </div>
 
-            <div class="card d-flex align-items-center" style="width:400px">
-                <img class=" icon blanco" src="icons/Artboard 4.png" alt="Guardar">
+            <div class="card border-0 d-flex align-items-center" style="width:400px">
+                <img class=" icon blanco mb-2" src="icons/Artboard 4.png" alt="Guardar">
                 <a href="#" class="text-a-icon">
                     <p class="card-text"><span>Cliente</span></p>
                 </a>
             </div>
 
-            <div class="card d-flex align-items-center" style="width:400px">
-                <img class=" icon blanco" src="icons/recibos.png" alt="Recibos">
+            <div class="card border-0 d-flex align-items-center" style="width:400px">
+                <img class=" icon blanco mb-2" src="icons/recibos.png" alt="Recibos">
                 <a href="#" class="text-a-icon">
                     <p class="card-text"><span>Recibos</span></p>
                 </a>
             </div>
 
-            <div class="card d-flex align-items-center" style="width:400px">
-                <img class=" icon blanco" src="icons/siniestros.png" alt="Recibos">
+            <div class="card  border-0 d-flex align-items-center" style="width:400px">
+                <img class=" icon blanco mb-2" src="icons/siniestros.png" alt="Recibos">
                 <a href="#" class="text-a-icon">
                     <p class="card-text"><span>Siniestros</span></p>
                 </a>
             </div>
 
-            <div class="card d-flex align-items-center" style="width:400px">
-                <img class=" icon blanco" src="icons/cartas.png" alt="Cartas">
+            <div class="card border-0 d-flex align-items-center" style="width:400px">
+                <img class=" icon blanco mb-2" src="icons/cartas.png" alt="Cartas">
                 <a href="#" class="text-a-icon">
                     <p class="card-text"><span>Cartas</span></p>
                 </a>
             </div>
 
-            <div class="card d-flex align-items-center" style="width:400px">
-                <img class=" icon blanco" src="icons/documentos.png" alt="Documentos">
+            <div class="card border-0 d-flex align-items-center" style="width:400px">
+                <img class=" icon blanco mb-2" src="icons/documentos.png" alt="Documentos">
                 <a href="#" class="text-a-icon">
                     <p class="card-text"><span>Documentos</span></p>
                 </a>
             </div>
 
-            <div class="card d-flex align-items-center" style="width:400px">
-                <img class=" icon blanco" src="icons/agenda.png" alt="Agenda">
+            <div class="card border-0 d-flex align-items-center" style="width:400px">
+                <img class=" icon blanco mb-2" src="icons/agenda.png" alt="Agenda">
                 <a href="#" class="text-a-icon">
                     <p class="card-text"><span>Agenda</span></p>
                 </a>
             </div>
 
-            <div class="card d-flex align-items-center" style="width:400px">
-                <img class=" icon blanco" src="icons/cotizar.png" alt="Cotizar">
+            <div class="card border-0 d-flex align-items-center" style="width:400px">
+                <img class=" icon blanco mb-2" src="icons/cotizar.png" alt="Cotizar">
                 <a href="#" class="text-a-icon">
                     <p class="card-text"><span>Cotizar</span></p>
                 </a>
             </div>
 
 
-            <div class="card d-flex align-items-center" style="width:400px">
-                <img class=" icon blanco" src="icons/buscar.png" alt="Buscar">
+            <div class="card border-0 d-flex align-items-center" style="width:400px">
+                <img class=" icon blanco mb-2" src="icons/buscar.png" alt="Buscar">
                 <a href="#" class="text-a-icon">
                     <p class="card-text"><span>Buscar</span></p>
                 </a>
             </div>
-
-            <div class="col-xl-1 d-grid" >                 
-                    <button type="button" class="btn btn-primary btn-block btn-salir">Salir</button>                                    
+            
+            <div class="col-xl-1 ">
+                <button type="button" class="btn btn-outline-primary boton">Salir</button>
             </div>
         </div>
     </div>
 
+
     <!-- FORM DATOS -->
-    <div class="container-fluid ">
+    <div class="container-fluid mb-1">
         <div class="row d-flex justify-content-center  flex-row">
+           
             <div class="col-lg-10">
                 <div id="accordion">
                     <div class="card">
-                        <div class="card-header">
-                            <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
-                                <strong>Datos</strong>
+                        <div class="card-header" >
+                            <a class="btn btn-block" data-bs-toggle="collapse" href="#collapseOne">
+                                <strong class="titulo-card">Datos</strong>
                             </a>
                         </div>
 
-                        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                        <!-- Start tomador y asegurado -->
+                        <div id="collapseOne" class="collapse " data-bs-parent="#accordion">
                             <div class="card-body">
-                                <div class="color-fondo d-flex fix-fill">
-                                    <!-- Contiene el form -->
 
-                                    <form action="/action_page.php">
-                                        <div class="mb-3 mt-3 col-sm-4 tomador">
-                                            <label for="text" class="form-label">Tomador y Asegurado:</label>
-                                            <input type="text" class="form-control form-control-sm " id="name"
-                                                placeholder="MANUEL ANDRADES FERNANDEZ" name="tomador">
+
+
+                                <div class="p-2 d-flex d-grid gap-3 tipo-letra">
+                                    <div class="p-2 bg-light flex-fill border border-3 ">
+                                        <div class="p-2 bg-light ">
+                                            <div class="mb-1 mt-1 col-sm-10 ">
+                                                <label for="text" class="form-label">Tomador y Asegurado:</label>
+                                                <input type="text" class="form-control form-control-sm " id="name"
+                                                    placeholder="MANUEL ANDRADES FERNANDEZ" name="tomador">
+                                            </div>
                                         </div>
+                                    </div>
+                                    <div class="p-2 bg-light d-flex border border-3">
+                                        <div class="row pos-center ">
+                                            <!-- N Contrato -->
+                                            <div class="col col-sm-3 d-flex flex-wrap align-content-center">
+                                                <label for="text" class="form-label"><span class="text-form">N&deg;
+                                                        de Contrato</span> </label>
+                                                <input type="text" class="form-control form-control-sm " id="name"
+                                                    placeholder="54545121215" name="contrato">
+                                            </div>
+                                            <!-- N Poliza -->
+                                            <div class="col col-sm-4 d-flex flex-wrap align-content-center">
+                                                <label for="text" class="form-label"><span class="text-form">N&deg;
+                                                        de Poliza</span> </label>
+                                                <input type="text" class="form-control form-control-sm " id="name"
+                                                    placeholder="54545121215" name="contrato">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 bg-light d-flex flex-wrap align-content-center ">
+                                        <button type="button" class="btn btn-outline-primary btn-block boton"><i
+                                                class="bi bi-card-text"></i><br>Resumen Poliza</button>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="p-2 color-fondo d-flex fix-fill  ">
+                                    <!-- Contiene el form -->
+                                    
+                                    <form action="/action_page.php">
 
                                         <div class="d-flex flex-row ">
-                                            <div class="col-lg-4  ">
-                                                <div class="cont-form-izq ">
-                                                    <div class="row pos-center">
-                                                        <!-- N Contrato -->
-                                                        <div class="col col-sm-3 flex-fill">
-                                                            <label for="text" class="form-label"><span
-                                                                    class="text-form">Nº
-                                                                    de Contrato</span> </label>
-                                                            <input type="text" class="form-control form-control-sm "
-                                                                id="name" placeholder="54545121215" name="contrato">
-                                                        </div>
-                                                        <!-- N Poliza -->
-                                                        <div class="col col-sm-6 flex-fill">
-                                                            <label for="text" class="form-label"><span
-                                                                    class="text-form">Nº
-                                                                    de Poliza</span> </label>
-                                                            <input type="text" class="form-control form-control-sm "
-                                                                id="name" placeholder="54545121215" name="contrato">
-                                                        </div>
-                                                    </div>
+                                            <div class=" col-lg-4  d-flex align-items-stretch ">
+                                                
+                                                <div class="cont-form-izq border border-3 p-3">
 
-                                                    <div class="row pos-center">
+
+                                                    <div class="row pos-center mb-4">
                                                         <!-- Compania -->
                                                         <div class="col col-sm-3 flex-fill">
                                                             <label for="text" class="form-label"><span
@@ -286,7 +316,7 @@
                                                     </div>
 
 
-                                                    <div class="row pos-center">
+                                                    <div class="row pos-center mb-4">
                                                         <!-- Ramo -->
                                                         <div class="col col-sm-3 flex-fill">
                                                             <label for="text" class="form-label"><span
@@ -303,7 +333,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="row pos-center">
+                                                    <div class="row pos-center mb-4">
                                                         <!-- Colaborador -->
                                                         <div class="col col-sm-3 flex-fill">
                                                             <label for="text" class="form-label"><span
@@ -321,7 +351,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="row pos-center">
+                                                    <div class="row pos-center mb-4">
                                                         <!-- Canal de cobro -->
                                                         <div class="col col-sm-3 flex-fill">
                                                             <label for="text" class="form-label"><span
@@ -339,7 +369,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="row pos-center">
+                                                    <div class="row pos-center mb-4">
                                                         <!-- Situacion -->
                                                         <div class="col col-sm-3 flex-fill">
                                                             <label for="text" class="form-label"><span
@@ -356,7 +386,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="row pos-center">
+                                                    <div class="row pos-center mb-4 ">
                                                         <!-- Situacion -->
                                                         <div class="col col-sm-3 flex-fill">
                                                             <label for="text" class="form-label"><span
@@ -384,11 +414,11 @@
 
                                                 </div>
                                             </div>
+                                            <!-- CUADRO 1 -->
 
-
-                                            <div class="col-lg-4 cen ">
+                                            <div class="col-lg-4 cen border border-3 p-3 ">
                                                 <!-- Jefe de equipo -->
-                                                <div class="row pos-center">
+                                                <div class="row pos-center mb-4">
                                                     <div class="col col-sm-3 flex-fill">
                                                         <label for="text" class="form-label"><span
                                                                 class="text-form">Jefe de equipo</span> </label>
@@ -404,7 +434,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="row pos-center">
+                                                <div class="row pos-center mb-4">
                                                     <div class="col col-sm-3 flex-fill">
                                                         <label for="text" class="form-label"><span
                                                                 class="text-form">Jefe comercio</span> </label>
@@ -421,7 +451,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="row pos-center">
+                                                <div class="row pos-center mb-4">
                                                     <div class="col col-sm-3 flex-fill">
                                                         <label for="text" class="form-label"><span
                                                                 class="text-form">Ejecutivo cuentas</span> </label>
@@ -437,7 +467,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="row d-flex pos-center">
+                                                <div class="row d-flex pos-center mb-4">
                                                     <div class="col col-sm-3 flex-fill">
                                                         <label for="text" class="form-label"><span
                                                                 class="text-form">Anulacion</span> </label>
@@ -457,7 +487,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="row d-flex pos-center">
+                                                <div class="row d-flex pos-center mb-4">
                                                     <div class="col col-sm-3 flex-fill">
                                                         <label for="text" class="form-label"><span
                                                                 class="text-form">Forma de pago</span> </label>
@@ -484,7 +514,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="row d-flex pos-center">
+                                                <div class="row d-flex pos-center mb-4">
                                                     <div class="col col-sm-3 flex-fill">
                                                         <label for="text" class="form-label"><span
                                                                 class="text-form">Alta</span> </label>
@@ -509,7 +539,7 @@
 
                                             </div>
 
-                                            <div class="col-lg-4 der">
+                                            <div class="col-lg-4 der border border-3 p-3">
                                                 <div class="row pos-center">
                                                     <div class="col col-sm-10 flex-fill">
                                                         <label for="text" class="form-label">IBAN</label>
@@ -517,59 +547,52 @@
                                                             id="name" placeholder="MANUEL ANDRADES FERNANDEZ"
                                                             name="tomador">
                                                     </div>
-                                                    <div class="col col-sm-10 flex-fill">
-                                                        <div class="form-check">
-                                                            <input type="radio" class="form-check-input" id="radio1"
-                                                                name="optradio" value="option1" checked>
-                                                            <label class="form-check-label" for="radio1">
-                                                                Faltan documentos
-                                                            </label>
+
+                                                    <!-- START FALTAN DOCUMENTOS -->
+                                                    <div class="d-flex">
+                                                        <div class="p-2 bg-light d-flex flex-wrap align-content-center">
+
+                                                            <div class="form-check">
+                                                                <input type="radio" class="form-check-input" id="radio1"
+                                                                    name="optradio" value="option1" checked>
+                                                                <label class="form-check-label" for="radio1">
+                                                                    Faltan documentos
+                                                                </label>              
+                                                            </div>
+                                                            
                                                         </div>
-                                                        <div class="form-check">
-                                                            <input type="radio" class="form-check-input" id="radio2"
-                                                                name="optradio" value="option2">
-                                                            <label class="form-check-label" for="radio2">
-                                                                Recepcion Docum.
-                                                            </label>
+
+                                                        <div class="p-2 bg-light flex-fill"></div>
+                
+                                                      </div>
+                                                    <!-- END FALTAN DOCUMENTOS --> 
+
+
+                                                    <!-- START DOCUMENTOS QUE FALTAN -->
+                                                      <div class="d-flex">
+                                                        <div class="p-2 bg-light d-flex flex-wrap align-content-center">
+
+                                                            <div class="form-check">
+                                                                <input type="radio" class="form-check-input" id="radio1"
+                                                                    name="optradio" value="option1" checked>
+                                                                <label class="form-check-label" for="radio1">
+                                                                    Documentos que faltan
+                                                                </label>              
+                                                            </div>
+                                                            
                                                         </div>
-                                                    </div>
+
+                                                        <div class="p-2 bg-light flex-fill"></div>
+
+                    
+                                                      </div>
+                                                    <!-- END DOCUMENTOS QUE FALTAN -->  
 
                                                     <div class="col col-sm-10 flex-fill">
                                                         <label for="exampleFormControlTextarea1"
                                                             class="form-label">Documentos que faltan</label>
                                                         <textarea class="form-control" id="exampleFormControlTextarea1"
-                                                            rows="3">Lorem ipsum dolor sit amet consectetur.</textarea>
-                                                    </div>
-
-                                                    <div class="col col-sm-10 flex-fill">
-                                                        <div class="form-check">
-                                                            <input type="radio" class="form-check-input" id="radio1"
-                                                                name="optradio" value="option1" checked>
-                                                            <label class="form-check-label" for="radio1">
-                                                                Informacion previa al cliente firmada
-                                                            </label>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <input type="radio" class="form-check-input" id="radio2"
-                                                                name="optradio" value="option2">
-                                                            <label class="form-check-label" for="radio2">
-                                                                Orden domiciliacion
-                                                            </label>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <input type="radio" class="form-check-input" id="radio1"
-                                                                name="optradio" value="option1" checked>
-                                                            <label class="form-check-label" for="radio1">
-                                                                Financiacion
-                                                            </label>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <input type="radio" class="form-check-input" id="radio2"
-                                                                name="optradio" value="option2">
-                                                            <label class="form-check-label" for="radio2">
-                                                                Tarificador
-                                                            </label>
-                                                        </div>
+                                                            rows="6">Lorem ipsum dolor sit amet consectetur.</textarea>
                                                     </div>
 
                                                     <div class="col col-sm-10 d-grid flex-fill btn-der">
@@ -581,9 +604,103 @@
                                                     <div class="col col-sm-10 d-grid flex-fill btn-der">
                                                         <button type="button"
                                                             class="btn btn-outline-primary btn-block"><i
-                                                                class="bi bi-arrow-left-right"></i> Reemplazo cía
+                                                                class="bi bi-arrow-left-right"></i> Reemplazo c&iacute;a
                                                             Pacc</button>
+                                                    </div>                                                    
+
+                                                    <div class="col col-sm-10 flex-fill">
+
+                                                        <div class="d-flex">
+                                                            <div class="p-2 bg-light d-flex flex-wrap align-content-center">
+
+                                                                <div class="form-check">
+                                                                    <input type="radio" class="form-check-input" id="radio1"
+                                                                        name="optradio" value="option1" checked>
+                                                                    <label class="form-check-label" for="radio1">
+                                                                        Informacion previa al cliente firmada
+                                                                    </label>              
+                                                                </div>
+                                                                    
+                                                            </div>
+
+                                                            <div class="p-2 bg-light flex-fill"></div>
+
+                                                            <div class="p-2 bg-light d-flex justify-content-end">
+                                                                <div>
+                                                                    <button type="button"
+                                                                    class="btn btn-outline-primary btn-block"><i class="bi bi-printer"></i></button>
+                                                                </div>
+                                                            </div>
+                                                          </div>
+
+
+                                                        <div class="d-flex">
+                                                            <div class="p-2 bg-light d-flex flex-wrap align-content-center">
+                                                                
+                                                                <div class="form-check">
+                                                                    <input type="radio" class="form-check-input" id="radio1"
+                                                                        name="optradio" value="option1" checked>
+                                                                    <label class="form-check-label" for="radio1">
+                                                                        Orden domiciliacion
+                                                                    </label>              
+                                                                </div>
+                                                                    
+                                                            </div>
+
+                                                            <div class="p-2 bg-light flex-fill"></div>
+
+                                                            <div class="p-2 bg-light d-flex justify-content-end">
+                                                                <div>
+                                                                    <button type="button"
+                                                                    class="btn btn-outline-primary btn-block"><i class="bi bi-printer"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="d-flex">
+                                                            <div class="p-2 bg-light d-flex flex-wrap align-content-center">
+                                                                
+                                                                <div class="form-check">
+                                                                    <input type="radio" class="form-check-input" id="radio1"
+                                                                        name="optradio" value="option1" checked>
+                                                                    <label class="form-check-label" for="radio1">
+                                                                        Financiacion
+                                                                    </label>              
+                                                                </div>
+                                                                    
+                                                            </div>
+
+                                                            <div class="p-2 bg-light flex-fill"></div>
+
+                                                            <div class="p-2 bg-light d-flex justify-content-end">
+                                                                <div>
+                                                                    <button type="button"
+                                                                    class="btn btn-outline-primary btn-block"><i class="bi bi-printer"></i></button>
+                                                                </div>
+                                                            </div>
+                                                          </div>                                                        
+       
+
+                                                          <div class="d-flex">
+                                                            <div class="p-2 bg-light d-flex flex-wrap align-content-center">
+
+                                                                <div class="form-check">
+                                                                    <input type="radio" class="form-check-input" id="radio1"
+                                                                        name="optradio" value="option1" checked>
+                                                                    <label class="form-check-label" for="radio1">
+                                                                        Tarificador
+                                                                    </label>              
+                                                                </div>
+                                                                    
+                                                            </div>
+
+                                                            <div class="p-2 bg-light flex-fill"></div>
+
+                               
+                                                          </div>
                                                     </div>
+
+
                                                     <div class="col col-sm-10 d-grid flex-fill btn-der">
                                                         <button type="button"
                                                             class="btn btn-outline-primary btn-block"><i
@@ -597,21 +714,33 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- End tomador y asegurado -->
 
                     </div>
                 </div>
 
             </div>
+
+
             <div class="col-lg-1">
-                <div class="row">
+                <div class="row d-grid gap-3">
                     <div class="col-lg-12 d-flex justify-content-center flex-column align-items-center cont-sidebar"
                         style="border: 1px blue solid;">
                         <div><i class="bi bi-person-fill icon-cli-sidebar"></i></div>
-                        <div>Tipo de Cliente</div><br>
-                        <div><span class="fiel">Fiel</span>
-                            <hr>
-                        </div>
-                        <div class="d-flex align-self-center">Autos</div>
+                        <div class="color-text">Tipo de Cliente</div><br>
+
+
+                        <table class="table table-sm">
+                            <tbody>
+                                <tr>
+                                    <td>Fiel</td>
+                                </tr>
+                                <tr>
+                                    <td>Autos</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
 
                         <div class="divider"></div>
                     </div>
@@ -621,11 +750,22 @@
                     <div class="col-lg-12 d-flex justify-content-center flex-column align-items-center cont-sidebar"
                         style="border: 1px blue solid;">
                         <div><i class="bi bi-person-check icon-cli-sidebar"></i></div>
-                        <div>Tipo de Cliente</div><br>
-                        <div class="cont-fiel"><span class="fiel">Fiel</span>
-                            <hr>
-                        </div>
-                        <div class="d-flex align-self-center">Autos</div>
+                        <div class="color-text"> Cliente de</div><br>
+
+
+                        <table class="table table-sm">
+                            <tbody>
+                                <tr>
+                                    <td>Hogar</td>
+                                </tr>
+                                <tr>
+                                    <td>Vida</td>
+                                </tr>
+                                <tr>
+                                    <td>Salud</td>
+                                </tr>                                
+                            </tbody>
+                        </table>
 
                         <div class="divider"></div>
                     </div>
@@ -634,7 +774,7 @@
                 <div class="row cliente-contenedor">
                     <div class="col-lg-12 d-flex justify-content-center flex-column align-items-center cont-sidebar"
                         style="border: 1px blue solid;">
-                        <span>Codigo de importancia</span>
+                        <span class="color-text">Codigo de importancia</span>
                         <span>482.33</span>
                     </div>
                 </div>
@@ -643,7 +783,7 @@
                 <div class="row cliente-contenedor">
                     <div class="col-lg-12 d-flex justify-content-center flex-column align-items-center cont-sidebar"
                         style="border: 1px blue solid;">
-                        <span>Codigo de importancia master</span>
+                        <span class="color-text">Codigo de importancia master</span>
                         <span>482.33</span>
                     </div>
                 </div>

@@ -4,12 +4,33 @@
   background-color: white;
   margin: 4px;
   border-radius: 4px;
-  border: 1px solid #ccc;
+  border: 1px solid blue;
   padding: 10px; }
 
-.cont-form-izq, .cen, .der {
+.caja-superior {
+  margin-top: 0.5;
+  background-color: white;
+  margin: 4px;
+  border-radius: 4px;
+  border: 1px solid red;
+  padding: 10px; }
+
+.cont-form-izq, .cen, .der, .tipo-letra {
   font-size: 11px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  color: #299FDE; }
+
+/* BARRA AZUL */
+.contenedor-azul {
+  margin: 10px;
+  background-color: #0C0B71;
+  color: white;
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  -webkit-box-shadow: 4px 4px 5px 0px #ccc;
+  -moz-box-shadow: 4px 4px 5px 0px #ccc;
+  box-shadow: 4px 4px 5px 0px #ccc; }
 
 ul {
   background-color: white; }
@@ -39,9 +60,6 @@ a.nav-link {
   -webkit-box-shadow: 7px 7px 5px 0px #ccc;
   -moz-box-shadow: 7px 7px 5px 0px #ccc;
   box-shadow: 7px 7px 5px 0px #ccc; }
-
-.contenedor-azul {
-  margin: 10px; }
 
 .blanco {
   text-align: center;
@@ -80,11 +98,17 @@ a.nav-link {
   text-align: left; }
 
 .card {
-  padding: 2px;
+  padding: 4px;
   margin: 3px; }
 
 .card-text {
   font-size: 12px; }
+
+.cotenedor-icons {
+  border: 2px solid blue; }
+
+.titulo-card {
+  color: white; }
 
 /* ESTILOS DE LA BARRA LATERAL DERECHA "sidebar" */
 .cont-sidebar {
@@ -97,7 +121,8 @@ a.nav-link {
   box-shadow: 0px 0px 5px 1px #a5a5a5; }
 
 .icon-cli-sidebar {
-  font-size: 25px; }
+  font-size: 25px;
+  color: #299FDE; }
 
 hr {
   height: 1px;
@@ -110,6 +135,12 @@ hr {
 
 .cliente-contenedor {
   padding-top: 10px; }
+
+/* Texto Celeste sidebar */
+.color-text {
+  color: #299FDE;
+  font-weight: bold;
+  font-size: 10px; }
 
 * {
   padding: 0;
