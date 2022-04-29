@@ -1,0 +1,2299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="shortcut icon" href="http://82.159.210.31/desarrollo/favicon.ico" />
+  <title>Pólizas hogar</title>
+
+
+  <!-- CSS OLD version -->
+
+  <link rel="stylesheet" href="http://82.159.210.31/desarrollo/css/styles.css">
+  <link rel="stylesheet" href="http://82.159.210.31/desarrollo/css/theme/jquery-ui.css">
+  <link rel="stylesheet" href="http://82.159.210.31/desarrollo/css/msgBoxLight.css">
+  <link rel="stylesheet" href="http://82.159.210.31/desarrollo/css/ui.jqgrid.css">
+  <link rel="stylesheet" href="http://82.159.210.31/desarrollo/css/font-awesome.min.css">
+  <link type="text/css" rel="stylesheet" href="http://82.159.210.31/desarrollo/css/printer.css" media="print">
+
+  <!-- CSS NEW version -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap5.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Custom css -->
+  <link rel="stylesheet" href="http://82.159.210.31/desarrollo/css/style-v2.css">
+  <link rel="stylesheet" href="http://82.159.210.31/desarrollo/css/color.css">
+  <!-- Menu -->
+  <link rel="stylesheet" href="http://82.159.210.31/desarrollo/css/navbar.css">
+  <!-- Iconos / fonts -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="http://82.159.210.31/desarrollo/css/bootstrap-editable.css">
+ <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+ 
+
+  <!-- Css adicional -->
+  
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+</head>
+
+<body>
+  <!-- Menu -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-blue-p1" id="main-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">PaccOnline <span class="badge bg-primary" >v3 <span style="font-size: 12px;" >menu_dinamico<span style="font-size: 9px;">  [2022-04-25 21:21:56]</span></span></span></a>
+   
+    
+ <button class="btn btn-primary"
+ style="display: none"
+id="colapsoMenu"
+  type="button" data-toggle="collapse" 
+  data-target="#navbar-content" aria-controls="navbar-content">
+    
+  </button>
+  <button class="navbar-toggler collapsed" 
+   
+  type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse justify-content-center" id="navbar-content">
+      <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+        
+        <li
+        class="nav-item dropdown"    
+	
+	>                
+                                <a id_="2" class="nav-link active dropdown-toggle"
+	onclick="return false;" id="idNegocio" href="#"
+	data-bs-toggle="dropdown" data-bs-auto-close="outside">Negocio</a>         	         
+                                              
+           <ul
+		class="dropdown-menu shadow">            <li
+            
+	
+	>                
+                                <a id_="3" class="dropdown-item autoclose"
+	 id="idArchClientes"
+	  	    href="#" target="">Clientes</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="4" class="dropdown-item autoclose"
+	 id="idArchPolizas"
+	  	    href="#" target="">Pólizas</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="5" class="dropdown-item autoclose"
+	 id="idArchRecibos"
+	  	    href="#" target="">Recibos</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="6" class="dropdown-item autoclose"
+	 id="idArchSiniestros"
+	  	    href="#" target="">Siniestros</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="7" class="dropdown-item autoclose"
+	 id="idArchPreSiniestros"
+	  	    href="#" target="">Pre-Siniestros</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="62" class="dropdown-item autoclose"
+	 id="idEstadisticas"
+	  	    href="http://82.159.210.31/desarrollo/estadisticas/estadisticas" target="_blank">Estadísticas</a>         	           
+                                              
+                     		</li>
+<li
+        class="dropend"    
+	
+	>                
+                                <a id_="8" class="dropdown-item dropdown-toggle"
+	onclick="return false;" id="idEiac" href="#"
+	data-bs-toggle="dropdown" data-bs-auto-close="outside">EIAC</a>         	         
+                                              
+           <ul
+		class="dropdown-menu shadow">            <li
+            
+	
+	>                
+                                <a id_="9" class="dropdown-item autoclose"
+	 id="idEiacProduccion"
+	  	    href="#" target="">Nueva producción</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="10" class="dropdown-item autoclose"
+	 id="idEiacAnulaciones"
+	  	    href="#" target="">Anulaciones</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="11" class="dropdown-item autoclose"
+	 id="idModuloTraspaso"
+	  	    href="http://82.159.210.59/PaccEiac/" target="_blank">Módulo traspaso</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="12" class="dropdown-item autoclose"
+	 id="idModuloEstadisticas"
+	  	    href="http://82.159.210.31/desarrollo/" target="_blank">Módulo estadísticas</a>         	           
+                                              
+                     		</li>
+          
+           
+	
+	
+	
+	</ul>           		</li>
+<li
+            
+	
+	>                
+                                <a id_="14" class="dropdown-item autoclose"
+	 id="idCartasNombramiento"
+	  	    href="https://www.gpacc.es/paccnombramientos/" target="_blank">Cartas de nombramiento</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="15" class="dropdown-item autoclose"
+	 id="idAvant2"
+	  	    href="https://grupopacc.avant2.es/avant/start#" target="">Avant2</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="13" class="dropdown-item autoclose"
+	 id="idImportacionMultitarificador"
+	  	    href="http://82.159.210.31/desarrollo/procesos/softQSTarificacion" target="">Importación multitarificador</a>         	           
+                                              
+                     		</li>
+<li
+        class="dropend"    
+	
+	>                
+                                <a id_="53" class="dropdown-item dropdown-toggle"
+	onclick="return false;" id="idGestionCarteraClientes" href="#"
+	data-bs-toggle="dropdown" data-bs-auto-close="outside">Gestion cartera clientes</a>         	         
+                                              
+           <ul
+		class="dropdown-menu shadow">            <li
+            
+	
+	>                
+                                <a id_="54" class="dropdown-item autoclose"
+	 id="idGeCaClFidelizacionClientes"
+	  	    href="http://82.159.210.31/desarrollo/fidelizacion/fidelizacion" target="">Fidelización clientes</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="55" class="dropdown-item autoclose"
+	 id="idGesCarAnalisisClientes"
+	  	    href="http://82.159.210.31/desarrollo/negocio/analisisClientes" target="">Análisis clientes</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="56" class="dropdown-item autoclose"
+	 id="idGesCarMantClientes"
+	  	    href="#" target="">Mantenimiento clientes</a>         	           
+                                              
+                     		</li>
+<li
+        class="dropstart"    
+	
+	>                
+                                <a id_="57" class="dropdown-item dropdown-toggle"
+	onclick="return false;" id="idGesCarPeticionDatos" href="#"
+	data-bs-toggle="dropdown" data-bs-auto-close="outside">Petición datos clientes</a>         	         
+                                              
+           <ul
+		class="dropdown-menu shadow">            <li
+            
+	
+	>                
+                                <a id_="58" class="dropdown-item autoclose"
+	 id="idCliBaseDatos"
+	  	    href="#" target="">Actualización base datos</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="59" class="dropdown-item autoclose"
+	 id="idCliBaseDatosResult"
+	  	    href="#" target="">Actualización base datos result.</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="60" class="dropdown-item autoclose"
+	 id="idCliVidaDni"
+	  	    href="#" target="">Clientes vida actualización DNI</a>         	           
+                                              
+                     		</li>
+          
+           
+	
+	
+	
+	</ul>           		</li>
+<li
+            
+	
+	>                
+                                <a id_="61" class="dropdown-item autoclose"
+	 id="idGesCarVentaCruzada"
+	  	    href="#" target="">Venta cruzada</a>         	           
+                                              
+                     		</li>
+          
+           
+	
+	
+	
+	</ul>           		</li>
+<li
+            
+	
+	>                
+                                <a id_="63" class="dropdown-item autoclose"
+	 id="idAdministracion"
+	  	    href="http://82.159.210.31/desarrollo/varios/menuAdministracion" target="">Administración</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="16" class="dropdown-item autoclose"
+	 id="idTarificacionAutomatica"
+	  	    href="http://82.159.210.31/desarrollo/tarificacion/tarificacionAutomatica" target="">Tarificación automática</a>         	           
+                                              
+                     		</li>
+<li
+        class="dropend"    
+	
+	>                
+                                <a id_="42" class="dropdown-item dropdown-toggle"
+	onclick="return false;" id="idInformacionCorporativa" href="#"
+	data-bs-toggle="dropdown" data-bs-auto-close="outside">Información corporativa</a>         	         
+                                              
+           <ul
+		class="dropdown-menu shadow">            <li
+            
+	
+	>                
+                                <a id_="43" class="dropdown-item autoclose"
+	 id="idArchCompanias"
+	  	    href="#" target="">Compañias</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="44" class="dropdown-item autoclose"
+	 id="idArchColaboradores"
+	  	    href="#" target="">Colaboradores externos</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="45" class="dropdown-item autoclose"
+	 id="idArchJefesEquipo"
+	  	    href="#" target="">Jefes equipo</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="46" class="dropdown-item autoclose"
+	 id="idArchProfesionales"
+	  	    href="#" target="">Profesionales</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="47" class="dropdown-item autoclose"
+	 id="idArchSucursales"
+	  	    href="#" target="">Sucursales</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="48" class="dropdown-item autoclose"
+	 id="idArchRamos"
+	  	    href="#" target="">Ramos</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="49" class="dropdown-item autoclose"
+	 id="idArchJefesComerciales"
+	  	    href="#" target="">Jefes comerciales</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="50" class="dropdown-item autoclose"
+	 id="idArchEjecutivosCuentas"
+	  	    href="#" target="">Ejecutivos cuentas</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="51" class="dropdown-item autoclose"
+	 id="idArchBancosCuentas"
+	  	    href="#" target="">Bancos</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="52" class="dropdown-item autoclose"
+	 id="idArchColectivosAgro"
+	  	    href="#" target="">Colectivos agroseguros</a>         	           
+                                              
+                     		</li>
+          
+           
+	
+	
+	
+	</ul>           		</li>
+          
+           
+	
+	
+	
+	</ul>           		</li>
+<li
+        class="nav-item dropdown"    
+	
+	>                
+                                <a id_="17" class="nav-link active dropdown-toggle"
+	onclick="return false;" id="idInfPolizas2" href="#"
+	data-bs-toggle="dropdown" data-bs-auto-close="outside">Informes</a>         	         
+                                              
+           <ul
+		class="dropdown-menu shadow">            <li
+            
+	
+	>                
+                                <a id_="65" class="dropdown-item autoclose"
+	 id="idInfPolizas"
+	  	    href="#" target="">Pólizas</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="66" class="dropdown-item autoclose"
+	 id="idInfRecibos"
+	  	    href="#" target="">Recibos</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="67" class="dropdown-item autoclose"
+	 id="idInfRecibosPendientes"
+	  	    href="#" target="">Recibos pendientes</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="68" class="dropdown-item autoclose"
+	 id="idInfSiniestros"
+	  	    href="#" target="">Siniestros</a>         	           
+                                              
+                     		</li>
+<li
+        class="dropend"    
+	
+	>                
+                                <a id_="69" class="dropdown-item dropdown-toggle"
+	onclick="return false;" id="idInfIndicadoresControlNegocio" href="#"
+	data-bs-toggle="dropdown" data-bs-auto-close="outside">Indicadores control negocio</a>         	         
+                                              
+           <ul
+		class="dropdown-menu shadow">            <li
+            
+	
+	>                
+                                <a id_="70" class="dropdown-item autoclose"
+	 id="idInfPolizaSinRec"
+	  	    href="#" target="">Pólizas en vigor sin recibos</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="71" class="dropdown-item autoclose"
+	 id="idInfRecibosComAuxCorr"
+	  	    href="#" target="">Recibos comi. col. superior corr.</a>         	           
+                                              
+                     		</li>
+<li
+        class="dropstart"    
+	
+	>                
+                                <a id_="72" class="dropdown-item dropdown-toggle"
+	onclick="return false;" id="idInfAlertas" href="#"
+	data-bs-toggle="dropdown" data-bs-auto-close="outside">Alertas</a>         	         
+                                              
+           <ul
+		class="dropdown-menu shadow">            <li
+            
+	
+	>                
+                                <a id_="73" class="dropdown-item autoclose"
+	 id="idInfAlertasRecibos"
+	  	    href="#" target="">Recibos pendientes</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="74" class="dropdown-item autoclose"
+	 id="idInfAlertasSiniestros"
+	  	    href="#" target="">Siniestros pendientes</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="75" class="dropdown-item autoclose"
+	 id="idInfAlertasSolicitudes"
+	  	    href="#" target="">Solicitudes pendientes</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="76" class="dropdown-item autoclose"
+	 id="idInfAlertasSuplementos"
+	  	    href="#" target="">Suplementos pendientes</a>         	           
+                                              
+                     		</li>
+          
+           
+	
+	
+	
+	</ul>           		</li>
+<li
+            
+	
+	>                
+                                <a id_="78" class="dropdown-item autoclose"
+	 id="idInfResProAdmin"
+	  	    href="#" target="">Incidencias procesos admin.</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="79" class="dropdown-item autoclose"
+	 id="idInfPolizaSinUltimoRec"
+	  	    href="#" target="">Pólizas sin ult. recibo</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="80" class="dropdown-item autoclose"
+	 id="idInfAgendasSinPtes"
+	  	    href="#" target="">Agenda siniestros pendientes</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="81" class="dropdown-item autoclose"
+	 id="idInfComparativoComiCias"
+	  	    href="#" target="">Comparativo comisiones cias</a>         	           
+                                              
+                     		</li>
+          
+           
+	
+	
+	
+	</ul>           		</li>
+<li
+            
+	
+	>                
+                                <a id_="82" class="dropdown-item autoclose"
+	 id="idInfPolizasEmpresas"
+	  	    href="#" target="">Pólizas empresas</a>         	           
+                                              
+                     		</li>
+          
+           
+	
+	
+	
+	</ul>           		</li>
+<li
+        class="nav-item dropdown"    
+	
+	>                
+                                <a id_="84" class="nav-link active dropdown-toggle"
+	onclick="return false;" id="idGestion" href="#"
+	data-bs-toggle="dropdown" data-bs-auto-close="outside">Gestión</a>         	         
+                                              
+           <ul
+		class="dropdown-menu shadow">            <li
+            
+	
+	>                
+                                <a id_="83" class="dropdown-item autoclose"
+	 id="idGeTratamientoDeCartera"
+	  	    href="http://82.159.210.31/desarrollo/cartera/cartera" target="">Tratamiento de Cartera</a>         	           
+                                              
+                     		</li>
+<li
+        class="dropend"    
+	
+	>                
+                                <a id_="85" class="dropdown-item dropdown-toggle"
+	onclick="return false;" id="idGeDefensaCartera" href="#"
+	data-bs-toggle="dropdown" data-bs-auto-close="outside">Defensa Cartera</a>         	         
+                                              
+           <ul
+		class="dropdown-menu shadow">            <li
+            
+	
+	>                
+                                <a id_="86" class="dropdown-item autoclose"
+	 id="idInfDefensaCartera"
+	  	    href="#" target="">Defensa cartera</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="87" class="dropdown-item autoclose"
+	 id="idInfDefensaCarteraRedCom"
+	  	    href="#" target="">D. C. Red comercial</a>         	           
+                                              
+                     		</li>
+          
+           
+	
+	
+	
+	</ul>           		</li>
+<li
+            
+	
+	>                
+                                <a id_="88" class="dropdown-item autoclose"
+	 id="idGeContabilidad"
+	  	    href="http://82.159.210.31/desarrollo/contabilidad/menuContabilidad" target="">Contabilidad</a>         	           
+                                              
+                     		</li>
+<li
+        class="dropend"    
+	
+	>                
+                                <a id_="89" class="dropdown-item dropdown-toggle"
+	onclick="return false;" id="idGeAuditorias" href="#"
+	data-bs-toggle="dropdown" data-bs-auto-close="outside">Auditorias</a>         	         
+                                              
+           <ul
+		class="dropdown-menu shadow">            <li
+            
+	
+	>                
+                                <a id_="90" class="dropdown-item autoclose"
+	 id="idAuditoriasVenciPol"
+	  	    href="#" target="">Vencimiento pólizas</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="91" class="dropdown-item autoclose"
+	 id="idAuditoriasAuditoria"
+	  	    href="#" target="">Auditoría</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="92" class="dropdown-item autoclose"
+	 id="idAuditoriasSinSinMovil"
+	  	    href="#" target="">Siniestros sin teléfono móvil</a>         	           
+                                              
+                     		</li>
+<li
+        class="dropstart"    
+	
+	>                
+                                <a id_="93" class="dropdown-item dropdown-toggle"
+	onclick="return false;" id="idGeAuAuditoriasSiniestros" href="#"
+	data-bs-toggle="dropdown" data-bs-auto-close="outside">Auditorías siniestros</a>         	         
+                                              
+           <ul
+		class="dropdown-menu shadow">            <li
+            
+	
+	>                
+                                <a id_="94" class="dropdown-item autoclose"
+	 id="idAuditoriasSiniCartas"
+	  	    href="#" target="">Auditoria cartas siniestros</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="95" class="dropdown-item autoclose"
+	 id="idAuditoriasSiniAperturados"
+	  	    href="#" target="">Sin. aperturados sin agenda</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="96" class="dropdown-item autoclose"
+	 id="idAuditoriasSiniDocumentacion"
+	  	    href="#" target="">Sin. sin documentación subida</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="97" class="dropdown-item autoclose"
+	 id="idAuditoriasSiniAntiguos"
+	  	    href="#" target="">Siniestros antiguos abierto</a>         	           
+                                              
+                     		</li>
+          
+           
+	
+	
+	
+	</ul>           		</li>
+          
+           
+	
+	
+	
+	</ul>           		</li>
+<li
+        class="dropend"    
+	
+	>                
+                                <a id_="98" class="dropdown-item dropdown-toggle"
+	onclick="return false;" id="idGeDefensaImpagados" href="#"
+	data-bs-toggle="dropdown" data-bs-auto-close="outside">Defensa Impagados</a>         	         
+                                              
+           <ul
+		class="dropdown-menu shadow">            <li
+            
+	
+	>                
+                                <a id_="99" class="dropdown-item autoclose"
+	 id="idInfDefensaImpAutos"
+	  	    href="#" target="">Autos Particulares</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="101" class="dropdown-item autoclose"
+	 id="idInfDefensaImpInforme"
+	  	    href="#" target="">Informe</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="100" class="dropdown-item autoclose"
+	 id="idInfDefensaImpEmpresas"
+	  	    href="#" target="">Empresas</a>         	           
+                                              
+                     		</li>
+          
+           
+	
+	
+	
+	</ul>           		</li>
+          
+           
+	
+	
+	
+	</ul>           		</li>
+<li
+        class="nav-item dropdown"    
+	
+	>                
+                                <a id_="41" class="nav-link active dropdown-toggle"
+	onclick="return false;" id="idArchProyectos2" href="#"
+	data-bs-toggle="dropdown" data-bs-auto-close="outside">Proyectos</a>         	         
+                                              
+           <ul
+		class="dropdown-menu shadow">            <li
+            
+	
+	>                
+                                <a id_="154" class="dropdown-item autoclose"
+	onclick="return false;" id="idProyEmpresas" href="#"
+	data-bs-toggle="dropdown" data-bs-auto-close="outside">Proyectos Empresas</a>         	         
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="156" class="dropdown-item autoclose"
+	onclick="return false;" id="idArchProyectos" href="#"
+	data-bs-toggle="dropdown" data-bs-auto-close="outside">Resto de Proyectos</a>         	         
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="157" class="dropdown-item autoclose"
+	 id="idGerenciaRiesgos"
+	  	    href="http://paccgerenciaderiesgos.es/" target="_blank">Gerencia Riesgos</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="158" class="dropdown-item autoclose"
+	 id="idEstudioComparativoProductos"
+	  	    href="http://82.159.210.31/desarrollo/comparativo/comparativo" target="">Estudio comparativo Productos</a>         	           
+                                              
+                     		</li>
+<li
+        class="dropend"    
+	
+	>                
+                                <a id_="159" class="dropdown-item dropdown-toggle"
+	onclick="return false;" id="idCuestionariosSolicitudes" href="#"
+	data-bs-toggle="dropdown" data-bs-auto-close="outside">Cuestionarios y Solicitudes</a>         	         
+                                              
+           <ul
+		class="dropdown-menu shadow">            <li
+            
+	
+	>                
+                                <a id_="160" class="dropdown-item autoclose"
+	 id="idProCuestionarios"
+	  	    href="http://82.159.210.31/desarrollo/tarificacion/cuestionariosParaCotizar" target="">Cuestionarios</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="161" class="dropdown-item autoclose"
+	 id="idProSolicitudesCompanias"
+	  	    href="http://82.159.210.31/desarrollo/documentos/solicitudes/companias" target="">Solicitudes compañías</a>         	           
+                                              
+                     		</li>
+          
+           
+	
+	
+	
+	</ul>           		</li>
+          
+           
+	
+	
+	
+	</ul>           		</li>
+<li
+        class="nav-item"    
+	
+	>                
+                                <a id_="104" class="nav-link active"
+	 id="idFormacion"
+	  	    href="https://www.google.com.ar/?hl=es" target="_blank">Formación</a>         	           
+                                              
+                     		</li>
+<li
+        class="nav-item dropdown"    
+	
+	>                
+                                <a id_="123" class="nav-link active dropdown-toggle"
+	onclick="return false;" id="idUtilidades1" href="#"
+	data-bs-toggle="dropdown" data-bs-auto-close="outside">Utilidades</a>         	         
+                                              
+           <ul
+		class="dropdown-menu shadow">            <li
+            
+	
+	>                
+                                <a id_="125" class="dropdown-item autoclose"
+	 id="idAgenda"
+	  	    href="http://82.159.210.31/desarrollo/agenda/calendario" target="">Agenda</a>         	           
+                                              
+                     		</li>
+<li
+        class="dropend"    
+	
+	>                
+                                <a id_="126" class="dropdown-item dropdown-toggle"
+	onclick="return false;" id="idControlClaves" href="#"
+	data-bs-toggle="dropdown" data-bs-auto-close="outside">Control claves</a>         	         
+                                              
+           <ul
+		class="dropdown-menu shadow">            <li
+            
+	
+	>                
+                                <a id_="127" class="dropdown-item autoclose"
+	 id="idClavesCompanias"
+	  	    href="http://82.159.210.31/desarrollo/utilidades/controlClavesCias" target="">Claves compañías</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="128" class="dropdown-item autoclose"
+	 id="idOtrasClaves"
+	  	    href="http://82.159.210.31/desarrollo/utilidades/controlClavesOtras" target="">Otras claves</a>         	           
+                                              
+                     		</li>
+          
+           
+	
+	
+	
+	</ul>           		</li>
+<li
+            
+	
+	>                
+                                <a id_="129" class="dropdown-item autoclose"
+	 id="idDirectorioPersonal"
+	  	    href="http://82.159.210.31/desarrollo/utilidades/directorioPersonal" target="">Directorio personal</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="131" class="dropdown-item autoclose"
+	 id="idRecursos"
+	  	    href="http://82.159.210.31/desarrollo/utilidades/software" target="">Recursos</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="133" class="dropdown-item autoclose"
+	onclick="return false;" id="tiendaVirtual" href="#"
+	data-bs-toggle="dropdown" data-bs-auto-close="outside">Tienda Virtual</a>         	         
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="134" class="dropdown-item autoclose"
+	 id="idRegistroSucesos"
+	  	    href="http://82.159.210.31/desarrollo/varios/consultaLog" target="">Registro sucesos</a>         	           
+                                              
+                     		</li>
+          
+           
+	
+	
+	
+	</ul>           		</li>
+<li
+        class="nav-item dropdown"    
+	
+	>                
+                                <a id_="124" class="nav-link active dropdown-toggle"
+	onclick="return false;" id="idDocumentos1" href="#"
+	data-bs-toggle="dropdown" data-bs-auto-close="outside">Documentos</a>         	         
+                                              
+           <ul
+		class="dropdown-menu shadow">            <li
+            
+	
+	>                
+                                <a id_="135" class="dropdown-item autoclose"
+	onclick="return false;" id="docsCompaniasTel" href="#"
+	data-bs-toggle="dropdown" data-bs-auto-close="outside">Teléfonos asistencias cías.</a>         	         
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="136" class="dropdown-item autoclose"
+	 id="idComisionesCompanias"
+	  	    href="http://82.159.210.31/desarrollo/documentos/comisiones" target="">Comisiones compañías</a>         	           
+                                              
+                     		</li>
+<li
+        class="dropend"    
+	
+	>                
+                                <a id_="137" class="dropdown-item dropdown-toggle"
+	onclick="return false;" id="idConsorcioComp" href="#"
+	data-bs-toggle="dropdown" data-bs-auto-close="outside">Consorcio comp. de seguros</a>         	         
+                                              
+           <ul
+		class="dropdown-menu shadow">            <li
+            
+	
+	>                
+                                <a id_="139" class="dropdown-item autoclose"
+	 id="idCondicionesGenConsorcio"
+	  	    href="http://82.159.210.31/desarrollo/varios/con-gen-consorcio.pdf" target="_blank">Condiciones gen. Consorcio</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="141" class="dropdown-item autoclose"
+	 id="idCriteriosAplicablesSiniestros"
+	  	    href="http://82.159.210.31/desarrollo/varios/cri-apli-siniestros.pdf" target="_blank">Criterios aplicables a siniestros</a>         	           
+                                              
+                     		</li>
+          
+           
+	
+	
+	
+	</ul>           		</li>
+<li
+        class="dropend"    
+	
+	>                
+                                <a id_="142" class="dropdown-item dropdown-toggle"
+	onclick="return false;" id="idCompanias" href="#"
+	data-bs-toggle="dropdown" data-bs-auto-close="outside">Compañías</a>         	         
+                                              
+           <ul
+		class="dropdown-menu shadow">            <li
+            
+	
+	>                
+                                <a id_="143" class="dropdown-item autoclose"
+	 id="idProtocolosCompanias"
+	  	    href="http://82.159.210.31/desarrollo/documentos/protocolos" target="_blank">Protocolos compañías</a>         	           
+                                              
+                     		</li>
+<li
+        class="dropstart"    
+	
+	>                
+                                <a id_="144" class="dropdown-item dropdown-toggle"
+	onclick="return false;" id="idCoFichaOperativaCompanias" href="#"
+	data-bs-toggle="dropdown" data-bs-auto-close="outside">Ficha operativa compañías</a>         	         
+                                              
+           <ul
+		class="dropdown-menu shadow">            <li
+            
+	
+	>                
+                                <a id_="145" class="dropdown-item autoclose"
+	 id="idContratacion"
+	  	    href="http://82.159.210.31/desarrollo/documentos/fichaOperativaCias/companias/CONTRATACION" target="">Contratación</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="146" class="dropdown-item autoclose"
+	 id="idDoCoSiniestros"
+	  	    href="http://82.159.210.31/desarrollo/documentos/fichaOperativaCias/companias/SINIESTROS" target="">Siniestros</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="147" class="dropdown-item autoclose"
+	 id="idDoCoOperativaImpagadosCias"
+	  	    href="http://82.159.210.31/desarrollo/documentos/fichaOperativaCias/companias/OPERATIVA IMPAGADOS CIAS" target="">Operativa impagados cias.</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="148" class="dropdown-item autoclose"
+	 id="idDoCoContabilidad"
+	  	    href="http://82.159.210.31/desarrollo/documentos/fichaOperativaCias/companias/CONTABILIDAD" target="">Contabilidad</a>         	           
+                                              
+                     		</li>
+          
+           
+	
+	
+	
+	</ul>           		</li>
+          
+           
+	
+	
+	
+	</ul>           		</li>
+<li
+            
+	
+	>                
+                                <a id_="149" class="dropdown-item autoclose"
+	 id="idDoCalidad"
+	  	    href="http://82.159.210.31/desarrollo/documentos/calidad" target="">Calidad</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="150" class="dropdown-item autoclose"
+	 id="idDoBiblioteca"
+	  	    href="http://82.159.210.31/desarrollo/documentos/biblioteca" target="">Biblioteca</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="151" class="dropdown-item autoclose"
+	 id="idDoBlanqueoCapitales"
+	  	    href="http://82.159.210.31/desarrollo/formacion/formacionBlanqueo" target="">Blanqueo Capitales</a>         	           
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="152" class="dropdown-item autoclose"
+	onclick="return false;" id="ordenDomiciliacion" href="#"
+	data-bs-toggle="dropdown" data-bs-auto-close="outside">Orden domiciliación</a>         	         
+                                              
+                     		</li>
+<li
+            
+	
+	>                
+                                <a id_="153" class="dropdown-item autoclose"
+	 id="idDoPlanesAcogida"
+	  	    href="http://82.159.210.31/desarrollo/formacion/formacion/documentos/PLANES DE ACOGIDA" target="">Planes de acogida</a>         	           
+                                              
+                     		</li>
+          
+           
+	
+	
+	
+	</ul>           		</li>
+      
+      <!-- <form class="d-flex ms-auto">
+                <div class="input-group">
+                    <input class="form-control border-0 mr-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary border-0" type="submit">Search</button>
+                </div>
+            </form> -->
+    </div>
+  </div>
+</nav>
+  <!-- Header -->
+  <div class="container-fluid">
+    <header class="row py-3 border-bottom bg-white">
+      <div class="col-6 col-md-3 col-xl-2 my-auto">
+        <a href="http://82.159.210.31/desarrollo/"><img src="http://82.159.210.31/desarrollo/img/logo_pacc.png" width="200px" class="img-fluid float-end" alt=""></a>
+      </div>
+      <div class="col-8 col-md-6 col-xl-8 align-self-center px-2 px-md-3 d-none d-md-block">
+        <div class="input-group d-flex">
+          <div class="dropdown d-flex align-items-stretch">
+            <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Filtro
+            </button>
+            <div class="dropdown-menu bg-light" id="buscadorFiltro">
+              <a class="dropdown-item" href="#">Menú</a>
+              <h6 class="dropdown-header" data-type="header">Clientes</h6>
+              <a class="dropdown-item" data-type="cliente" href="#">Nif</a>
+              <a class="dropdown-item" data-type="cliente" href="#">Nombre</a>
+            </div>
+          </div>
+          <div class="form-floating flex-fill" id="buscadorFiltro">
+            <input type="text" class="form-control" id="buscador" placeholder="Que está buscando ..." autocomplete="off">
+            <label for="floatingInputValue" id="buscadorPlaceholder">Buscar en menú ...</label>
+          </div>
+        </div>
+      </div>
+      <!-- Avatar -->
+      <div class="col-6 col-md-3 col-xl-2 align-self-center d-flex">
+        <div class="avatar-circle bg-blue-p1">
+          <span class="initials text-light">
+            RL          </span>
+        </div>
+        <div class="d-flex flex-column my-auto ms-2">
+          <span class="fw-bold">
+            Rafael López          </span>
+          <span class="fs-09 text-muted">GP MEDINA AZAHARA</span>
+        </div>
+        <!-- Menu usuario -->
+        <button type="button" class="btn mt-0 p-1 dropdown-toggle" data-bs-toggle="dropdown">
+        </button>
+        <div class="dropdown-menu">
+          <h6 class="dropdown-header" data-type="header">Usuario</h6>
+          <a class="dropdown-item" href="http://82.159.210.31/desarrollo/admin/MiCuenta"><i class="fas fa-user margin-right-10"></i>Mi cuenta</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item text-secondary" href="#" id="btnLogoutPaccOnline"><i class="fas fa-power-off margin-right-10"></i>Cerrar sesión</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Breadcrumb -->
+          <section class="row">
+        <nav aria-label="breadcrumb" class="p-0">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <!-- <li class="breadcrumb-item"><a href="#">Negocio</a></li> -->
+            <li class="breadcrumb-item active" aria-current="page">polizasHogar</li>
+          </ol>
+        </nav>
+      </section>
+        
+    <div id="content">
+  <div id="leftpanel">
+      <div id="toolbar">
+          <div class="btn-img btn-imprimir">Imprimir</div>
+          <div class="btn-img btn-guardar">Guardar</div>
+    <div class="btn-img btn-cliente">Cliente</div>
+  <div class="btn-img btn-recibos">Recibos</div>
+  <div class="btn-img btn-siniestros">Siniestros</div>
+        <div class="btn-img btn-cartas">Cartas</div>
+      
+      <div class="btn-img btn-documentos">Docs.</div>
+        
+      <div class="btn-img btn-agenda">Agenda</div>
+    
+        <div class="btn-img btn-cotizar" style="background: url('http://82.159.210.31/desarrollo/img/button/avant2.png') no-repeat top;">Cotizar</div>
+    <div class="btn-img btn-buscar">Buscar</div>
+  <div class="btn-img btn-salir float-right">Salir</div>
+</div>
+    <div id="main-content">
+                  <div id="extra-info" class="font-12em" style="display:none;"><p>CLIENTE RENTABLE</p></div>
+            <form id ="polizasHogarForm" method="post" action="http://82.159.210.31/desarrollo/polizas/polizasHogar/grabar">
+        <div id="tabs" class="tabs">
+          <ul id="tabs_botones" class="display-none">
+            <li><a href="#datos-tab">Datos</a></li>
+            <li><a href="#tomador-tab">Tomador</a></li>
+            <li><a href="#asegurado-tab">Asegurado</a></li>
+            <li><a href="#riesgo-tab">Riesgo</a></li>
+            <li><a href="#garantias-tab">Garantías</a></li>
+                            <li><a href="#mant-cliente-tab">Mant. Cliente</a></li>
+                <li><a href="#suplemento-tab">Suplemento</a></li>
+                <li><a href="#comentarios-tab">Comentarios</a></li>
+                      </ul>
+          <div id="datos-tab">
+              <fieldset id="info_cliente_asegurado" class="formspacc ui-corner-all" style="border:1px solid #bbb;background:#eee;padding:0.8em 0;margin:0.8em 0.7em 0.8em 1.2em;"></fieldset>
+<fieldset class="formspacc">
+  <ol>
+    <li>
+      <label>Nº Contrato
+        <input type="text" class="input25" id="poliza" name="poliza" readonly value="410100854538">
+              </label>
+      <label>Nº póliza
+        <input type="text" class="input50" id="cia_poliza" name="cia_poliza" value="02HU21211896">
+              </label>
+                <div class="bottom-actions">
+            <a href="#" id="btnResumenPoliza" class="ui-corner-all"><span class="fa fa-print"></span>Resumen póliza</a>
+            <div class="clear"></div>
+        </div>
+            </li>
+    <li>
+      <label><span id="lblCompania" class="link-label">Compañía</span>
+        <input type="text" class="input25" id="compania" name="compania" value="34">
+              </label>
+      <label class="transparent">
+        <input type="text" class="input75" id="aux_compania" name="aux_compania" readonly value="LIBERTY SEGUROS">
+              </label>
+    </li>
+        <li>
+      <label><span id="lblRamo" class="link-label">Ramo</span>
+        <input type="text" class="input25" id="producto" name="producto" value="201">
+              </label>
+      <label class="transparent">
+        <input type="text" class="input75" id="aux_ramo" name="aux_ramo" readonly value="HOGAR">
+              </label>
+    </li>
+            <li>
+          <label><span id="lblColaborador" class="link-label">Colaborador</span>
+            <input type="text" class="input25" id="colaborador" name="colaborador" value="41010081">
+                      </label>
+          <label class="transparent">
+            <input type="text" class="input75" id="aux_colaborador" name="aux_colaborador" readonly value="Mª DOLORES DIAZ BERMUDEZ">
+                      </label>
+        </li>
+        <li>
+          <label><span id="lblCanal" class="link-label">Canal de cobro</span>
+            <input type="text" class="input25" id="canal" name="canal" value="6">
+                      </label>
+          <label class="transparent">
+            <input type="text" class="input75" id="aux_canal" name="aux_canal" readonly value="COBRO DIRECTO COMPAÑÍA">
+                      </label>
+        </li>
+        <li>
+      <label><span id="lblSituacion" class="link-label">Situación</span>
+        <input type="text" class="input25" id="situacion" name="situacion" value="1">
+              </label>
+      <label class="transparent">
+        <input type="text" class="input75" id="aux_situacion" name="aux_situacion" readonly value="POLIZA EN VIGOR">
+              </label>
+    </li>
+    <li>
+      <label>Póliza Reemplazada
+        <input type="text" class="input30" id="poliza_reemplaza" name="poliza_reemplaza" value="">
+              </label>
+      <label class="input25 labelsolo label-check">
+        <input id="traspaso_cartera" name="traspaso_cartera" type="checkbox" >Traspaso cartera
+      </label>
+      <label class="input30 labelsolo label-check">
+        <input id="carta_nombramiento" name="carta_nombramiento" type="checkbox" >Carta nombramiento
+      </label>
+    </li>
+            <li>
+          <label>Jefe equipo
+            <input type="text" class="input25" id="jefe_equipo" name="jefe_equipo" readonly value="">
+          </label>
+          <label class="transparent">
+            <input type="text" class="input75" id="aux_jefe_equipo" name="aux_jefe_equipo" readonly value="">
+          </label>
+        </li>
+        <li>
+          <label>Jefe comercial
+            <input type="text" class="input25" id="jefe_comercial" name="jefe_comercial" readonly value="410104">
+                      </label>
+          <label class="transparent">
+            <input type="text" class="input75" id="aux_jefe_comercial" name="aux_jefe_comercial" readonly value="ELEUTERIO MESA MUÑOZ">
+                      </label>
+        </li>
+        <li>
+          <label>Ejecutivo Cuentas
+            <input type="text" class="input25" id="ecuentas" name="ecuentas" readonly value="410103">
+                      </label>
+          <label class="transparent">
+            <input type="text" class="input75" id="aux_ecuentas" name="aux_ecuentas" readonly value="SARA CANDON GARCIA">
+                      </label>
+        </li>
+        <li>
+      <label class="input25 fecha-img">Anulación
+        <input type="text" id="fecha_anula" name="fecha_anula" value="">
+              </label>
+      <label>Causa anulación
+        <select class="input50" id="causa_anula" name="causa_anula">
+            <option value="0">&nbsp;</option><option value="6">ANULACION CIA FALTA PAGO</option><option value="18">ANULACION RECIBO, POLIZA EN VIGOR</option><option value="3">CAMBIO CIA EN PACC POR PRECIO</option><option value="5">CAMBIO CORREDOR / AGENTE</option><option value="12">DESCONTENTO CON EL AUXILIAR</option><option value="2">DESPARICION DEL RIESGO</option><option value="7">EL CLIENTE NO DESEA RENOVAR</option><option value="19">FALLECIMIENTO CLIENTE</option><option value="11">LA CIA NO ACEPTA EL RIESGO</option><option value="13">MALA GESTION EN SINIESTROS</option><option value="14">PACC PROTECCION</option><option value="4">POLIZA DUPLICADA</option><option value="8">POR REEMPLAZO EN CIA</option><option value="1">PRECIO EXCESIVO</option><option value="15">RESCATE POLIZA</option><option value="20">RESERVA DE PRIMA</option><option value="9">SINIESTRALIDAD CON CAMBIO DE CIA</option><option value="10">SINIESTRALIDAD SIN CAMBIO DE CIA</option><option value="16">SUSPENSION DE GARANTIAS</option><option value="17">TRASPASO A COBRADOR</option>                    </select>
+      </label>
+      <label class="hidden">Anulacion sis.
+        <input class="input25" type="text" id="fecha_anula_sis" name="fecha_anula_sis" readonly value="">
+              </label>
+    </li>
+    <li>
+      <label>Forma de pago
+        <select class="input50" id="forma_pago" name="forma_pago">
+            <option value=""></option><option value="MEN">MEN - Mensual</option><option value="BIM">BIM - Bimensual</option><option value="TRI">TRI - Trimestral</option><option value="CUA">CUA - Cuatrimestral</option><option value="SEM">SEM - Semestral</option><option value="ANU" selected>ANU - Anual</option><option value="UNI">UNI - Unica</option>                    </select>
+      </label>
+          </li>
+    <li>
+      <label>Tipo póliza
+        <select class="input50" id="tipo_poliza" name="tipo_poliza">
+            <option value="0"></option><option value="1" selected>1 - Anual renovable</option><option value="2">2 - Temporal</option><option value="3">3 - Prima unica</option><option value="4">4 - Anual no renovable</option>                    </select>
+      </label>
+      <label class="input25 fecha-img">Efecto
+        <input type="text" id="fecha_efecto" name="fecha_efecto" value="10-10-2018">
+              </label>
+      <label class="input25 fecha-img">Vencimiento
+        <input type="text" id="fecha_vencimiento" name="fecha_vencimiento" value="10-10-2021">
+              </label>
+    </li>
+    <li>
+      <label>Alta
+        <input class="input25" type="text" id="fecha_alta" name="fecha_alta" readonly value="13-09-2018">
+              </label>
+      <label>Recepción
+        <input class="input25" type="text" id="fecha_recepcion" name="fecha_recepcion" readonly value="13-09-2018">
+              </label>
+      <label>IBAN
+        <input type="text" class="input50" id="iban" name="iban" value="ES24-2100-8482-2123-0004-2148">
+              </label>
+    </li>
+    <li>
+      <label class="input25 fecha-img">Vto. Sig. Recibo
+        <input type="text" id="fecha_siguiente_recibo" name="fecha_siguiente_recibo" value="10-10-2021">
+              </label>
+    </li>
+    <li class="margin-top-0 padding-top-0">
+      <label class="labelsolo label-check">
+        <input id="doc_falta" name="doc_falta" type="checkbox" >Faltan documentos
+      </label>
+      <label class="transparent">
+        <input readonly type="text" class="input20" id="doc_fecha_peticion" name="doc_fecha_peticion" value="">
+              </label>
+      <label class="labelsolo label-check margin-left-40">
+        <input id="doc_recep" name="doc_recep" type="checkbox">Recepción docum.
+      </label>
+      <label class="transparent">
+        <input readonly type="text" class="input20" id="doc_fecha_recepcion" name="doc_fecha_recepcion" value="">
+              </label>
+    </li>
+    <li>
+      <label>Documentos que faltan
+        <textarea class="input100" rows="5" id="doc_detalle" name="doc_detalle"></textarea>
+      </label>
+    </li>
+            <li class="margin-top-0 padding-top-0">
+          <div class="container-buttons margin-left-20">
+            <div class="bottom-actions margin-right-0">
+                                  <a href="#" id="btnReemplazoCiaPacc" class="ui-corner-all input50 text-center margin-left-40"><span class="fa fa-refresh"></span>Reemplazo Cía Pacc</a>
+                  <a href="#" id="btnNuevoRecibo" class="ui-corner-all input50 text-center"><span class="fa fa-plus"></span>Nuevo recibo</a>
+                            <div class="clear"></div>
+            </div>
+          </div>
+        </li>
+        <li class="margin-top-0 padding-top-0">
+      <label class="labelsolo label-check" style="margin-top: 0;">
+        <input id="doc_firmado" name="doc_firmado" type="checkbox"  checked="checked">Información previa al cliente firmada
+      </label>
+                <div class="container-buttons margin-left-10 margin-right-50" style="margin-top: -10px;">
+            <div class="bottom-actions">
+              <a href="#" id="btnInfoPreviaPrint" class="ui-corner-all"><span class="fa fa-print"></span>Imprimir</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+            <label class="labelsolo label-check" style="margin-top: 0;">
+                <input type="checkbox" checked disabled>Tarificador
+              </label>
+    </li>
+    <li class="margin-top-0 padding-top-0">
+      <label class="labelsolo label-check" style="margin-top: 0;">
+        <input id="orden_domiciliacion" name="orden_domiciliacion" type="checkbox" >Orden domiciliación
+      </label>
+            <label class="labelsolo label-check" style="margin-top: 0;">
+        <input id="financiacion" name="financiacion" type="checkbox" >Financiación
+      </label>  
+    </li>
+    <li>
+    </li>
+  </ol>
+  <input type="hidden" id="situacion_original" value="1">
+  <input type="hidden" id="s_director_hidden" name="s_director_hidden" value="1">
+  <input type="hidden" id="s_codigo_hidden" name="s_codigo_hidden" value="14030018">
+  <input type="hidden" id="s_avanzado_hidden" name="s_avanzado_hidden" value="">
+  <input type="hidden" id="s_jequipo_hidden" name="s_jequipo_hidden" value="">
+  <input type="hidden" id="procede_hidden" name="procede_hidden" value="TQS">
+</fieldset>
+          </div>
+          <div id="tomador-tab">
+              <fieldset class="formspacc">
+  <ol>
+    <li>
+      <label><span id="lblTomador" class="link-label">NIF/CIF</span>
+        <input type="text" class="input25" id="tom_nif" name="tom_nif" value="28735116C">
+      </label>
+                <label class="input25 labelsolo label-check">
+            <input id="tom_es_asegurado" name="tom_es_asegurado" type="checkbox"  checked="checked">Asegurado
+          </label>
+          </li>
+    <li>
+      <label>Nombre
+        <input type="text" class="input100" id="tom_nombre" name="tom_nombre" readonly value="RAFAEL RUIZ COLMENERO">
+      </label>
+    </li>
+    <li>
+      <label>Domicilio
+        <input type="text" class="input100" id="tom_domicilio" name="tom_domicilio" readonly value="AVDA LAS CIENCIAS 20 PORT 4 2ºC">
+      </label>
+    </li>
+    <li>
+      <label>C. Postal
+        <input type="text" class="input15 numeric" id="tom_cpostal" name="tom_cpostal" readonly value="41020">
+      </label>
+      <label>Población
+        <input type="text" class="input50" id="tom_poblacion" name="tom_poblacion" readonly value="SEVILLA">
+      </label>
+      <label>Provincia
+        <select class="input35 select-readonly" id="tom_provincia" name="tom_provincia">
+            <option value="0">&nbsp;</option><option value="15">A CORUÑA</option><option value="1">ALAVA</option><option value="2">ALBACETE</option><option value="3">ALICANTE</option><option value="4">ALMERIA</option><option value="33">ASTURIAS</option><option value="5">AVILA</option><option value="6">BADAJOZ</option><option value="7">BALEARES</option><option value="8">BARCELONA</option><option value="9">BURGOS</option><option value="10">CACERES</option><option value="11">CADIZ</option><option value="39">CANTABRIA</option><option value="12">CASTELLON</option><option value="51">CEUTA</option><option value="13">CIUDAD REAL</option><option value="14">CORDOBA</option><option value="16">CUENCA</option><option value="17">GIRONA</option><option value="18">GRANADA</option><option value="19">GUADALAJARA</option><option value="20">GUIPUZCOA</option><option value="21">HUELVA</option><option value="22">HUESCA</option><option value="23">JAEN</option><option value="26">LA RIOJA</option><option value="35">LAS PALMAS</option><option value="24">LEON</option><option value="25">LLEIDA</option><option value="27">LUGO</option><option value="28">MADRID</option><option value="29">MALAGA</option><option value="52">MELILLA</option><option value="30">MURCIA</option><option value="31">NAVARRA</option><option value="32">OURENSE</option><option value="34">PALENCIA</option><option value="36">PONTEVEDRA</option><option value="37">SALAMANCA</option><option value="40">SEGOVIA</option><option value="41" selected>SEVILLA</option><option value="42">SORIA</option><option value="38">STA. CRUZ TENERIFE</option><option value="43">TARRAGONA</option><option value="44">TERUEL</option><option value="45">TOLEDO</option><option value="46">VALENCIA</option><option value="47">VALLADOLID</option><option value="48">VIZCAYA</option><option value="49">ZAMORA</option><option value="50">ZARAGOZA</option>                    </select>
+      </label>
+    </li>
+    <li>
+      <label>Fecha nacimiento
+        <input class="input25" id="tom_fecha_nacimiento" name="tom_fecha_nacimiento" type="text" readonly value="31-07-1972">
+      </label>
+      <label>Profesión
+        <input type="text" class="input75" id="tom_profesion" name="tom_profesion" readonly value="">
+      </label>
+    </li>
+    <li>
+      <label>Tlf. Privado
+        <input type="text" class="input30" id="tom_tel_privado" name="tom_tel_privado" readonly value="954443418">
+      </label>
+      <!--<label>Tlf. Profesional
+        <input type="text" class="input30" id="tom_tel_profesion" name="tom_tel_profesion" readonly value="">
+      </label>-->
+      <label>Móvil
+        <input type="text" class="input30" id="tom_movil" name="tom_movil" readonly value="665514640">
+      </label>
+    </li>
+    <li>
+      <label>Sexo
+        <select  class="input25 select-readonly" id="tom_sexo" name="tom_sexo">
+            <option value="HOM" selected>Hombre</option><option value="MUJ">Mujer</option><option value="EMP">Empresa</option>                    </select>
+      </label>
+      <label>Fecha carnet
+        <input class="input25" id="tom_fecha_carnet" name="tom_fecha_carnet" type="text" readonly value="04-02-1991">
+      </label>
+      <label><a href="mailto:rafaelruiz72@gmail.com">Email</a>
+        <input type="text" class="input50" id="tom_email" name="tom_email" readonly value="rafaelruiz72@gmail.com">
+      </label>
+    </li>
+  </ol>
+</fieldset>
+          </div>
+          <div id="asegurado-tab">
+              <fieldset class="formspacc">
+  <ol>
+    <li>
+      <label><span id="lblAseNif" class="link-label">NIF/CIF</span>
+        <input type="text" class="input25" id="ase_nif" name="ase_nif" value="28735116C">
+      </label>
+                <div class="container-buttons">
+            <div class="bottom-actions">
+              <a href="#" id="btnEditarAsegurado" class="ui-corner-all"><span class="fa fa-pencil-square-o"></span>Editar</a>
+            </div>
+            <div class="clear"></div>
+          </div>
+          </li>
+    <li>
+      <label>Nombre
+        <input type="text" class="input100" id="ase_nombre" name="ase_nombre" readonly value="RAFAEL RUIZ COLMENERO">
+      </label>
+    </li>
+    <li>
+      <label>Domicilio
+        <input type="text" class="input100" id="ase_domicilio" name="ase_domicilio" readonly value="AVDA LAS CIENCIAS 20 PORT 4 2ºC">
+      </label>
+    </li>
+    <li>
+      <label>C. Postal
+        <input type="text" class="input15 numeric" id="ase_cpostal" name="ase_cpostal" readonly value="41020">
+      </label>
+      <label>Población
+        <input type="text" class="input50" id="ase_poblacion" name="ase_poblacion" readonly value="SEVILLA">
+      </label>
+      <label>Provincia
+        <select class="input35 select-readonly" id="ase_provincia" name="ase_provincia">
+            <option value="0">&nbsp;</option><option value="15">A CORUÑA</option><option value="1">ALAVA</option><option value="2">ALBACETE</option><option value="3">ALICANTE</option><option value="4">ALMERIA</option><option value="33">ASTURIAS</option><option value="5">AVILA</option><option value="6">BADAJOZ</option><option value="7">BALEARES</option><option value="8">BARCELONA</option><option value="9">BURGOS</option><option value="10">CACERES</option><option value="11">CADIZ</option><option value="39">CANTABRIA</option><option value="12">CASTELLON</option><option value="51">CEUTA</option><option value="13">CIUDAD REAL</option><option value="14">CORDOBA</option><option value="16">CUENCA</option><option value="17">GIRONA</option><option value="18">GRANADA</option><option value="19">GUADALAJARA</option><option value="20">GUIPUZCOA</option><option value="21">HUELVA</option><option value="22">HUESCA</option><option value="23">JAEN</option><option value="26">LA RIOJA</option><option value="35">LAS PALMAS</option><option value="24">LEON</option><option value="25">LLEIDA</option><option value="27">LUGO</option><option value="28">MADRID</option><option value="29">MALAGA</option><option value="52">MELILLA</option><option value="30">MURCIA</option><option value="31">NAVARRA</option><option value="32">OURENSE</option><option value="34">PALENCIA</option><option value="36">PONTEVEDRA</option><option value="37">SALAMANCA</option><option value="40">SEGOVIA</option><option value="41" selected>SEVILLA</option><option value="42">SORIA</option><option value="38">STA. CRUZ TENERIFE</option><option value="43">TARRAGONA</option><option value="44">TERUEL</option><option value="45">TOLEDO</option><option value="46">VALENCIA</option><option value="47">VALLADOLID</option><option value="48">VIZCAYA</option><option value="49">ZAMORA</option><option value="50">ZARAGOZA</option>                    </select>
+      </label>
+    </li>
+    <li>
+      <label>Fecha nacimiento
+        <input class="input25" id="ase_fecha_nacimiento" name="ase_fecha_nacimiento" type="text" readonly value="31-07-1972">
+      </label>
+      <label>Profesión
+        <input type="text" class="input50" id="ase_profesion" name="ase_profesion" readonly value="">
+      </label>
+      <label>Tlfn.
+        <input type="text" class="input25" id="ase_tel_privado" name="ase_tel_privado" value="954443418">
+      </label>
+    </li>
+    <li>
+      <label>Sexo
+        <select class="input25 select-readonly" id="ase_sexo" name="ase_sexo">
+            <option value="HOM" selected>Hombre</option><option value="MUJ">Mujer</option><option value="EMP">Empresa</option>                    </select>
+      </label>
+      <label>Fecha carnet
+        <input class="input25" id="ase_fecha_carnet" name="ase_fecha_carnet" type="text" readonly value="04-02-1991">
+      </label>
+        <label><a href="mailto:rafaelruiz72@gmail.com">Email</a>
+        <input type="text" class="input50" id="ase_email" name="ase_email" value="rafaelruiz72@gmail.com">
+      </label>
+    </li>
+  </ol>
+</fieldset>
+          </div>
+                        <div id="mant-cliente-tab">
+                  <fieldset class="formspacc">
+  <ol>
+      
+        <li>
+        <label class="labelsolo label-check"><b>1</b>
+        <input style="margin-left: 7px;" type="checkbox" id="mntcli1_check"  
+               name="mntcli1_check"  checked="checked">
+      </label>
+      <label>Renovación
+        <input class="input15" type="text" id="mntcli1_fecha_renovacion" 
+               name="mntcli1_fecha_renovacion" readonly value="17-09-2020">
+      </label>
+      <label>Usuario
+        <input class="input75" type="text" id="mntcli1_usuario" 
+               name="mntcli1_usuario" readonly value="Sara Candón García">
+      </label>
+    </li>
+    <li>
+      <label>Tipo cliente
+        <select class="input40" id="mntcli1_producto" name="mntcli1_producto">
+            <option value="0">&nbsp;</option><option value="8">ANULACIÓN EIAC</option><option value="4">ANULACIÓN SINIESTRALIDAD</option><option value="1">BONIFICADO</option><option value="6">EMPRESA A VTO</option><option value="2">NEUTRO</option><option value="5">PETICIÓN ANULACIÓN CLIENTE</option><option value="3" selected>RECARGADO</option><option value="7">REGULARIZACION DE POLIZA</option>            
+        </select>
+      </label>
+      <label>Resultado
+        <select class="input40" id="mntcli1_resultado" name="mntcli1_resultado">
+            <option value="0">&nbsp;</option><option value="8">AGENDAR</option><option value="6">DESAPARICION DEL RIESGO</option><option value="4">IMPOSIBILIDAD CONTACTAR</option><option value="5">IMPOSIBILIDAD ECONOMICA</option><option value="2" selected>MANTENEMOS PÓLIZA</option><option value="3">NO DESEA RENOVAR</option><option value="1">PÓLIZA NUEVA EN PACC</option><option value="7">POLIZA REGULARIZADA</option>                    </select>
+      </label>
+      <label class="input20 fecha-img transparent">
+        <input type="text" id="mntcli1_fecha_otros" name="mntcli1_fecha_otros" 
+               value="">
+      </label>
+    </li>
+    <li>
+      <label>Observaciones
+        <textarea class="input100" rows="3" id="mntcli1_observaciones" 
+                  name="mntcli1_observaciones">NO ES POSIBLE APLICAR DEFENSA DE CARTERA.</textarea>
+      </label>
+    </li>
+    <li>
+      <hr>
+    </li>
+        <li>
+        <label class="labelsolo label-check"><b>2</b>
+        <input style="margin-left: 7px;" type="checkbox" id="mntcli2_check"  
+               name="mntcli2_check" >
+      </label>
+      <label>Renovación
+        <input class="input15" type="text" id="mntcli2_fecha_renovacion" 
+               name="mntcli2_fecha_renovacion" readonly value="">
+      </label>
+      <label>Usuario
+        <input class="input75" type="text" id="mntcli2_usuario" 
+               name="mntcli2_usuario" readonly value="">
+      </label>
+    </li>
+    <li>
+      <label>Tipo cliente
+        <select class="input40" id="mntcli2_producto" name="mntcli2_producto">
+            <option value="0">&nbsp;</option><option value="8">ANULACIÓN EIAC</option><option value="4">ANULACIÓN SINIESTRALIDAD</option><option value="1">BONIFICADO</option><option value="6">EMPRESA A VTO</option><option value="2">NEUTRO</option><option value="5">PETICIÓN ANULACIÓN CLIENTE</option><option value="3">RECARGADO</option><option value="7">REGULARIZACION DE POLIZA</option>            
+        </select>
+      </label>
+      <label>Resultado
+        <select class="input40" id="mntcli2_resultado" name="mntcli2_resultado">
+            <option value="0">&nbsp;</option><option value="8">AGENDAR</option><option value="6">DESAPARICION DEL RIESGO</option><option value="4">IMPOSIBILIDAD CONTACTAR</option><option value="5">IMPOSIBILIDAD ECONOMICA</option><option value="2">MANTENEMOS PÓLIZA</option><option value="3">NO DESEA RENOVAR</option><option value="1">PÓLIZA NUEVA EN PACC</option><option value="7">POLIZA REGULARIZADA</option>                    </select>
+      </label>
+      <label class="input20 fecha-img transparent">
+        <input type="text" id="mntcli2_fecha_otros" name="mntcli2_fecha_otros" 
+               value="">
+      </label>
+    </li>
+    <li>
+      <label>Observaciones
+        <textarea class="input100" rows="3" id="mntcli2_observaciones" 
+                  name="mntcli2_observaciones"></textarea>
+      </label>
+    </li>
+    <li>
+      <hr>
+    </li>
+        <li>
+        <label class="labelsolo label-check"><b>3</b>
+        <input style="margin-left: 7px;" type="checkbox" id="mntcli3_check"  
+               name="mntcli3_check" >
+      </label>
+      <label>Renovación
+        <input class="input15" type="text" id="mntcli3_fecha_renovacion" 
+               name="mntcli3_fecha_renovacion" readonly value="">
+      </label>
+      <label>Usuario
+        <input class="input75" type="text" id="mntcli3_usuario" 
+               name="mntcli3_usuario" readonly value="">
+      </label>
+    </li>
+    <li>
+      <label>Tipo cliente
+        <select class="input40" id="mntcli3_producto" name="mntcli3_producto">
+            <option value="0">&nbsp;</option><option value="8">ANULACIÓN EIAC</option><option value="4">ANULACIÓN SINIESTRALIDAD</option><option value="1">BONIFICADO</option><option value="6">EMPRESA A VTO</option><option value="2">NEUTRO</option><option value="5">PETICIÓN ANULACIÓN CLIENTE</option><option value="3">RECARGADO</option><option value="7">REGULARIZACION DE POLIZA</option>            
+        </select>
+      </label>
+      <label>Resultado
+        <select class="input40" id="mntcli3_resultado" name="mntcli3_resultado">
+            <option value="0">&nbsp;</option><option value="8">AGENDAR</option><option value="6">DESAPARICION DEL RIESGO</option><option value="4">IMPOSIBILIDAD CONTACTAR</option><option value="5">IMPOSIBILIDAD ECONOMICA</option><option value="2">MANTENEMOS PÓLIZA</option><option value="3">NO DESEA RENOVAR</option><option value="1">PÓLIZA NUEVA EN PACC</option><option value="7">POLIZA REGULARIZADA</option>                    </select>
+      </label>
+      <label class="input20 fecha-img transparent">
+        <input type="text" id="mntcli3_fecha_otros" name="mntcli3_fecha_otros" 
+               value="">
+      </label>
+    </li>
+    <li>
+      <label>Observaciones
+        <textarea class="input100" rows="3" id="mntcli3_observaciones" 
+                  name="mntcli3_observaciones"></textarea>
+      </label>
+    </li>
+    <li>
+      <hr>
+    </li>
+        <li>
+        <label class="labelsolo label-check"><b>4</b>
+        <input style="margin-left: 7px;" type="checkbox" id="mntcli4_check"  
+               name="mntcli4_check" >
+      </label>
+      <label>Renovación
+        <input class="input15" type="text" id="mntcli4_fecha_renovacion" 
+               name="mntcli4_fecha_renovacion" readonly value="">
+      </label>
+      <label>Usuario
+        <input class="input75" type="text" id="mntcli4_usuario" 
+               name="mntcli4_usuario" readonly value="">
+      </label>
+    </li>
+    <li>
+      <label>Tipo cliente
+        <select class="input40" id="mntcli4_producto" name="mntcli4_producto">
+            <option value="0">&nbsp;</option><option value="8">ANULACIÓN EIAC</option><option value="4">ANULACIÓN SINIESTRALIDAD</option><option value="1">BONIFICADO</option><option value="6">EMPRESA A VTO</option><option value="2">NEUTRO</option><option value="5">PETICIÓN ANULACIÓN CLIENTE</option><option value="3">RECARGADO</option><option value="7">REGULARIZACION DE POLIZA</option>            
+        </select>
+      </label>
+      <label>Resultado
+        <select class="input40" id="mntcli4_resultado" name="mntcli4_resultado">
+            <option value="0">&nbsp;</option><option value="8">AGENDAR</option><option value="6">DESAPARICION DEL RIESGO</option><option value="4">IMPOSIBILIDAD CONTACTAR</option><option value="5">IMPOSIBILIDAD ECONOMICA</option><option value="2">MANTENEMOS PÓLIZA</option><option value="3">NO DESEA RENOVAR</option><option value="1">PÓLIZA NUEVA EN PACC</option><option value="7">POLIZA REGULARIZADA</option>                    </select>
+      </label>
+      <label class="input20 fecha-img transparent">
+        <input type="text" id="mntcli4_fecha_otros" name="mntcli4_fecha_otros" 
+               value="">
+      </label>
+    </li>
+    <li>
+      <label>Observaciones
+        <textarea class="input100" rows="3" id="mntcli4_observaciones" 
+                  name="mntcli4_observaciones"></textarea>
+      </label>
+    </li>
+    <li>
+      <hr>
+    </li>
+        <li>
+        <label class="labelsolo label-check"><b>5</b>
+        <input style="margin-left: 7px;" type="checkbox" id="mntcli5_check"  
+               name="mntcli5_check" >
+      </label>
+      <label>Renovación
+        <input class="input15" type="text" id="mntcli5_fecha_renovacion" 
+               name="mntcli5_fecha_renovacion" readonly value="">
+      </label>
+      <label>Usuario
+        <input class="input75" type="text" id="mntcli5_usuario" 
+               name="mntcli5_usuario" readonly value="">
+      </label>
+    </li>
+    <li>
+      <label>Tipo cliente
+        <select class="input40" id="mntcli5_producto" name="mntcli5_producto">
+            <option value="0">&nbsp;</option><option value="8">ANULACIÓN EIAC</option><option value="4">ANULACIÓN SINIESTRALIDAD</option><option value="1">BONIFICADO</option><option value="6">EMPRESA A VTO</option><option value="2">NEUTRO</option><option value="5">PETICIÓN ANULACIÓN CLIENTE</option><option value="3">RECARGADO</option><option value="7">REGULARIZACION DE POLIZA</option>            
+        </select>
+      </label>
+      <label>Resultado
+        <select class="input40" id="mntcli5_resultado" name="mntcli5_resultado">
+            <option value="0">&nbsp;</option><option value="8">AGENDAR</option><option value="6">DESAPARICION DEL RIESGO</option><option value="4">IMPOSIBILIDAD CONTACTAR</option><option value="5">IMPOSIBILIDAD ECONOMICA</option><option value="2">MANTENEMOS PÓLIZA</option><option value="3">NO DESEA RENOVAR</option><option value="1">PÓLIZA NUEVA EN PACC</option><option value="7">POLIZA REGULARIZADA</option>                    </select>
+      </label>
+      <label class="input20 fecha-img transparent">
+        <input type="text" id="mntcli5_fecha_otros" name="mntcli5_fecha_otros" 
+               value="">
+      </label>
+    </li>
+    <li>
+      <label>Observaciones
+        <textarea class="input100" rows="3" id="mntcli5_observaciones" 
+                  name="mntcli5_observaciones"></textarea>
+      </label>
+    </li>
+    <li>
+      <hr>
+    </li>
+        <li>
+        <label class="labelsolo label-check"><b>6</b>
+        <input style="margin-left: 7px;" type="checkbox" id="mntcli6_check"  
+               name="mntcli6_check" >
+      </label>
+      <label>Renovación
+        <input class="input15" type="text" id="mntcli6_fecha_renovacion" 
+               name="mntcli6_fecha_renovacion" readonly value="">
+      </label>
+      <label>Usuario
+        <input class="input75" type="text" id="mntcli6_usuario" 
+               name="mntcli6_usuario" readonly value="">
+      </label>
+    </li>
+    <li>
+      <label>Tipo cliente
+        <select class="input40" id="mntcli6_producto" name="mntcli6_producto">
+            <option value="0">&nbsp;</option><option value="8">ANULACIÓN EIAC</option><option value="4">ANULACIÓN SINIESTRALIDAD</option><option value="1">BONIFICADO</option><option value="6">EMPRESA A VTO</option><option value="2">NEUTRO</option><option value="5">PETICIÓN ANULACIÓN CLIENTE</option><option value="3">RECARGADO</option><option value="7">REGULARIZACION DE POLIZA</option>            
+        </select>
+      </label>
+      <label>Resultado
+        <select class="input40" id="mntcli6_resultado" name="mntcli6_resultado">
+            <option value="0">&nbsp;</option><option value="8">AGENDAR</option><option value="6">DESAPARICION DEL RIESGO</option><option value="4">IMPOSIBILIDAD CONTACTAR</option><option value="5">IMPOSIBILIDAD ECONOMICA</option><option value="2">MANTENEMOS PÓLIZA</option><option value="3">NO DESEA RENOVAR</option><option value="1">PÓLIZA NUEVA EN PACC</option><option value="7">POLIZA REGULARIZADA</option>                    </select>
+      </label>
+      <label class="input20 fecha-img transparent">
+        <input type="text" id="mntcli6_fecha_otros" name="mntcli6_fecha_otros" 
+               value="">
+      </label>
+    </li>
+    <li>
+      <label>Observaciones
+        <textarea class="input100" rows="3" id="mntcli6_observaciones" 
+                  name="mntcli6_observaciones"></textarea>
+      </label>
+    </li>
+    <li>
+      <hr>
+    </li>
+        <li>
+        <label class="labelsolo label-check"><b>7</b>
+        <input style="margin-left: 7px;" type="checkbox" id="mntcli7_check"  
+               name="mntcli7_check" >
+      </label>
+      <label>Renovación
+        <input class="input15" type="text" id="mntcli7_fecha_renovacion" 
+               name="mntcli7_fecha_renovacion" readonly value="">
+      </label>
+      <label>Usuario
+        <input class="input75" type="text" id="mntcli7_usuario" 
+               name="mntcli7_usuario" readonly value="">
+      </label>
+    </li>
+    <li>
+      <label>Tipo cliente
+        <select class="input40" id="mntcli7_producto" name="mntcli7_producto">
+            <option value="0">&nbsp;</option><option value="8">ANULACIÓN EIAC</option><option value="4">ANULACIÓN SINIESTRALIDAD</option><option value="1">BONIFICADO</option><option value="6">EMPRESA A VTO</option><option value="2">NEUTRO</option><option value="5">PETICIÓN ANULACIÓN CLIENTE</option><option value="3">RECARGADO</option><option value="7">REGULARIZACION DE POLIZA</option>            
+        </select>
+      </label>
+      <label>Resultado
+        <select class="input40" id="mntcli7_resultado" name="mntcli7_resultado">
+            <option value="0">&nbsp;</option><option value="8">AGENDAR</option><option value="6">DESAPARICION DEL RIESGO</option><option value="4">IMPOSIBILIDAD CONTACTAR</option><option value="5">IMPOSIBILIDAD ECONOMICA</option><option value="2">MANTENEMOS PÓLIZA</option><option value="3">NO DESEA RENOVAR</option><option value="1">PÓLIZA NUEVA EN PACC</option><option value="7">POLIZA REGULARIZADA</option>                    </select>
+      </label>
+      <label class="input20 fecha-img transparent">
+        <input type="text" id="mntcli7_fecha_otros" name="mntcli7_fecha_otros" 
+               value="">
+      </label>
+    </li>
+    <li>
+      <label>Observaciones
+        <textarea class="input100" rows="3" id="mntcli7_observaciones" 
+                  name="mntcli7_observaciones"></textarea>
+      </label>
+    </li>
+    <li>
+      <hr>
+    </li>
+        <li>
+        <label class="labelsolo label-check"><b>8</b>
+        <input style="margin-left: 7px;" type="checkbox" id="mntcli8_check"  
+               name="mntcli8_check" >
+      </label>
+      <label>Renovación
+        <input class="input15" type="text" id="mntcli8_fecha_renovacion" 
+               name="mntcli8_fecha_renovacion" readonly value="">
+      </label>
+      <label>Usuario
+        <input class="input75" type="text" id="mntcli8_usuario" 
+               name="mntcli8_usuario" readonly value="">
+      </label>
+    </li>
+    <li>
+      <label>Tipo cliente
+        <select class="input40" id="mntcli8_producto" name="mntcli8_producto">
+            <option value="0">&nbsp;</option><option value="8">ANULACIÓN EIAC</option><option value="4">ANULACIÓN SINIESTRALIDAD</option><option value="1">BONIFICADO</option><option value="6">EMPRESA A VTO</option><option value="2">NEUTRO</option><option value="5">PETICIÓN ANULACIÓN CLIENTE</option><option value="3">RECARGADO</option><option value="7">REGULARIZACION DE POLIZA</option>            
+        </select>
+      </label>
+      <label>Resultado
+        <select class="input40" id="mntcli8_resultado" name="mntcli8_resultado">
+            <option value="0">&nbsp;</option><option value="8">AGENDAR</option><option value="6">DESAPARICION DEL RIESGO</option><option value="4">IMPOSIBILIDAD CONTACTAR</option><option value="5">IMPOSIBILIDAD ECONOMICA</option><option value="2">MANTENEMOS PÓLIZA</option><option value="3">NO DESEA RENOVAR</option><option value="1">PÓLIZA NUEVA EN PACC</option><option value="7">POLIZA REGULARIZADA</option>                    </select>
+      </label>
+      <label class="input20 fecha-img transparent">
+        <input type="text" id="mntcli8_fecha_otros" name="mntcli8_fecha_otros" 
+               value="">
+      </label>
+    </li>
+    <li>
+      <label>Observaciones
+        <textarea class="input100" rows="3" id="mntcli8_observaciones" 
+                  name="mntcli8_observaciones"></textarea>
+      </label>
+    </li>
+    <li>
+      <hr>
+    </li>
+        <li>
+        <label class="labelsolo label-check"><b>9</b>
+        <input style="margin-left: 7px;" type="checkbox" id="mntcli9_check"  
+               name="mntcli9_check" >
+      </label>
+      <label>Renovación
+        <input class="input15" type="text" id="mntcli9_fecha_renovacion" 
+               name="mntcli9_fecha_renovacion" readonly value="">
+      </label>
+      <label>Usuario
+        <input class="input75" type="text" id="mntcli9_usuario" 
+               name="mntcli9_usuario" readonly value="">
+      </label>
+    </li>
+    <li>
+      <label>Tipo cliente
+        <select class="input40" id="mntcli9_producto" name="mntcli9_producto">
+            <option value="0">&nbsp;</option><option value="8">ANULACIÓN EIAC</option><option value="4">ANULACIÓN SINIESTRALIDAD</option><option value="1">BONIFICADO</option><option value="6">EMPRESA A VTO</option><option value="2">NEUTRO</option><option value="5">PETICIÓN ANULACIÓN CLIENTE</option><option value="3">RECARGADO</option><option value="7">REGULARIZACION DE POLIZA</option>            
+        </select>
+      </label>
+      <label>Resultado
+        <select class="input40" id="mntcli9_resultado" name="mntcli9_resultado">
+            <option value="0">&nbsp;</option><option value="8">AGENDAR</option><option value="6">DESAPARICION DEL RIESGO</option><option value="4">IMPOSIBILIDAD CONTACTAR</option><option value="5">IMPOSIBILIDAD ECONOMICA</option><option value="2">MANTENEMOS PÓLIZA</option><option value="3">NO DESEA RENOVAR</option><option value="1">PÓLIZA NUEVA EN PACC</option><option value="7">POLIZA REGULARIZADA</option>                    </select>
+      </label>
+      <label class="input20 fecha-img transparent">
+        <input type="text" id="mntcli9_fecha_otros" name="mntcli9_fecha_otros" 
+               value="">
+      </label>
+    </li>
+    <li>
+      <label>Observaciones
+        <textarea class="input100" rows="3" id="mntcli9_observaciones" 
+                  name="mntcli9_observaciones"></textarea>
+      </label>
+    </li>
+    <li>
+      <hr>
+    </li>
+        <li>
+        <label class="labelsolo label-check"><b>10</b>
+        <input style="margin-left: 7px;" type="checkbox" id="mntcli10_check"  
+               name="mntcli10_check" >
+      </label>
+      <label>Renovación
+        <input class="input15" type="text" id="mntcli10_fecha_renovacion" 
+               name="mntcli10_fecha_renovacion" readonly value="">
+      </label>
+      <label>Usuario
+        <input class="input75" type="text" id="mntcli10_usuario" 
+               name="mntcli10_usuario" readonly value="">
+      </label>
+    </li>
+    <li>
+      <label>Tipo cliente
+        <select class="input40" id="mntcli10_producto" name="mntcli10_producto">
+            <option value="0">&nbsp;</option><option value="8">ANULACIÓN EIAC</option><option value="4">ANULACIÓN SINIESTRALIDAD</option><option value="1">BONIFICADO</option><option value="6">EMPRESA A VTO</option><option value="2">NEUTRO</option><option value="5">PETICIÓN ANULACIÓN CLIENTE</option><option value="3">RECARGADO</option><option value="7">REGULARIZACION DE POLIZA</option>            
+        </select>
+      </label>
+      <label>Resultado
+        <select class="input40" id="mntcli10_resultado" name="mntcli10_resultado">
+            <option value="0">&nbsp;</option><option value="8">AGENDAR</option><option value="6">DESAPARICION DEL RIESGO</option><option value="4">IMPOSIBILIDAD CONTACTAR</option><option value="5">IMPOSIBILIDAD ECONOMICA</option><option value="2">MANTENEMOS PÓLIZA</option><option value="3">NO DESEA RENOVAR</option><option value="1">PÓLIZA NUEVA EN PACC</option><option value="7">POLIZA REGULARIZADA</option>                    </select>
+      </label>
+      <label class="input20 fecha-img transparent">
+        <input type="text" id="mntcli10_fecha_otros" name="mntcli10_fecha_otros" 
+               value="">
+      </label>
+    </li>
+    <li>
+      <label>Observaciones
+        <textarea class="input100" rows="3" id="mntcli10_observaciones" 
+                  name="mntcli10_observaciones"></textarea>
+      </label>
+    </li>
+    <li>
+      <hr>
+    </li>
+       
+  </ol>
+</fieldset>
+              </div>
+              <div id="suplemento-tab" class="margin-bottom-50">
+                  <div id="suplemento_wrapper_tabla" class="margin-left-20 margin-bottom-10" style="padding:1.3em 0 1.0em 1.3em;">
+  <div id ="suplemento_tabla">
+  </div>
+</div>
+    <div class="bottom-actions margin-right-30">
+      <a href="#" id="suplemento-edit" class="ui-corner-all"><span class="fa fa-pencil"></span>Editar</a>
+      <a href="#" id="suplemento-add" class="ui-corner-all"><span class="fa fa-plus"></span>Añadir</a>
+      <div class="clear"></div>
+    </div>
+              </div>
+              <div id="comentarios-tab">
+                  <fieldset class="formspacc">
+  <ol>
+    <li>
+      <label>Comentario
+        <textarea class="inputTA" rows="15" id="com_comentario" name="com_comentario"></textarea>
+              </label>
+    </li>
+  </ol>
+</fieldset>
+              </div>
+                    <div id="riesgo-tab">
+            <fieldset class="formspacc">
+              <ol>
+                <li>
+                  <span class="font-bold">Situación del riesgo</span>
+                </li>
+                <li>
+                  <label>Domicilio
+                    <input type="text" class="input70" id="rie_domicilio" name="rie_domicilio" value="LAS CIENCIAS Nº 20 BL 4 2ºC">
+                                      </label>
+                                        <div class="container-buttons">
+                        <div class="bottom-actions">
+                          <a href="#" id="btnImportarDelTomador" class="ui-corner-all"><span class="fa fa-exchange"></span>Importar tomador</a>
+                          <div class="clear"></div>
+                        </div>
+                      </div>
+                                  </li>
+                <li>
+                  <label>Cód. Postal
+                    <input type="text" class="input15 numeric" id="rie_cpostal" name="rie_cpostal" value="41020">
+                                      </label>
+                  <label>Población
+                    <input type="text" class="input50" id="rie_poblacion" name="rie_poblacion" value="SEVILLA">
+                                      </label>
+                  <label>Provincia
+                    <select class="input35" id="rie_provincia" name="rie_provincia">
+                        <option value="0">&nbsp;</option><option value="15">A CORUÑA</option><option value="1">ALAVA</option><option value="2">ALBACETE</option><option value="3">ALICANTE</option><option value="4">ALMERIA</option><option value="33">ASTURIAS</option><option value="5">AVILA</option><option value="6">BADAJOZ</option><option value="7">BALEARES</option><option value="8">BARCELONA</option><option value="9">BURGOS</option><option value="10">CACERES</option><option value="11">CADIZ</option><option value="39">CANTABRIA</option><option value="12">CASTELLON</option><option value="51">CEUTA</option><option value="13">CIUDAD REAL</option><option value="14">CORDOBA</option><option value="16">CUENCA</option><option value="17">GIRONA</option><option value="18">GRANADA</option><option value="19">GUADALAJARA</option><option value="20">GUIPUZCOA</option><option value="21">HUELVA</option><option value="22">HUESCA</option><option value="23">JAEN</option><option value="26">LA RIOJA</option><option value="35">LAS PALMAS</option><option value="24">LEON</option><option value="25">LLEIDA</option><option value="27">LUGO</option><option value="28">MADRID</option><option value="29">MALAGA</option><option value="52">MELILLA</option><option value="30">MURCIA</option><option value="31">NAVARRA</option><option value="32">OURENSE</option><option value="34">PALENCIA</option><option value="36">PONTEVEDRA</option><option value="37">SALAMANCA</option><option value="40">SEGOVIA</option><option value="41" selected>SEVILLA</option><option value="42">SORIA</option><option value="38">STA. CRUZ TENERIFE</option><option value="43">TARRAGONA</option><option value="44">TERUEL</option><option value="45">TOLEDO</option><option value="46">VALENCIA</option><option value="47">VALLADOLID</option><option value="48">VIZCAYA</option><option value="49">ZAMORA</option><option value="50">ZARAGOZA</option>                                            </select>
+                  </label>
+                </li>
+                <li>Características de la vivienda</li>
+                <li>
+                  <label>Uso
+                    <select class="input30" id="rie_uso" name="rie_uso">
+                        <option value=""></option><option value="PRI" selected>Principal</option><option value="SEC">Secundaria</option><option value="ARR">Arrendada a inquilino</option><option value="SIN">Sin ocupación</option>                                            </select>
+                  </label>
+                  <label>Régimen
+                    <select class="input30" id="rie_regimen" name="rie_regimen">
+                        <option value=""></option><option value="PRO" selected>Propiedad</option><option value="ALQ">Alquiler</option>                                            </select>
+                  </label>
+                  <label>Tipo
+                    <select class="input30" id="rie_tipo" name="rie_tipo">
+                        <option value=""></option><option value="1" selected>Piso en altura</option><option value="4">Piso bajo o entresuelo</option><option value="2">Casa urbana o adosada</option><option value="5">Chalet adosado</option><option value="6">Chalet independiente</option><option value="3">Casa de campo</option><option value="7">Otros</option>                                            </select>
+                  </label>
+                </li>
+                <li>
+                  <label>Año construcción
+                    <input type="text" class="input25" id="rie_ano_construccion" name="rie_ano_construccion" value="1996">
+                                      </label>
+                  <label>Año reforma
+                    <input type="text" class="input25" id="rie_ano_reforma" name="rie_ano_reforma" value="0">
+                                      </label>
+                  <label>Metros construidos
+                    <input type="text" class="input25" id="rie_m2_construidos" name="rie_m2_construidos" value="106">
+                                      </label>
+                  <label>Emplazamiento
+                    <select class="input25" id="rie_emplazamiento" name="rie_emplazamiento">
+                        <option value="" selected></option><option value="NUC">Nucleo urbano</option><option value="URB">Urbanización</option><option value="DES">Despoblado</option>                                            </select>
+                  </label>
+                </li>
+                <li>
+                  <label class="input100 labelsolo label-check">
+                    <input id="rie_cesion_derechos" name="rie_cesion_derechos" type="checkbox" >Cesión de derechos
+                  </label>
+                  <div class="container-buttons">
+                    <div class="bottom-actions">
+                      <a href="#" id="btnRieObservaciones" class="ui-corner-all"><span class="fa fa-info-circle"></span>Observaciones</a>
+                      <div class="clear"></div>
+                    </div>
+                  </div>
+                  <div id="rie_observaciones_li" class="display-none">
+                    <label class="transparent">
+                      <textarea class="input100" rows="5" id="rie_observaciones" name="rie_observaciones"></textarea>
+                    </label>
+                  </div>
+                </li>
+              </ol>
+            </fieldset>
+          </div>
+          <div id="garantias-tab">
+            <fieldset class="formspacc">
+              <ol>
+                <li>
+                  <label>Continente
+                    <input type="text" class="input25 numeric double" id="gar_continente" name="gar_continente" value="63000.00">
+                                      </label>
+                  <label>Continente 1º riesgo
+                    <select class="input25" id="gar_continente_riesgo_1" name="gar_continente_riesgo_1">
+                        <option value="6000.00">6.000</option><option value="10000.00">10.000</option><option value="15000.00">15.000</option><option value="0.00" selected>Otras</option>                                            </select>
+                  </label>
+                  <label class="transparent">
+                    <input type="text" class="input25 numeric double" id="gar_aux_continente_riesgo_1" name="gar_aux_continente_riesgo_1" value="">
+                  </label>
+                </li>
+                <li>
+                  <label>Contenido
+                    <input type="text" class="input25 numeric double" id="gar_contenido" name="gar_contenido" value="15000.00">
+                                      </label>
+                  <label>Responsabilidad civil
+                    <select class="input25" id="gar_rcivil" name="gar_rcivil">
+                        <option value="150000.00">150.000</option><option value="300000.00">300.000</option><option value="600000.00">600.000</option><option value="0.00" selected>Otras</option>                                            </select>
+                  </label>
+                  <label class="transparent">
+                    <input type="text" class="input25 numeric double" id="gar_rcivil2" name="gar_rcivil2" value="">
+                  </label>
+                </li>
+                <li>
+                  <label class="input25 labelsolo label-check">
+                    <input id="gar_todo_riesgo" name="gar_todo_riesgo" type="checkbox" >Todo riesgo
+                  </label>
+                  <label>Franquicia
+                    <input type="text" class="input25 numeric double" id="gar_franquicia" name="gar_franquicia" value="">
+                                      </label>
+                </li>
+                <li>
+                  <label class="input25 labelsolo label-check">
+                    <input id="gar_exceso_joyas" name="gar_exceso_joyas" type="checkbox" >Exceso joyas
+                  </label>
+                </li>
+                <li>
+                  <div class="container-buttons">
+                    <div class="bottom-actions">
+                      <a href="#" id="btnGarObservaciones" class="ui-corner-all"><span class="fa fa-info-circle"></span>Observaciones</a>
+                      <div class="clear"></div>
+                    </div>
+                  </div>
+                  <div id="gar_observaciones_li" class="display-none">
+                    <label class="transparent">
+                      <textarea class="input100" rows="5" id="gar_observaciones" name="gar_observaciones"></textarea>
+                    </label>
+                  </div>
+                </li>
+              </ol>
+            </fieldset>
+          </div>
+        </div>
+        <input type="hidden" id="tipo_producto_hidden" name="tipo_producto_hidden" value="2"><input type="hidden" id="s_usuario_hidden" name="s_usuario_hidden" value="rlopez"><input type="hidden" id="s_titular_hidden" name="s_titular_hidden" value="Rafael López Muñoz"><input type="hidden" id="s_sucursal_hidden" name="s_sucursal_hidden" value="1403"><input type="hidden" id="colaborador_hidden" name="colaborador_hidden" value="41010081"><input type="hidden" id="canal_hidden" name="canal_hidden" value="6"><input type="hidden" id="sucursal_hidden" name="sucursal_hidden" value="4101"><input type="hidden" id="sucursal2_hidden" name="sucursal2_hidden" value=""><input type="hidden" id="compania_hidden" name="compania_hidden" value="34"><input type="hidden" id="producto_hidden" name="producto_hidden" value="201"><input type="hidden" id="situacion_hidden" name="situacion_hidden" value="1"><input type="hidden" id="colaborador_original_hidden" name="colaborador_original_hidden" value="41010081"><input type="hidden" id="compania_original_hidden" name="compania_original_hidden" value="34"><input type="hidden" id="producto_original_hidden" name="producto_original_hidden" value="201"><input type="hidden" id="tipo_ramo_hidden" name="tipo_ramo_hidden" value="2"><input type="hidden" id="tom_nif_hidden" name="tom_nif_hidden" value="28735116C"><input type="hidden" id="ase_nif_hidden" name="ase_nif_hidden" value="28735116C"><input type="hidden" id="ase_es_asegurado_hidden" name="ase_es_asegurado_hidden" value=""><input type="hidden" id="ase_es_asegurado_hidden" name="ase_es_asegurado_hidden" value=""><input type="hidden" id="mntcli1_id_hidden" name="mntcli1_id_hidden" value="60955"><input type="hidden" id="mntcli2_id_hidden" name="mntcli2_id_hidden" value=""><input type="hidden" id="mntcli3_id_hidden" name="mntcli3_id_hidden" value=""><input type="hidden" id="mntcli4_id_hidden" name="mntcli4_id_hidden" value=""><input type="hidden" id="mntcli5_id_hidden" name="mntcli5_id_hidden" value=""><input type="hidden" id="mntcli6_id_hidden" name="mntcli6_id_hidden" value=""><input type="hidden" id="mntcli7_id_hidden" name="mntcli7_id_hidden" value=""><input type="hidden" id="mntcli8_id_hidden" name="mntcli8_id_hidden" value=""><input type="hidden" id="mntcli9_id_hidden" name="mntcli9_id_hidden" value=""><input type="hidden" id="mntcli10_id_hidden" name="mntcli10_id_hidden" value=""><input type="hidden" id="mntcli1_usuario_codigo_hidden" name="mntcli1_usuario_codigo_hidden" value="scandon"><input type="hidden" id="objeto_hidden" name="objeto_hidden" value="LAS CIENCIAS Nº 20 BL 4 2ºC (SEVILLA)">      </form>
+      <div class="bottom-actions">
+        <a href="#" class="ui-corner-all btn-salir"><span class="fa fa-power-off"></span>Salir</a>
+        <a href="#" class="ui-corner-all btn-subir"><span class="fa fa-arrow-up"></span>Subir</a>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  <div id="rightpanel">
+          <div id="location">
+        <p>Usted se encuentra en</p>
+        <p><span>Pol. Hogar</span></p>
+      </div>
+      <div id="extra-content">
+        <div id="panel_recibos_pendientes" class="recibos-pendientes font-1em text-center" style="letter-spacing: 0.2em; display:none;">
+          <p>RECIBOS</p><p>PENDIENTES</p>
+        </div>
+        <div id="panel_tipo_cliente" class="tipo-cliente-boton-info">
+          <p>TIPO CLIENTE</p>
+          <hr />
+          <div id="cliente_fiel" class="cliente-boton-info" title="El cliente lleva en Pacc 5 ó más años"><p>FIEL</p></div><div id="cliente_CUASI-INTEGRAL" class="cliente-boton-info" title="El cliente tiene 2 pólizas en vigor"><p>CUASI-INTEGRAL</p></div>        </div>
+        <div id="panel_cliente_potencial" class="tipo-cliente-boton-info">
+          <p>CLIENTE POTENCIAL</p>
+          <hr />
+          <img src="http://82.159.210.31/desarrollo/img/potencialvida.png" alt="icono vida" style="width:150px;height:76px;"><img src="http://82.159.210.31/desarrollo/img/potencialsalud.png" alt="icono salud" style="width:150px;height:76px;">        </div>
+        <div id="panel_codigo_importancia" class="importancia-boton-info">
+          <p>CÓDIGO IMPORTANCIA</p>
+          <hr />
+          <p><span>276,62</span></p>
+        </div>
+      </div>
+  </div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+
+<footer class="p-3"></footer>
+
+<!-- Menu flotante -->
+<div class="dropup position-fixed floating-button d-none d-md-block">
+    <button class="btn rounded-circle bg-primary py-2 mb-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-plus-lg text-white"></i>
+    </button>
+    <ul class="dropdown-menu border-0 p-0 bg-transparent" aria-labelledby="dropdownMenuButton1">
+        <div class="d-flex align-items-end flex-column justify-content-end">
+            <button class="btn rounded-circle bg-secondary py-2 mb-2" type="button" id="dropdownMenuButton1" data-bs-toggle="tooltip" data-bs-placement="left" title="Pólizas" data-color="secondary">
+                <i class="bi bi-list-check text-white"></i>
+            </button>
+            <button class="btn rounded-circle bg-success py-2 mb-2" type="button" id="dropdownMenuButton1" data-bs-toggle="tooltip" data-bs-placement="left" title="Recibos">
+                <i class="bi bi-sticky text-white"></i>
+            </button>
+            <button class="btn rounded-circle bg-danger py-2 mb-2" type="button" id="dropdownMenuButton1" data-bs-toggle="tooltip" data-bs-placement="left" title="Tarificación">
+                <i class="bi bi-calendar text-white"></i>
+            </button>
+            <button class="btn rounded-circle bg-warning py-2 mb-2" type="button" id="dropdownMenuButton1" data-bs-toggle="tooltip" data-bs-placement="left" title="Multitarificador">
+                <i class="bi bi-person-plus text-white"></i>
+            </button>
+        </div>
+    </ul>
+</div>
+<!-- Widgets -->
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Media</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        ... contenido
+    </div>
+</div>
+
+<!-- Scripts OLD -->
+<script src="http://82.159.210.31/desarrollo/js/vendor/jquery-2.2.4.min.js"></script>
+<script src="http://82.159.210.31/desarrollo/js/vendor/jquery-ui.min.js"></script>
+<script src="http://82.159.210.31/desarrollo/js/vendor/grid.locale-es.js"></script>
+<script src="http://82.159.210.31/desarrollo/js/vendor/jquery.jqGrid.min.js"></script>
+<script src="http://82.159.210.31/desarrollo/js/vendor/jquery.msgBox.min.js"></script>
+<script src="http://82.159.210.31/desarrollo/js/vendor/jquery.scrollTo.js"></script>
+<script src="http://82.159.210.31/desarrollo/js/vendor/jquery.validate.min.js"></script>
+<script src="http://82.159.210.31/desarrollo/js/vendor/jquery.validate.additional-methods.js"></script>
+<script src="http://82.159.210.31/desarrollo/js/vendor/jquery.validate.messages_es.js"></script>
+<script src="http://82.159.210.31/desarrollo/js/vendor/jquery.fileDownload.js"></script>
+<script src="http://82.159.210.31/desarrollo/js/utilidades.js"></script>
+<script src="http://82.159.210.31/desarrollo/js/utilidadesV3.js"></script>
+<script src="http://82.159.210.31/desarrollo/js/utilDownload.js"></script>
+<script src="http://82.159.210.31/desarrollo/js/paginas/menu.js"></script>
+
+<!-- App -->
+<script src="http://82.159.210.31/desarrollo/js/app.js" type="module"></script>
+<!-- Scripts NEW -->
+<script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js" defer></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js" defer></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js" defer></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js" defer></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/datetime.js" defer></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" referrerpolicy="no-referrer"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- Datatables responsive -->
+<script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js" defer=""></script>
+<!-- Bootstrap -->
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- Media -->
+<!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v13.0"
+        nonce="gjSA9cg6"></script> -->
+
+<script src="http://82.159.210.31/desarrollo/js/vendor/bootstrap-editable.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="http://82.159.210.31/desarrollo/js/vendor/jquery.loading.min.js"></script>
+<script src="http://82.159.210.31/desarrollo/js/vendor/notify.min.js"></script>
+
+
+
+  
+
+
+
+<script>
+    U.tipoUsu = 1;
+    U.urlBasePHP = "http://82.159.210.31/desarrollo/";
+    U.controlAdmin = false;
+    U.saveOk = false;
+    U.saveOkNuevoReg = false;
+
+    window.setTimeout(function() {
+        window.location.href = U.baseURL('login');
+    }, 60000 * 30);
+</script>
+<script src="http://82.159.210.31/desarrollo/js/paginas/polizas/polizas.js"></script>
+<script src="http://82.159.210.31/desarrollo/js/paginas/polizas/polizasHogar.js?5920220426"></script>
+</body>
+
+</html>

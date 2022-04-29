@@ -1,0 +1,15 @@
+@import "./variables/variables";
+@import "./variables/extends";
+@import "./secciones/header";
+@import "./secciones/sidebar";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+
+.contenedor{
+    padding: 10px;
+}
+

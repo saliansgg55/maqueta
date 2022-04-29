@@ -1,0 +1,120 @@
+/* Variables SIDEBAR*/
+.tomador, .cont-form-izq, .cen, .der {
+  margin-top: 0.5;
+  background-color: white;
+  margin: 4px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 10px; }
+
+.cont-form-izq, .cen, .der {
+  font-size: 11px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+ul {
+  background-color: white; }
+
+a.nav-link {
+  margin: 0 auto;
+  color: black; }
+
+.pipe {
+  color: #ccc; }
+
+.img-user {
+  max-width: 40px;
+  max-height: auto; }
+
+.separador {
+  padding: 30px; }
+
+.cont-barra-azul {
+  margin-top: 120px; }
+
+.barra-azul {
+  background-color: #0C0B71;
+  padding: 12px;
+  border-radius: 5px;
+  color: white;
+  -webkit-box-shadow: 7px 7px 5px 0px #ccc;
+  -moz-box-shadow: 7px 7px 5px 0px #ccc;
+  box-shadow: 7px 7px 5px 0px #ccc; }
+
+.contenedor-azul {
+  margin: 10px; }
+
+.blanco {
+  text-align: center;
+  font-size: 0.9em;
+  color: blue;
+  margin: 0 auto;
+  text-decoration: none; }
+
+.card-body {
+  background-color: #FAFAFF; }
+
+.radio-datos {
+  margin-top: 13px; }
+
+/***************/
+.pos-center {
+  justify-content: center; }
+
+.cont-form-izq {
+  padding: 5px; }
+
+/***************/
+.img-logo {
+  background-color: white; }
+
+/* Estilo Iconos que estan debajo de la barra azul */
+.text-a-icon {
+  text-decoration: none;
+  color: #0C0B71; }
+
+/* Estilo Boton Salir*/
+.btn-der {
+  padding: 2px; }
+
+.text-btn-der {
+  text-align: left; }
+
+.card {
+  padding: 2px;
+  margin: 3px; }
+
+.card-text {
+  font-size: 12px; }
+
+/* ESTILOS DE LA BARRA LATERAL DERECHA "sidebar" */
+.cont-sidebar {
+  padding: 20px;
+  border: 1px solid red;
+  border-radius: 5px;
+  color: black;
+  text-align: center;
+  font-size: 12px;
+  box-shadow: 0px 0px 5px 1px #a5a5a5; }
+
+.icon-cli-sidebar {
+  font-size: 25px; }
+
+hr {
+  height: 1px;
+  background-color: red;
+  border: 1px black solid;
+  width: 90px; }
+
+.divider {
+  background-color: red; }
+
+.cliente-contenedor {
+  padding-top: 10px; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.contenedor {
+  padding: 10px; }

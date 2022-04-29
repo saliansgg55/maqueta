@@ -1,0 +1,148 @@
+
+
+
+
+ul{
+    background-color: white;
+
+}
+
+a.nav-link{
+    margin: 0 auto;
+    color: black;
+}
+
+
+.pipe{
+    color: #ccc;
+}
+
+.img-user{
+    max-width: 40px;
+    max-height: auto;    
+}
+
+.separador{
+    padding: 30px;
+}
+
+.cont-barra-azul{
+    margin-top: 120px;
+}
+
+.barra-azul{
+    background-color: #0C0B71;
+    //background-color: #0C0redB71;    
+    padding: 12px;
+    border-radius: 5px;    
+    color: white;
+    -webkit-box-shadow: 7px 7px 5px 0px #ccc;
+    -moz-box-shadow: 7px 7px 5px 0px #ccc;
+    box-shadow: 7px 7px 5px 0px #ccc;
+}
+
+.contenedor-azul{
+    margin: 10px;
+}
+
+.blanco{
+    // background-color: red;
+    text-align: center;
+    font-size: 0.9em;
+    color: blue;
+    margin: 0 auto;
+    text-decoration: none;
+    
+    
+}
+
+// .fondo-gris{
+//     background-color: red;
+//     //background-color: #0C0B71;
+// }
+
+.card-body{
+    background-color: #FAFAFF;
+}
+
+// .text-form {
+//     font-size: 10px;
+// }
+
+.radio-datos {
+    margin-top: 13px;
+}
+
+/***************/
+// .color-fondo{
+//     background-color: orange;
+// }
+
+// .izq{
+//     background-color: red;
+    
+// }
+
+.tomador{
+    // background-color: aqua;
+    @extend %caja-form;   
+}
+.pos-center{
+    justify-content: center;
+    //@extend %caja-form;  
+}
+
+
+.cont-form-izq{
+    // background-color: green;
+    padding: 5px;
+     @extend %caja-form;    
+     @extend %tipo-de-letra;
+}
+
+.cen{
+    // background-color: blue;
+    @extend %caja-form;  
+    @extend %tipo-de-letra;
+}
+.der{
+    // background-color: greenyellow;
+    @extend %caja-form;
+    @extend %tipo-de-letra;
+}
+
+/***************/
+
+.img-logo{
+    background-color: white;
+}
+
+
+
+
+/* Estilo Iconos que estan debajo de la barra azul */
+.text-a-icon{
+    text-decoration: none;
+    color:#0C0B71;
+    
+    
+}
+/* Estilo Boton Salir*/
+
+.btn-der{
+    padding: 2px;
+}
+
+.text-btn-der{
+    text-align: left;
+    
+}
+
+.card{
+    padding: 2px;
+    margin: 3px;
+}
+
+.card-text{
+    font-size: 12px;
+}
