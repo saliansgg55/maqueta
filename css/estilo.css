@@ -15,11 +15,15 @@
   border: 1px solid red;
   padding: 10px; }
 
-.cont-form-izq, .cen, .der, .tipo-letra {
-  font-size: 11px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: bold;
-  color: #299FDE; }
+.cont-form-izq, .cen, .der, .tipografia, .tipo-letra {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  color: #3552D1; }
+
+.tipografia-barra-azul {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: white; }
 
 /* BARRA AZUL */
 .contenedor-azul {
@@ -27,10 +31,16 @@
   background-color: #0C0B71;
   color: white;
   font-size: 16px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   -webkit-box-shadow: 4px 4px 5px 0px #ccc;
   -moz-box-shadow: 4px 4px 5px 0px #ccc;
-  box-shadow: 4px 4px 5px 0px #ccc; }
+  box-shadow: 4px 4px 5px 0px #ccc;
+  font-family: "Montserrat", sans-serif;
+  src: url("fonts/Montserrat-VariableFont_wght.ttf") format("ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Montserrat", sans-serif; }
 
 ul {
   background-color: white; }
@@ -52,19 +62,18 @@ a.nav-link {
 .cont-barra-azul {
   margin-top: 120px; }
 
-.barra-azul {
-  background-color: #0C0B71;
-  padding: 12px;
-  border-radius: 5px;
+.barra-azulada {
+  background-color: #3552D1;
   color: white;
-  -webkit-box-shadow: 7px 7px 5px 0px #ccc;
-  -moz-box-shadow: 7px 7px 5px 0px #ccc;
-  box-shadow: 7px 7px 5px 0px #ccc; }
+  margin-left: -40px;
+  padding-left: 30px;
+  border-radius: 10px;
+  width: 90%; }
 
 .blanco {
   text-align: center;
   font-size: 0.9em;
-  color: blue;
+  color: #3552D1;
   margin: 0 auto;
   text-decoration: none; }
 
@@ -87,8 +96,7 @@ a.nav-link {
 
 /* Estilo Iconos que estan debajo de la barra azul */
 .text-a-icon {
-  text-decoration: none;
-  color: #0C0B71; }
+  text-decoration: none; }
 
 /* Estilo Boton Salir*/
 .btn-der {
@@ -110,6 +118,9 @@ a.nav-link {
 .titulo-card {
   color: white; }
 
+.sombreado {
+  box-shadow: 0px 0px 5px 1px #a5a5a5; }
+
 /* ESTILOS DE LA BARRA LATERAL DERECHA "sidebar" */
 .cont-sidebar {
   padding: 20px;
@@ -122,7 +133,7 @@ a.nav-link {
 
 .icon-cli-sidebar {
   font-size: 25px;
-  color: #299FDE; }
+  color: #67aeff; }
 
 hr {
   height: 1px;
@@ -138,7 +149,7 @@ hr {
 
 /* Texto Celeste sidebar */
 .color-text {
-  color: #299FDE;
+  color: #67aeff;
   font-weight: bold;
   font-size: 10px; }
 
