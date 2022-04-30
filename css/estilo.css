@@ -96,7 +96,8 @@ a.nav-link {
 
 /* Estilo Iconos que estan debajo de la barra azul */
 .text-a-icon {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #3552D1; }
 
 /* Estilo Boton Salir*/
 .btn-der {
