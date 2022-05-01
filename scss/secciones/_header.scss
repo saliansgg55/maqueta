@@ -3,6 +3,12 @@
 //     background-color: white;
 // }
 
+
+.separador{
+    padding: 30px;
+    
+}
+
 .resumen-fondo{
     background-color: rebeccapurple;
 }
@@ -59,6 +65,7 @@
 .form-select-sm {
     border: 1px solid rgb(135, 105, 211);
     border-radius: 0px;
+    color: black;
 
 }
 
@@ -75,10 +82,16 @@
 // /* menor a 1024*/
 @media (max-width: 1024px) {
 
+    // .iconos{
+    //     display: none;
+    // }
 
-    
-    .iconos{
-        display: none;
+    .usuario{
+        margin: 10px auto;    
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-self: center;
     }
 
     .tomador {

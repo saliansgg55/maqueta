@@ -16,6 +16,9 @@
   border-radius: 15px; }
 
 /* FORMULARIOS INPUT ETC */
+.separador {
+  padding: 30px; }
+
 .resumen-fondo {
   background-color: rebeccapurple; }
 
@@ -52,7 +55,8 @@
 .form-control-sm,
 .form-select-sm {
   border: 1px solid #8769d3;
-  border-radius: 0px; }
+  border-radius: 0px;
+  color: black; }
 
 .form-label,
 .form-check-label,
@@ -62,8 +66,12 @@
   color: #3552D1; }
 
 @media (max-width: 1024px) {
-  .iconos {
-    display: none; }
+  .usuario {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-self: center; }
   .tomador {
     display: flex;
     flex-direction: column;
