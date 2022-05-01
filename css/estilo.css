@@ -1,32 +1,7 @@
+@charset "UTF-8";
 /* Variables SIDEBAR*/
-.tomador, .cont-form-izq, .cen, .der {
-  margin-top: 0.5;
-  background-color: white;
-  margin: 4px;
-  border-radius: 4px;
-  border: 1px solid blue;
-  padding: 10px; }
-
-.caja-superior {
-  margin-top: 0.5;
-  background-color: white;
-  margin: 4px;
-  border-radius: 4px;
-  border: 1px solid red;
-  padding: 10px; }
-
-.cont-form-izq, .cen, .der, .tipografia, .tipo-letra {
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  color: #3552D1; }
-
-.tipografia-barra-azul {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  color: white; }
-
 /* BARRA AZUL */
-.contenedor-azul {
+.barra-azul {
   margin: 10px;
   background-color: #0C0B71;
   color: white;
@@ -35,123 +10,93 @@
   -moz-box-shadow: 4px 4px 5px 0px #ccc;
   box-shadow: 4px 4px 5px 0px #ccc;
   font-family: "Montserrat", sans-serif;
-  src: url("fonts/Montserrat-VariableFont_wght.ttf") format("ttf");
   font-style: normal;
-  font-weight: normal; }
+  font-weight: normal;
+  width: 92%;
+  border-radius: 15px; }
 
-@font-face {
-  font-family: "Montserrat", sans-serif; }
-
-ul {
-  background-color: white; }
-
-a.nav-link {
-  margin: 0 auto;
-  color: black; }
+/* FORMULARIOS INPUT ETC */
+.resumen-fondo {
+  background-color: rebeccapurple; }
 
 .pipe {
   color: #ccc; }
 
-.img-user {
-  max-width: 40px;
-  max-height: auto; }
+.nav-link, .dropdown-item {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: black; }
 
-.separador {
-  padding: 30px; }
+.hr {
+  background-color: blue;
+  width: 94%;
+  margin: 10px auto; }
 
-.cont-barra-azul {
-  margin-top: 120px; }
-
-.barra-azulada {
-  background-color: #3552D1;
-  color: white;
-  margin-left: -40px;
-  padding-left: 30px;
-  border-radius: 10px;
-  width: 90%; }
-
-.blanco {
-  text-align: center;
-  font-size: 0.9em;
-  color: #3552D1;
-  margin: 0 auto;
-  text-decoration: none; }
-
-.card-body {
-  background-color: #FAFAFF; }
-
-.radio-datos {
-  margin-top: 13px; }
-
-/***************/
-.pos-center {
-  justify-content: center; }
-
-.cont-form-izq {
-  padding: 5px; }
-
-/***************/
-.img-logo {
-  background-color: white; }
-
-/* Estilo Iconos que estan debajo de la barra azul */
+/* Barra azul */
 .text-a-icon {
   text-decoration: none;
-  color: #3552D1; }
+  color: #3552D1;
+  font-size: 0.9em;
+  text-align: center; }
 
-/* Estilo Boton Salir*/
-.btn-der {
-  padding: 2px; }
-
-.text-btn-der {
-  text-align: left; }
+.card-header {
+  background-color: #3552D1; }
 
 .card {
   padding: 4px;
   margin: 3px; }
 
-.card-text {
-  font-size: 12px; }
-
-.cotenedor-icons {
-  border: 2px solid blue; }
-
 .titulo-card {
   color: white; }
 
-.sombreado {
-  box-shadow: 0px 0px 5px 1px #a5a5a5; }
+.form-control-sm,
+.form-select-sm {
+  border: 1px solid #8769d3;
+  border-radius: 0px; }
 
-.inpute {
-  border: 1px solid red; }
+.form-label,
+.form-check-label,
+.form-check-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  color: #3552D1; }
 
-/* ESTILOS DE LA BARRA LATERAL DERECHA "sidebar" */
+@media (max-width: 1024px) {
+  .iconos {
+    display: none; }
+  .tomador {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: stretch; }
+  .tom-input {
+    width: 100%; }
+  .boton {
+    margin: 10px auto;
+    width: 30%; }
+  .principal {
+    display: flex;
+    flex-direction: column; }
+  .cuadro1 {
+    margin: 10px auto;
+    width: 100%; }
+  .sidebar-der {
+    width: 30%;
+    margin-top: 15px; } }
+
 .cont-sidebar {
   padding: 20px;
-  border: 1px solid red;
   border-radius: 5px;
-  color: black;
+  margin-bottom: 10px;
   text-align: center;
   font-size: 12px;
   box-shadow: 0px 0px 5px 1px #a5a5a5; }
 
+/* Color tamaño icono */
 .icon-cli-sidebar {
   font-size: 25px;
   color: #67aeff; }
 
-hr {
-  height: 1px;
-  background-color: red;
-  border: 1px black solid;
-  width: 90px; }
-
-.divider {
-  background-color: red; }
-
-.cliente-contenedor {
-  padding-top: 10px; }
-
-/* Texto Celeste sidebar */
 .color-text {
   color: #67aeff;
   font-weight: bold;
@@ -162,5 +107,6 @@ hr {
   margin: 0;
   box-sizing: border-box; }
 
-.contenedor {
-  padding: 10px; }
+.img-user {
+  width: auto;
+  height: 35px; }

@@ -59,8 +59,17 @@
     box-shadow: 4px 4px 5px 0px #ccc;
 
     font-family: $monserrat;
-     src: url('fonts/Montserrat-VariableFont_wght.ttf') format('ttf');
     font-style: normal;
     font-weight: normal;
+    width: 92%; 
+    border-radius: 15px;
 }
 
+
+
+/* FORMULARIOS INPUT ETC */
+%texto-form{
+    font-family: $monserrat;
+    font-size: 12px;
+    color: $color-texto-form;
+}

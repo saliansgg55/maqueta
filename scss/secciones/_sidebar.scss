@@ -1,38 +1,25 @@
 
 
-/* ESTILOS DE LA BARRA LATERAL DERECHA "sidebar" */
+// /* ESTILOS DE LA BARRA LATERAL DERECHA "sidebar" */
 .cont-sidebar{
-    padding: 20px;
-    //border: 1px solid $color-border-sidebar;
-    border: 1px solid red;
+     padding: 20px;
+    // //border: 1px solid $color-border-sidebar;
+    // border: 1px solid red;
     border-radius: 5px;
-    color: black;
+    // color: black;
+    margin-bottom: 10px;
     text-align: center;
     font-size: 12px;
     box-shadow: 0px 0px 5px 1px rgb(165, 165, 165);
 }
 
+/* Color tamaño icono */
 .icon-cli-sidebar{
     font-size: 25px;    
     color: $color-celeste-sidebar;    
 }
 
-hr {
-    height: 1px;
-    background-color: red;
-    border:1px black solid; 
-    width: 90px;
-  }
-
-.divider{
-    background-color: red;
-}
-
-.cliente-contenedor{
-    padding-top: 10px;
-}
-
-/* Texto Celeste sidebar */
+// /* Texto Celeste sidebar */
 .color-text{
     color: $color-celeste-sidebar;
     font-weight: bold;

@@ -1,190 +1,118 @@
+// /* Menu header */
+// .navbar-light {
+//     background-color: white;
+// }
 
-@font-face {
+.resumen-fondo{
+    background-color: rebeccapurple;
+}
+
+.pipe {
+    color: #ccc;
+}
+
+.nav-link, .dropdown-item {
     font-family: $monserrat;
-}
-
-
-ul{
-    background-color: white;
-
-}
-
-a.nav-link{
-    margin: 0 auto;
+    font-size: 14px;
     color: black;
 }
 
 
-.pipe{
-    color: #ccc;
+.hr{
+    background-color: blue;
+    
+    width: 94%;
+    margin: 10px auto;
 }
 
-.img-user{
-    max-width: 40px;
-    max-height: auto;    
-}
 
-.separador{
-    padding: 30px;
-}
-
-.cont-barra-azul{
-    margin-top: 120px;
-}
-
-// .barra-azul{
-//     background-color: #0C0B71;
-//     //background-color: #0C0redB71;    
-//     padding: 12px;
-//     border-radius: 5px;    
-//     color: white;
-//     -webkit-box-shadow: 7px 7px 5px 0px #ccc;
-//     -moz-box-shadow: 7px 7px 5px 0px #ccc;
-//     box-shadow: 7px 7px 5px 0px #ccc;
-// }
-
-.contenedor-azul{
+/* Barra azul */
+.barra-azul {
     @extend %barra-azul;
 }
-.barra-azulada{
-    background-color: #3552D1;
-    color:white;
-    margin-left: -40px;
-    padding-left: 30px;
-    border-radius: 10px;
-   width: 90%;
 
-}
 
-.blanco{
-    // background-color: red;
-    text-align: center;
-    font-size: 0.9em;
+// // /* Estilo Iconos que estan debajo de la barra azul */
+.text-a-icon {
+    text-decoration: none;
     color: #3552D1;
-    margin: 0 auto;
-    text-decoration: none;
+    font-size: 0.9em;
+    text-align: center;
 }
 
-// .fondo-gris{
-//     background-color: red;
-//     //background-color: #0C0B71;
-// }
+.card-header {
+    background-color: #3552D1;
 
-.card-body{
-    background-color: #FAFAFF;
-    
 }
 
-// .text-form {
-//     font-size: 10px;
-// }
-
-.radio-datos {
-    margin-top: 13px;
-}
-
-/***************/
-// .color-fondo{
-//     background-color: orange;
-// }
-
-// .izq{
-//     background-color: red;
-    
-// }
-
-.tomador{
-    // background-color: aqua;
-    @extend %caja-form;   
-}
-
-.caja-superior{
-    @extend %caja-superior;
-}
-
-.pos-center{
-    justify-content: center;
-    //@extend %caja-form;  
-}
-
-
-.cont-form-izq{
-    // background-color: green;
-    padding: 5px;
-     @extend %caja-form;    
-     @extend %tipo-de-letra;
-}
-
-.cen{
-    // background-color: blue;
-    @extend %caja-form;  
-    @extend %tipo-de-letra;
-}
-.der{
-    // background-color: greenyellow;
-    @extend %caja-form;
-    @extend %tipo-de-letra;
-}
-
-/***************/
-
-.img-logo{
-    background-color: white;
-}
-
-.tipografia{
-    @extend %tipo-de-letra ;
-}
-
-.tipografia-barra-azul{
-    @extend %tipo-de-letra-barra-azul ;
-}
-
-/* Estilo Iconos que estan debajo de la barra azul */
-.text-a-icon{
-    text-decoration: none;
-    color:#3552D1;        
-}
-/* Estilo Boton Salir*/
-
-.btn-der{
-    padding: 2px;
-}
-
-.text-btn-der{
-    text-align: left;
-    
-}
-
-.card{
+.card {
     padding: 4px;
     margin: 3px;
-    
+
 }
 
-.card-text{
-    font-size: 12px;
-}
-
-.cotenedor-icons{
-    border: 2px solid blue;
-}
-
-.tipo-letra{
-    @extend %tipo-de-letra;
-}
-
-.titulo-card{
+.titulo-card {
     color: white;
 }
-.sombreado{
-    box-shadow: 0px 0px 5px 1px rgb(165, 165, 165);
+
+.form-control-sm,
+.form-select-sm {
+    border: 1px solid rgb(135, 105, 211);
+    border-radius: 0px;
+
 }
 
 
-.inpute{
-    border: 1px solid red;
+.form-label,
+.form-check-label,
+.form-check-label {
+    font-family: $monserrat;
+    font-size: 11px;
+    color: #3552D1;
+}
+
+
+// /* menor a 1024*/
+@media (max-width: 1024px) {
+
+
     
-}
+    .iconos{
+        display: none;
+    }
 
+    .tomador {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: stretch;
+    }
+
+    .tom-input {
+        width: 100%;
+    }
+
+    .boton {
+        margin: 10px auto;
+        width: 30%;
+    }
+
+    .principal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cuadro1 {
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    .sidebar-der {
+        width: 30%;
+        margin-top: 15px;
+    }
+
+
+
+}
 
