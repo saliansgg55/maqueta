@@ -1,15 +1,21 @@
+@charset "UTF-8";
 /* Variables SIDEBAR*/
 /* BARRA AZUL */
 /* FORMULARIOS INPUT ETC */
+/*@import "./secciones/estilo";*/
 .pipe {
   color: #ccc; }
 
 /* Barra azul */
 .text-a-icon {
   text-decoration: none;
-  color: #3552D1;
+  color: #67aeff;
   font-size: 0.9em;
   text-align: center; }
+
+.img-user {
+  width: auto;
+  height: 35px; }
 
 @media (max-width: 1024px) {
   .usuario {
@@ -38,11 +44,21 @@
     width: 30%;
     margin-top: 15px; } }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
+/* Color tamaño icono */
+.icon-cli-sidebar {
+  font-size: 25px;
+  color: #67aeff; }
+
+.color-text {
+  color: #67aeff;
+  font-weight: bold;
+  font-size: 10px; }
 
 .img-user {
   width: auto;
   height: 35px; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }

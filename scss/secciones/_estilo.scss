@@ -1,0 +1,254 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". header header header header header header header header header header ."
+        ". barra-azul barra-azul barra-azul barra-azul barra-azul barra-azul barra-azul barra-azul barra-azul barra-azul ."
+        ". iconos iconos iconos iconos iconos iconos iconos iconos iconos iconos ."
+        ". main main main main main main main main main sidebar ."
+        ". main main main main main main main main main sidebar ."
+        ". main main main main main main main main main sidebar ."
+        ". main main main main main main main main main sidebar ."
+        ". . . . . . . . . . . .";
+
+    background-color: #f5f4f4;
+}
+
+.header {
+    grid-area: header;
+    /*background-color: red;*/
+    height: 10vh;
+}
+
+.barra-azul {
+    grid-area: barra-azul;
+    height: 5vh;
+    background-color: #151689;
+    color: white;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    border-radius: 15px;
+    height: 55px;
+    margin-top: -30px;
+}
+
+.iconos {
+    grid-area: iconos;
+    background-color: #f5f4f4;
+    height: 13vh;
+    padding: 15px;
+    margin-top: -70px;
+    border-radius: 5px;
+    // margin-top:0fr;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #f5f4f4;
+    padding: 10px;
+    margin-top: -60px;
+}
+
+.main {
+    grid-area: main;
+    background-color: #f5f4f4;
+    margin-top: -60px;
+}
+
+/* Menu del header */
+.letra-menu,
+.dropdown-item {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.img-logo {
+    /* background-color: red; */
+    margin-left: 0px;
+
+}
+
+/* Menu del header */
+
+
+/* Barra azul */
+
+
+.img-user {
+    width: auto;
+    height: 35px;
+}
+
+/* ICONOS */
+
+
+
+.text-a-icon {
+    text-decoration: none;
+    color: #3552D1;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.img-icono {
+    width: 30px;
+    margin: 1px auto;
+    height: 30px;
+}
+
+.bg-blanco {
+    background-color: white;
+    border-radius: 5px;
+    width: 95px;
+}
+
+
+/* Boton salir */
+.bg-light-btn-salir {
+    border-radius: 5px;
+    width: 150px;
+    justify-content: flex-end;
+
+}
+
+.btn-primary {
+    background-color: #151689;
+    width: 300px;
+    border-radius: 50px;
+}
+
+
+/* sidebar */
+
+// .sidebar{
+//     margin-top: -110px;
+// }
+.cuadro-sidebar {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 12px;
+    margin: 5px auto;
+
+}
+
+.icon-cli-sidebar {
+    font-size: 25px;
+    color: #67aeff;
+}
+
+.color-text {
+    color: #67aeff;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+
+/* main datos */
+// .main{
+//     margin-top: -110px; 
+// }
+
+.impresora {
+    font-size: 20px;
+}
+
+.impresora:hover {
+    color: blue;
+
+}
+
+
+.boton-hover:hover {
+    color: blue;
+
+}
+
+.principal {
+    border: none;
+}
+
+.card-body {
+    background-color: #f5f4f4;
+    /* Color de fondo */
+}
+
+.cuadro {
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* btn poliza */
+.btn-resumen-poliza {
+    background-color: white;
+    border-radius: 20px;
+    -webkit-box-shadow: 4px 4px 5px 0px #ccc;
+    -moz-box-shadow: 4px 4px 5px 0px #ccc;
+    box-shadow: 4px 4px 5px 0px #ccc;
+    width: 200px;
+    font-size: 16px;
+
+}
+
+.btn-resumen-poliza:hover {
+    color: blue;
+
+}
+
+.btn-light {
+    color: #67aeff;
+    font-weight: bold;
+}
+
+
+/* gris claro*/
+.input-style {
+    background-color: rgb(231, 231, 231);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-style-dark {
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.form-label,
+.form-check-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    color: rgb(180, 180, 180);
+    width: 150px;
+    font-weight: bold;
+}
+
+
+.card-header {
+    /*background: transparent;*/
+    background-color: #eeeeee;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+}
+
+.card {
+    background-color: #f5f4f4;
+}
+
+.titulo-card {
+    color: black;
+    margin-top: -8px;
+}
+
+.card-text {
+    font-weight: bold;
+}

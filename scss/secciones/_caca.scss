@@ -1,0 +1,32 @@
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". header header header header header header."
+      ". barra barra barra barra barra barra ."
+      ". main main main main main sidebar ."
+      ". . . . . ."; 
+  }
+  .header { grid-area: header; background-color: red; }
+  .barra { grid-area: barra;  background-color: green;}
+  .sidebar { grid-area: sidebar; background-color: violet; }
+  .main { grid-area: main; background-color: gold;}
+
+.img-user{
+  width: auto;
+  height: 35px;
+}
+    /* Barra azul */
+    // .barra-azul{    
+    //     background-color: #151689;
+    //     color: white;
+    //     font-size: 16px;
+    //     font-family: 'Montserrat', sans-serif;
+    //     font-style: normal;
+    //     font-weight: normal;
+    //     border-radius: 15px;      
+    //     height: 55px; 
+    // }
+    

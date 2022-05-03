@@ -1,7 +1,9 @@
 @import "./variables/variables";
 @import "./variables/extends";
+// @import "./secciones/caca";
+/*@import "./secciones/estilo";*/
 @import "./secciones/header";
-//@import "./secciones/sidebar";
+@import "./secciones/sidebar";
 
 * {
   padding: 0;
@@ -9,8 +11,5 @@
   box-sizing: border-box; }
 
 
-.img-user{
-  width: auto;
-  height: 35px;
-}
+
 
