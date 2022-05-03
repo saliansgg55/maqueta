@@ -1,26 +1,6 @@
 /* Variables SIDEBAR*/
 /* BARRA AZUL */
-.barra-azul {
-  margin: 10px;
-  background-color: #151689;
-  color: white;
-  font-size: 16px;
-  -webkit-box-shadow: 4px 4px 5px 0px #ccc;
-  -moz-box-shadow: 4px 4px 5px 0px #ccc;
-  box-shadow: 4px 4px 5px 0px #ccc;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  width: 92%;
-  border-radius: 15px; }
-
 /* FORMULARIOS INPUT ETC */
-.separador {
-  padding: 30px; }
-
-.resumen-fondo {
-  background-color: rebeccapurple; }
-
 .pipe {
   color: #ccc; }
 
@@ -30,10 +10,6 @@
   color: #3552D1;
   font-size: 0.9em;
   text-align: center; }
-
-.card {
-  padding: 4px;
-  margin: 3px; }
 
 @media (max-width: 1024px) {
   .usuario {
