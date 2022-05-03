@@ -1,0 +1,19 @@
+- Alinear el logo de Grupo Pacc con la barra del titulo Home>Polizas Hogar
+- Letra mas gruesa en los titulos del menu
+- La barra Home>Polizas cambiar el color al que tiene el diseño
+- Adaptar la altura de esa barra Home
+- Pedir iconos en el color celeste
+- Palabras de los iconos ponerlas mas negritas y en el color celeste
+- Cuadros de los iconos(Imprimir, Guardar,...)
+- La barra datos ponerla en el color gris
+- Redondear todos los cuadros por debajo de la barra "Datos" incluida
+- Achicar la altura de la barra "Datos"
+- Agregar en la barra datos el simbolo resta o suma
+- Poner tipografia enviada
+- Hacer que toda la barra "Datos" pueda ser contraida o desplegada, no solo donde esta la palabra "Datos"
+- Icono del usuario, arriba a la derecha. La letra del nombre de usuario mas negrita y la campanita mas negrita
+- El boton salir hacerlo igual que el diseño
+- Todos los input redondeados y respetar el gris oscuro para los campos que no se pueden modificar. Los otros son campos editables
+- N° Contrato y N° Poliza llevarlo a la derecha de Tomador y Asegurado y alinearlos con los campos a partir de Jefe de Equipo
+- Luego los campos input grises o no estan correctos.
+- Resta agregar al lado de "Tarificador" otro button que se llame "EIAC". Estos dos botones indican el origen de la poliza. Es decir, si se creo desde el tarificador va a estar seleccionado eso. Si se origino desde EIAC va a estar seleccionado ese boton y si se genero de forma manual entonces Tarificador y EIAC no van a estar seleccionado

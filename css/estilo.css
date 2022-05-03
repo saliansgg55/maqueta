@@ -1,9 +1,8 @@
-@charset "UTF-8";
 /* Variables SIDEBAR*/
 /* BARRA AZUL */
 .barra-azul {
   margin: 10px;
-  background-color: #0C0B71;
+  background-color: #151689;
   color: white;
   font-size: 16px;
   -webkit-box-shadow: 4px 4px 5px 0px #ccc;
@@ -25,16 +24,6 @@
 .pipe {
   color: #ccc; }
 
-.nav-link, .dropdown-item {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  color: black; }
-
-.hr {
-  background-color: blue;
-  width: 94%;
-  margin: 10px auto; }
-
 /* Barra azul */
 .text-a-icon {
   text-decoration: none;
@@ -42,28 +31,9 @@
   font-size: 0.9em;
   text-align: center; }
 
-.card-header {
-  background-color: #3552D1; }
-
 .card {
   padding: 4px;
   margin: 3px; }
-
-.titulo-card {
-  color: white; }
-
-.form-control-sm,
-.form-select-sm {
-  border: 1px solid #8769d3;
-  border-radius: 0px;
-  color: black; }
-
-.form-label,
-.form-check-label,
-.form-check-label {
-  font-family: "Montserrat", sans-serif;
-  font-size: 11px;
-  color: #3552D1; }
 
 @media (max-width: 1024px) {
   .usuario {
@@ -91,24 +61,6 @@
   .sidebar-der {
     width: 30%;
     margin-top: 15px; } }
-
-.cont-sidebar {
-  padding: 20px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  text-align: center;
-  font-size: 12px;
-  box-shadow: 0px 0px 5px 1px #a5a5a5; }
-
-/* Color tamaño icono */
-.icon-cli-sidebar {
-  font-size: 25px;
-  color: #67aeff; }
-
-.color-text {
-  color: #67aeff;
-  font-weight: bold;
-  font-size: 10px; }
 
 * {
   padding: 0;
