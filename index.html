@@ -11,10 +11,13 @@
 
     <link rel="stylesheet" href="css/estilo.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap" rel="stylesheet"> -->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <style>
@@ -208,14 +211,15 @@
 
     .cuadro-sidebar {
         background-color: white;
-        padding: 60px;
+        /*padding: 60px;*/
         padding-top: 5px;
         padding-bottom: 5px;
         border-radius: 15px;
         margin-bottom: 5px;
         text-align: center;
         font-size: 12px;
-        margin-left: -30px;
+        margin-left: -30px;    
+        width: 160px;
 
     }
 
@@ -253,13 +257,13 @@
         margin: 10px;
         background-color: #151689;
         color: white;
-        font-size: 16px;
-        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;        
+        /* font-family: 'Montserrat', sans-serif;
+        src: url('fonts/static/Montserrat-Black.ttf'); */
         font-style: normal;
         font-weight: normal;
         width: 100%;
-        border-radius: 15px;
-
+        border-radius: 15px;        
         height: 4vh;
     }
 
@@ -292,6 +296,7 @@
     }
 
     .letra-menu {
+        
         font-size: 14px;
         font-weight: bold;
         color: black;
@@ -299,12 +304,20 @@
 
     .letra-menu-user {
         color: black;
+        font-family: 'Montserrat-Black', sans-serif;
+    /* font-family:'Montserrat-Italic-VariableFont_wght';  */
+    src: url('fonts/static/Montserrat-Black.ttf');
+    src: url('fonts/Montserrat-Italic-VariableFont_wght.ttf');
+    src: url('fonts/Montserrat-VariableFont_wght.ttf');
+    src: url('fonts/static/Montserrat-Black.ttf'); 
     }
 
     button.accordion-button{
     background-color: #CDDFE6;
     border-radius: 10px; /* Redondeado datos*/
     height: 5vh;
+   font-weight: bold;
+
 }
 
 .accordion-button::after {
@@ -317,14 +330,25 @@
     background-repeat: no-repeat;
     background-size: 1.25rem;
     transition: transform .2s ease-in-out;
+    margin-left: 10px;
+    margin-right: 95%;
 ;
 }
 
 .accordion-button:not(.collapsed)::after {
     background-image: url('icons/minus.png');
     transform: rotate(-180deg);
+    margin-left: 10px;
+    margin-right: 95%;
 }
 
+div.accordion-body{
+    background-color: #f5f4f4;
+}
+
+.accordion-header{
+    margin-left: 10px;
+}
     /* .accordion-flush{
         border: solid 1px red;
         border-radius: 15px;
@@ -349,13 +373,23 @@
         margin-right: -100px;
     }
 
-
+    
+ h1.caca{
+    /* font-family: 'Comic Neue', cursive; */
+    font-family: 'Montserrat-Black', sans-serif;
+    /* font-family:'Montserrat-Italic-VariableFont_wght';  */
+    src: url('fonts/static/Montserrat-Black.ttf');
+    src: url('fonts/Montserrat-Italic-VariableFont_wght.ttf');
+    src: url('fonts/Montserrat-VariableFont_wght.ttf');
+    src: url('fonts/static/Montserrat-Black.ttf'); 
+ }   
 </style>
 
 <body>
 
     <div class="container contenedor">
 
+        <h1 class="caca"> Making the Web Beautiful with Comic Sans MS!</h1>
 
         <header class="header d-flex justify-content-center mt-0 ">
             <nav class="navbar navbar-expand-xl navbar-light  text-center ">
@@ -636,12 +670,12 @@
 
                     <div class="col-lg-10  redondeado ">
 
-                        <div class="accordion accordion-flush accordion-datos mt-2" id="accordionFlushExample">
-                            <div class="col-11"> <!-- accordion-item  -->
+                        <div class="accordion accordion-flush accordion-datos mt-2 " id="accordionFlushExample">
+                            <div class="col-11 " > <!-- accordion-item  -->
                                 <h2 class="accordion-header " id="flush-headingOne">
                                     <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                        aria-controls="flush-collapseOne">
+                                        aria-controls="flush-collapseOne" >
                                         Datos
                                     </button>
                                 </h2>
