@@ -19,8 +19,18 @@
 
 <style>
     .contenedor {
-        background-color: #f5f4f4;
-       
+        /* background-color: #f5f4f4; */
+        background-color: white;
+    }
+
+    .img-user {
+        width: auto;
+        height: 35px;
+        border: 2px solid grey;
+        border-radius: 50px;
+        -webkit-box-shadow: 4px 4px 5px 0px #ccc;
+        -moz-box-shadow: 4px 4px 5px 0px #ccc;
+        box-shadow: 4px 4px 5px 0px #ccc;
     }
 
 
@@ -38,10 +48,10 @@
         max-width: 1185px;
     }*/
 
-    .icon-campana {        
-        font-size: 20px;     
+    .icon-campana {
+        font-size: 20px;
         font-weight: bold;
-        
+
     }
 
     /* Iconos debajo de la barra azul */
@@ -50,11 +60,11 @@
         margin: 1px auto;
         height: 30px;
     }
-    
-    .bg-blanco{
-        background-color: white;        
+
+    .bg-blanco {
+        background-color: white;
         border-radius: 5px;
-        width: 95px;
+        width: 800px;
     }
 
     .bg-light {
@@ -62,18 +72,32 @@
         width: 94px;
     }
 
-    .bg-light-btn-salir {
-        border-radius: 5px;
-        width: 150px;
-        justify-content: flex-end;
-    }
+
 
     /* Iconos debajo de la barra azul */
+
+    /* Fondo gris iconos */
+    .iconos {
+        background-color: #f5f4f4;
+        padding: 10px;
+        border-radius: 15px;
+    }
 
     .btn-primary {
         background-color: #151689;
         width: 300px;
         border-radius: 50px;
+    }
+
+    .bg-light-btn-salir {
+        border-radius: 5px;
+        width: 110px;
+        justify-content: flex-end;
+    }
+
+    .fondo-color-btn {
+        background-color: white;
+
     }
 
     .card-header {
@@ -84,8 +108,8 @@
         border: none;
     }
 
-    .card{
-        background-color:#f5f4f4;
+    .card {
+        background-color: #f5f4f4;
     }
 
     .titulo-card {
@@ -99,67 +123,81 @@
 
 
     .form-label,
- .form-check-label{
-     font-family: 'Montserrat', sans-serif;
-     font-size: 11px;
-     color: rgb(180, 180, 180);
-     width: 150px;
-     font-weight: bold;
- }
+    .form-check-label {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 11px;
+        color: rgb(180, 180, 180);
+        width: 150px;
+        font-weight: bold;
+    }
 
- /* gris claro*/
- .input-style{
+    /* gris claro*/
+    .input-style {
+        background-color: rgb(231, 231, 231);
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .text-into-input {
+        font-size: 11px;
+    }
+
+    /* input cuadro izquierdo */
+
+    /* input primer cuadro margen izquierdo tamaño de largo */
+    /* .input-style{
     background-color: rgb(231, 231, 231);
     border: 1px solid #ccc;
     border-radius: 5px;
- }
+ } */
 
- .input-style-dark{
-    background-color: #ccc;
-    border: 1px solid #ccc;
-    border-radius: 5px;
- }
+    .input-style-dark {
+        background-color: #ccc;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
 
- .btn-light {
-     color:#67aeff;
-     font-weight: bold;
- }
+    .btn-light {
+        color: #67aeff;
+        font-weight: bold;
+    }
 
- .btn-resumen-poliza{
-     background-color: white;
-     border-radius: 20px;
-     -webkit-box-shadow: 4px 4px 5px 0px #ccc;
-    -moz-box-shadow: 4px 4px 5px 0px #ccc;
-    box-shadow: 4px 4px 5px 0px #ccc;   
-    width: 200px;
-    font-size: 16px;
-    
- }
+    .btn-resumen-poliza {
+        background-color: white;
+        border-radius: 20px;
+        -webkit-box-shadow: 4px 4px 5px 0px #ccc;
+        -moz-box-shadow: 4px 4px 5px 0px #ccc;
+        box-shadow: 4px 4px 5px 0px #ccc;
+        width: 200px;
+        font-size: 16px;
 
- .btn-resumen-poliza:hover{
-     color: blue;
-     
- }
+    }
 
- .text-btn-der{
-margin: 10px auto;
- }
+    .btn-resumen-poliza:hover {
+        color: blue;
 
- .principal{
-     border:none;     
- }
+    }
 
- .card-body{
-     background-color: #f5f4f4; /* Color de fondo */
- }
+    .text-btn-der {
+        margin: 10px auto;
+    }
 
- .cuadro{
-     background-color: white;
-     border-radius: 5px;
- }
- 
+    .principal {
+        border: none;
+    }
 
- /* .cont-sidebar{
+    .card-body {
+        background-color: #f5f4f4;
+        /* Color de fondo */
+    }
+
+    .cuadro {
+        background-color: white;
+        border-radius: 5px;
+    }
+
+
+    /* .cont-sidebar{
     padding: 20px;
     border: 0;
     border-radius: 5px;
@@ -168,98 +206,149 @@ margin: 10px auto;
     font-size: 12px;
 } */
 
-.cuadro-sidebar{
-    background-color: white;   
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 12px;
-    margin-left: -20px;
+    .cuadro-sidebar {
+        background-color: white;
+        padding: 60px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 15px;
+        margin-bottom: 5px;
+        text-align: center;
+        font-size: 12px;
+        margin-left: -30px;
 
-}
+    }
 
-.impresora{
-    font-size: 20px;
-}
-.impresora:hover{
-     color: blue;
-     
- }
+    .impresora {
+        font-size: 20px;
+    }
+
+    .impresora:hover {
+        color: blue;
+
+    }
 
 
- .boton-hover:hover{
-     color: blue;
-     
- }
+    .boton-hover:hover {
+        color: blue;
 
- .icon-cli-sidebar{
-    font-size: 25px;    
-    color: #67aeff;    
-}
+    }
 
-.color-text{
-    color: #67aeff;
-    font-weight: bold;
-    font-size: 10px;
-}
+    .icon-cli-sidebar {
+        font-size: 25px;
+        color: #67aeff;
+    }
 
-.barra-azul{
-    margin: 10px;    
-    background-color: #151689;
-    color: white;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    width: 92%; 
-    border-radius: 15px;
-    max-width: 1185px;
-    height: 6vh;        
-}
+    .color-text {
+        color: #67aeff;
+        font-weight: bold;
+        font-size: 10px;
+    }
 
-.tipografia-barra-azul {
+    .color-text-gris {
+        color: grey;
+    }
+
+    .barra-azul {
+        margin: 10px;
+        background-color: #151689;
+        color: white;
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        width: 100%;
+        border-radius: 15px;
+
+        height: 4vh;
+    }
+
+    .tipografia-barra-azul {
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         font-size: 14px;
-        margin-top: -9px;
+        margin-top: -10px;
     }
 
-.header{
-/*    background-color: orangered;*/
-    margin-left: -55px;
-    
-}
+    .header {
+        /* background-color: orangered; */
+        width: 100%;
+        /* margin-left: -55px; */
+
+    }
+
     /* letra negrita del menu central del header */
     .nav-item {
         font-weight: bold;
     }
 
-    .img-logo {
+    /* .img-logo {
         /* background-color: red; */
-        margin-left: 40px;
+    margin-right: 100px;
+    margin-left: -30px;
+    display: flex;
+    justify-content: start;
 
     }
 
-.letra-menu{
-    font-size: 14px;
-    font-weight: bold;
-    color: black;
-}
+    .letra-menu {
+        font-size: 14px;
+        font-weight: bold;
+        color: black;
+    }
 
+    .letra-menu-user {
+        color: black;
+    }
 
-.accordion-button {
-    background-color: rgb(204, 204, 204);
-    /*border: solid 1px yellow;*/
-    border-radius: 100px;
+    button.accordion-button{
+    background-color: #CDDFE6;
+    border-radius: 10px; /* Redondeado datos*/
     height: 5vh;
 }
 
-.redondeado{    
-    border-radius: 10px;
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url('icons/plus.png');
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+;
 }
 
+.accordion-button:not(.collapsed)::after {
+    background-image: url('icons/minus.png');
+    transform: rotate(-180deg);
+}
+
+    /* .accordion-flush{
+        border: solid 1px red;
+        border-radius: 15px;
+    } */
+
+    .redondeado {
+        border-radius: 10px;
+    }
+
+    .accordion-datos {
+        margin-left: -110px;        ;
+
+    }
+
+    
+
+
+
     /************************************/
+    .sidebar {
+        /* background-color: red; */
+        margin-right: -100px;
+    }
+
 
 </style>
 
@@ -267,15 +356,22 @@ margin: 10px auto;
 
     <div class="container contenedor">
 
-        
+
         <header class="header d-flex justify-content-center mt-0 ">
             <nav class="navbar navbar-expand-xl navbar-light  text-center ">
                 <!-- Logo Pacc -->
                 <div class="d-flex">
-                    <div class="p-1 bg-basic">
+                    <!-- <div class="row bg-secondary">
+                        <div class="col-lg-4 bg-success">
+                            <a class="navbar-brand" href="./index.html">
+                                <img src="icons/logo_pacc.png" width="220px" class=""
+                                    alt="imagen logo">
+                            </a>
+                        </div>
+                    </div> -->
+                    <div class="p-1 bg-basic logo">
                         <a class="navbar-brand" href="./index.html">
-                            <img src="icons/logo_pacc.png" width="220px" class="img-fluid float-end img-logo"
-                                alt="imagen logo">
+                            <img src="icons/logo_pacc.png" width="220px" class="" alt="imagen logo">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -350,10 +446,10 @@ margin: 10px auto;
                     <div class="p-2 bg-basic flex-grow-1">
                         <li class="nav-item dropdown d-flex usuario">
 
-                            <img src="icons/fotousuario.png" alt="foto usuario" class="img-user">
+                            <img src="icons/img-user.png" alt="foto usuario" class="img-user">
 
                             <div>
-                                <a class="nav-link active dropdown-toggle letra-menu" data-bs-toggle="dropdown"
+                                <a class="nav-link active dropdown-toggle letra-menu-user" data-bs-toggle="dropdown"
                                     aria-current="page" href="#">Usuario <span class="pipe">|</span> </a>
 
                                 <ul class="dropdown-menu">
@@ -383,7 +479,7 @@ margin: 10px auto;
         </section>
 
         <!-- Iconos -->
-        <section class="iconos d-flex justify-content-center mb-2">
+        <section class="iconos d-flex flex-row justify-content-center mb-2">
             <div class="p-2 bg-blanco me-2 d-flex flex-column justify-content-center">
                 <div class="d-flex flex-column">
                     <div class="p-1 bg-basic d-flex  justify-content-center">
@@ -413,7 +509,7 @@ margin: 10px auto;
             <div class="p-2 bg-blanco me-2 d-flex flex-column justify-content-center">
                 <div class="d-flex flex-column">
                     <div class="p-1 bg-basic d-flex  justify-content-center">
-                        <img class="mb-0 img-icono" src="icons/Artboard 4.png" alt="Cliente">
+                        <img class="mb-0 img-icono" src="icons/cliente.png" alt="Cliente">
                     </div>
                     <div class="p-0 bg-basic">
                         <a href="#" class="text-a-icon">
@@ -473,7 +569,7 @@ margin: 10px auto;
                     </div>
                     <div class=" bg-basic">
                         <a href="#" class="text-a-icon">
-                            <p class="card-text"><span>Documentos</span></p>
+                            <p class="card-text"><span>Docs.</span></p>
                         </a>
                     </div>
                 </div>
@@ -518,9 +614,9 @@ margin: 10px auto;
                 </div>
             </div>
 
-            <div class="p-2  bg-light-btn-salir me-2 d-flex flex-column justify-content-center">
+            <div class="p-2  bg-light-btn-salir fondo-color-btn me-2 d-flex flex-column justify-content-center">
                 <div class="d-flex flex-column">
-                    <div class="p-1 bg-basic d-flex  justify-content-center">
+                    <div class="p-1  d-flex  justify-content-center">
                         <button type="button" class="btn btn-primary ">Salir</button>
                     </div>
                 </div>
@@ -529,743 +625,707 @@ margin: 10px auto;
         </section>
 
 
+
+
+
+
         <section class="">
             <!-- FORM DATOS -->
-            <div class="container-fluid mb-1">
-                <div class="row d-flex justify-content-center " >
+            <div class="container-fluid  mb-1" style="background-color: #f5f4f4; border-radius: 5px;">
+                <div class="row d-flex justify-content-center ">
 
-                    <div class="col-lg-10 me-4 redondeado" >
-                        
-                        <div class="accordion accordion-flush " id="accordionFlushExample" >
-                            <div class="accordion-item " >
-                              <h2 class="accordion-header "  id="flush-headingOne">
-                                <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                  Datos
-                                </button>
-                              </h2>
-                              <div id="flush-collapseOne"  class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
-                                  <div class="card-body redondeado">
-                                                                  
-                          
-                                      <div class="p-2 ms-2 col d-flex flex-fill justify-content-end cuadro redondeado" style="padding: 10px; ">
-                                          <button type="button"
-                                              class="btn btn-light   btn-resumen-poliza"><i
-                                                  class="bi bi-card-text "></i> Resumen Poliza</button>
-                                      </div>
-                          
-                          
-                                      <div class="p-2 color-fondo d-flex fix-fill redondeado">
-                          
-                                          <form action="/action_page.php">
-                          
-                                              <div class="d-flex  principal redondeado">
-                                                  <!-- START CUADRO 1 -->
-                                                  <div class=" col-lg-4  d-flex align-items-stretch me-2 redondeado">
-                          
-                                                      <div class="cont-form-izq border border-0 p-2 cuadro">
-                          
-                          
-                                                          <div class="row pos-center mb-3 ">
-                                                              <div class="mb-3 mt-1 col-sm-10 ">
-                                                                  <label for="text"
-                                                                      class="form-label text-form">Tomador y
-                                                                      Asegurado:</label>
-                                                                  <input type="text"
-                                                                      class="form-control form-control-sm input-style-dark" id="name"
-                                                                      placeholder="MANUEL ANDRADES FERNANDEZ"
-                                                                      name="tomador">
-                                                              </div>
-                                                              <!-- Compania -->
-                                                              <div class="col col-sm-3 flex-fill">
-                                                                  <label for="text" class="form-label"><span
-                                                                          class="text-form">Compania</span> </label>
-                                                                  <input type="text"
-                                                                      class="form-control form-control-sm input-style" id="name"
-                                                                      placeholder="8" name="contrato">
-                                                              </div>
-                                                              <!-- Compania -->
-                                                              <div class="col col-sm-6 flex-fill">
-                                                                  <label for="text" class="form-label"><span
-                                                                          class="text-form">Compania</span> </label>
-                                                                  <input type="text"
-                                                                      class="form-control form-control-sm input-style-dark" id="name"
-                                                                      placeholder="General seguros" name="contrato">
-                                                              </div>
-                                                          </div>
-                          
-                          
-                                                          <div class="row pos-center mb-4">
-                                                              <!-- Ramo -->
-                                                              <div class="col col-sm-3 flex-fill">
-                                                                  <label for="text" class="form-label"><span
-                                                                          class="text-form">Ramo</span> </label>
-                                                                  <input type="text"
-                                                                      class="form-control form-control-sm input-style" id="name"
-                                                                      placeholder="201" name="contrato">
-                                                              </div>
-                                                              <!--  -->
-                                                              <div class="col col-sm-6 flex-fill">
-                                                                  <label for="text" class="form-label"><span
-                                                                          class="text-form">-</span> </label>
-                                                                  <input type="text"
-                                                                      class="form-control form-control-sm input-style-dark" id="name"
-                                                                      placeholder="Hogar" name="contrato">
-                                                              </div>
-                                                          </div>
-                          
-                                                          <div class="row pos-center mb-3">
-                                                              <!-- Colaborador -->
-                                                              <div class="col col-sm-3 flex-fill">
-                                                                  <label for="text" class="form-label"><span
-                                                                          class="text-form">Colaborador</span>
-                                                                  </label>
-                                                                  <input type="text"
-                                                                      class="form-control form-control-sm input-style" id="name"
-                                                                      placeholder="14010065" name="contrato">
-                                                              </div>
-                                                              <!--  -->
-                                                              <div class="col col-sm-6 flex-fill">
-                                                                  <label for="text" class="form-label"><span
-                                                                          class="text-form">-</span> </label>
-                                                                  <input type="text"
-                                                                      class="form-control form-control-sm input-style-dark" id="name"
-                                                                      placeholder="IGALPA GESTION S.L"
-                                                                      name="contrato">
-                                                              </div>
-                                                          </div>
-                          
-                                                          <div class="row pos-center mb-3">
-                                                              <!-- Canal de cobro -->
-                                                              <div class="col col-sm-3 flex-fill">
-                                                                  <label for="text" class="form-label"><span
-                                                                          class="text-form">Colaborador</span>
-                                                                  </label>
-                                                                  <input type="text"
-                                                                      class="form-control form-control-sm input-style" id="name"
-                                                                      placeholder="6" name="contrato">
-                                                              </div>
-                                                              <!--  -->
-                                                              <div class="col col-sm-6 flex-fill">
-                                                                  <label for="text" class="form-label"><span
-                                                                          class="text-form">-</span> </label>
-                                                                  <input type="text"
-                                                                      class="form-control form-control-sm input-style-dark" id="name"
-                                                                      placeholder="COBRO DIRECTO COMPAÑIA"
-                                                                      name="contrato">
-                                                              </div>
-                                                          </div>
-                          
-                                                          <div class="row pos-center mb-3">
-                                                              <!-- Situacion -->
-                                                              <div class="col col-sm-3 flex-fill">
-                                                                  <label for="text" class="form-label"><span
-                                                                          class="text-form">Colaborador</span>
-                                                                  </label>
-                                                                  <input type="text"
-                                                                      class="form-control form-control-sm input-style" id="name"
-                                                                      placeholder="1" name="contrato">
-                                                              </div>
-                                                              <!--  -->
-                                                              <div class="col col-sm-6 flex-fill">
-                                                                  <label for="text" class="form-label"><span
-                                                                          class="text-form">-</span> </label>
-                                                                  <input type="text"
-                                                                      class="form-control form-control-sm input-style-dark" id="name"
-                                                                      placeholder="POLIZA EN VIGOR" name="contrato">
-                                                              </div>
-                                                          </div>
-                          
-                                                          <div class="row pos-center mb-3 ">
-                                                              <!-- Situacion -->
-                                                              <div class="col col-sm-3 flex-fill">
-                                                                  <label for="text" class="form-label"><span
-                                                                          class="text-form">Colaborador</span>
-                                                                  </label>
-                                                                  <input type="text"
-                                                                      class="form-control form-control-sm input-style" id="name"
-                                                                      placeholder="1" name="contrato">
-                                                              </div>
-                                                              <!--  -->
-                                                              <div class="col col-sm-6 flex-fill">
-                                                                  <div class="form-check radio-datos flex-fill">
-                                                                      <input type="radio" class="form-check-input input-style"
-                                                                          id="radio1" name="optradio" value="option1"
-                                                                          checked><span
-                                                                          class="text-form form-label">Cartera</span>
-                                                                      <label class="form-check-label"
-                                                                          for="radio1"></label>
-                                                                  </div>
-                                                                  <div class="form-check">
-                                                                      <input type="radio" class="form-check-input input-style"
-                                                                          id="radio2" name="optradio"
-                                                                          value="option2"><span
-                                                                          class="text-form form-label">Carta
-                                                                          nombramiento</span>
-                                                                      <label class="form-check-label"
-                                                                          for="radio2"></label>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                          
-                          
-                                                      </div>
-                                                  </div>
-                                                  <!-- END CUADRO 1 -->
-                          
-                          
-                                                  <!-- START CUADRO 2 CENTRO -->
-                                                  <div class="col-lg-4 cen border border-0 p-3 me-2 cuadro redondeado">
-                          
-                          
-                          
-                                                      <div class="row  mb-3">
-                          
-                                                          <div class="col col-sm-3 flex-fill">
-                                                              <label for="text" class="form-label"><span
-                                                                      class="text-form">N&deg;
-                                                                      de Contrato</span> </label>
-                                                              <input type="text" class="form-control form-control-sm input-style-dark"
-                                                                  id="name" placeholder="14101" name="contrato">
-                                                          </div>
-                                                       
-                                                          <div class="col col-sm-6 flex-fill">
-                                                              <label for="text" class="form-label"><span
-                                                                      class="text-form">N&deg;
-                                                                      de Poliza</span> </label>
-                                                              <input type="text" class="form-control form-control-sm input-style-dark"
-                                                                  id="name" placeholder="54545121215" name="contrato">
-                                                          </div>
-                                                      </div>
-                                                      <!-- Jefe 
+                    <div class="col-lg-10  redondeado ">
+
+                        <div class="accordion accordion-flush accordion-datos mt-2" id="accordionFlushExample">
+                            <div class="col-11"> <!-- accordion-item  -->
+                                <h2 class="accordion-header " id="flush-headingOne">
+                                    <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        Datos
+                                    </button>
+                                </h2>
+
+                                <div id="flush-collapseOne" class="accordion-collapse collapse mt-0"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="card-body redondeado">
+
+
+                                            <div class="p-2 ms-1 col d-flex flex-fill justify-content-end cuadro redondeado"
+                                                style="padding: 10px; ">
+                                                <button type="button" class="btn btn-light   btn-resumen-poliza"><i
+                                                        class="bi bi-card-text "></i> Resumen Poliza</button>
+                                            </div>
+
+
+                                            <div class="p-2 color-fondo d-flex fix-fill redondeado">
+
+                                                <form action="/action_page.php">
+
+                                                    <div class="d-flex  principal redondeado">
+                                                        <!-- START CUADRO 1 -->
+                                                        <div
+                                                            class=" col-lg-4  d-flex align-items-stretch me-2 redondeado">
+
+                                                            <div class="cont-form-izq border border-0 p-2 cuadro">
+
+
+                                                                <div class="row pos-center mb-3 ">
+                                                                    <div class="mb-3 mt-1 col-sm-10 ">
+                                                                        <label for="text"
+                                                                            class="form-label text-form">Tomador y
+                                                                            Asegurado:</label>
+                                                                        <input type="text"
+                                                                            class="form-control form-control-sm input-style-dark text-into-input"
+                                                                            id="name"
+                                                                            placeholder="MANUEL ANDRADES FERNANDEZ"
+                                                                            name="tomador">
+                                                                    </div>
+                                                                    <!-- Compania -->
+                                                                    <div class="col col-sm-3 flex-fill">
+                                                                        <label for="text" class="form-label"><span
+                                                                                class="text-form">Compania</span>
+                                                                        </label>
+                                                                        <input type="text"
+                                                                            class="form-control form-control-sm input-style text-into-input "
+                                                                            id="name" placeholder="8" name="contrato">
+                                                                    </div>
+                                                                    <!-- Compania -->
+                                                                    <div class="col col-sm-6 flex-fill">
+                                                                        <label for="text" class="form-label"><span
+                                                                                class="text-form">Compania</span>
+                                                                        </label>
+                                                                        <input type="text"
+                                                                            class="form-control form-control-sm input-style-dark text-into-input "
+                                                                            id="name" placeholder="General seguros"
+                                                                            name="contrato">
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <div class="row pos-center mb-4">
+                                                                    <!-- Ramo -->
+                                                                    <div class="col col-sm-3 flex-fill">
+                                                                        <label for="text" class="form-label"><span
+                                                                                class="text-form">Ramo</span> </label>
+                                                                        <input type="text"
+                                                                            class="form-control form-control-sm input-style text-into-input "
+                                                                            id="name" placeholder="201" name="contrato">
+                                                                    </div>
+                                                                    <!--  -->
+                                                                    <div class="col col-sm-6 flex-fill">
+                                                                        <label for="text" class="form-label"><span
+                                                                                class="text-form">-</span> </label>
+                                                                        <input type="text"
+                                                                            class="form-control form-control-sm input-style-dark text-into-input "
+                                                                            id="name" placeholder="Hogar"
+                                                                            name="contrato">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row pos-center mb-3">
+                                                                    <!-- Colaborador -->
+                                                                    <div class="col col-sm-3 flex-fill">
+                                                                        <label for="text" class="form-label"><span
+                                                                                class="text-form">Colaborador</span>
+                                                                        </label>
+                                                                        <input type="text"
+                                                                            class="form-control form-control-sm input-style text-into-input "
+                                                                            id="name" placeholder="14010065"
+                                                                            name="contrato">
+                                                                    </div>
+                                                                    <!--  -->
+                                                                    <div class="col col-sm-6 flex-fill">
+                                                                        <label for="text" class="form-label"><span
+                                                                                class="text-form">-</span> </label>
+                                                                        <input type="text"
+                                                                            class="form-control form-control-sm input-style-dark text-into-input "
+                                                                            id="name" placeholder="IGALPA GESTION S.L"
+                                                                            name="contrato">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row pos-center mb-3">
+                                                                    <!-- Canal de cobro -->
+                                                                    <div class="col col-sm-3 flex-fill">
+                                                                        <label for="text" class="form-label"><span
+                                                                                class="text-form">Colaborador</span>
+                                                                        </label>
+                                                                        <input type="text"
+                                                                            class="form-control form-control-sm input-style text-into-input "
+                                                                            id="name" placeholder="6" name="contrato">
+                                                                    </div>
+                                                                    <!--  -->
+                                                                    <div class="col col-sm-6 flex-fill">
+                                                                        <label for="text" class="form-label"><span
+                                                                                class="text-form">-</span> </label>
+                                                                        <input type="text"
+                                                                            class="form-control form-control-sm input-style-dark text-into-input "
+                                                                            id="name"
+                                                                            placeholder="COBRO DIRECTO COMPAÑIA"
+                                                                            name="contrato">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row pos-center mb-3">
+                                                                    <!-- Situacion -->
+                                                                    <div class="col col-sm-3 flex-fill">
+                                                                        <label for="text" class="form-label"><span
+                                                                                class="text-form">Colaborador</span>
+                                                                        </label>
+                                                                        <input type="text"
+                                                                            class="form-control form-control-sm input-style text-into-input "
+                                                                            id="name" placeholder="1" name="contrato">
+                                                                    </div>
+                                                                    <!--  -->
+                                                                    <div class="col col-sm-6 flex-fill">
+                                                                        <label for="text" class="form-label"><span
+                                                                                class="text-form">-</span> </label>
+                                                                        <input type="text"
+                                                                            class="form-control form-control-sm input-style-dark text-into-input "
+                                                                            id="name" placeholder="POLIZA EN VIGOR"
+                                                                            name="contrato">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row pos-center mb-3 ">
+                                                                    <!-- Situacion -->
+                                                                    <div class="col col-sm-3 flex-fill">
+                                                                        <label for="text" class="form-label"><span
+                                                                                class="text-form">Colaborador</span>
+                                                                        </label>
+                                                                        <input type="text"
+                                                                            class="form-control form-control-sm input-style text-into-input "
+                                                                            id="name" placeholder="1" name="contrato">
+                                                                    </div>
+                                                                    <!--  -->
+                                                                    <div class="col col-sm-6 flex-fill">
+                                                                        <div class="form-check radio-datos flex-fill">
+                                                                            <input type="radio"
+                                                                                class="form-check-input input-style text-into-input"
+                                                                                id="radio1" name="optradio"
+                                                                                value="option1" checked><span
+                                                                                class="text-form form-label">Cartera</span>
+                                                                            <label class="form-check-label"
+                                                                                for="radio1"></label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input type="radio"
+                                                                                class="form-check-input input-style text-into-input"
+                                                                                id="radio2" name="optradio"
+                                                                                value="option2"><span
+                                                                                class="text-form form-label">Carta
+                                                                                nombramiento</span>
+                                                                            <label class="form-check-label"
+                                                                                for="radio2"></label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                        <!-- END CUADRO 1 -->
+
+
+                                                        <!-- START CUADRO 2 CENTRO -->
+                                                        <div
+                                                            class="col-lg-4 cen border border-0 p-3 me-2 cuadro redondeado">
+
+
+
+                                                            <div class="row  mb-3">
+
+                                                                <div class="col col-sm-3 flex-fill">
+                                                                    <label for="text" class="form-label"><span
+                                                                            class="text-form">N&deg;
+                                                                            de Contrato</span> </label>
+                                                                    <input type="text"
+                                                                        class="form-control form-control-sm input-style-dark text-into-input "
+                                                                        id="name" placeholder="14101" name="contrato">
+                                                                </div>
+
+                                                                <div class="col col-sm-6 flex-fill">
+                                                                    <label for="text" class="form-label"><span
+                                                                            class="text-form">N&deg;
+                                                                            de Poliza</span> </label>
+                                                                    <input type="text"
+                                                                        class="form-control form-control-sm input-style-dark text-into-input"
+                                                                        id="name" placeholder="54545121215"
+                                                                        name="contrato">
+                                                                </div>
+                                                            </div>
+                                                            <!-- Jefe
                                                           de equipo -->
-                                                      <div class="row  mb-3">
-                          
-                                                          <div class="col col-sm-3 flex-fill">
-                                                              <label for="text" class="form-label"><span
-                                                                      class="text-form">Jefe de equipo</span> </label>
-                                                              <input type="text" class="form-control form-control-sm input-style-dark"
-                                                                  id="name" placeholder="14101" name="contrato">
-                                                          </div>
-                                                       
-                                                          <div class="col col-sm-6 flex-fill">
-                                                              <label for="text" class="form-label"><span
-                                                                      class="text-form">-</span> </label>
-                                                              <input type="text" class="form-control form-control-sm input-style-dark"
-                                                                  id="name" placeholder="54545121215" name="contrato">
-                                                          </div>
-                                                      </div>
-                          
-                                                      <div class="row pos-center mb-3">
-                                                          <div class="col col-sm-3 flex-fill">
-                                                              <label for="text" class="form-label"><span
-                                                                      class="text-form">Jefe comercio</span> </label>
-                                                              <input type="text" class="form-control form-control-sm input-style-dark"
-                                                                  id="name" placeholder="14101" name="contrato">
-                                                          </div>
-                          
-                                                          <div class="col col-sm-6 flex-fill">
-                                                              <label for="text" class="form-label"><span
-                                                                      class="text-form">-</span> </label>
-                                                              <input type="text" class="form-control form-control-sm input-style-dark"
-                                                                  id="name" placeholder="ANTONIO JOSE PEREZ SANCHEZ"
-                                                                  name="contrato">
-                                                          </div>
-                                                      </div>
-                          
-                                                      <div class="row pos-center mb-3">
-                                                          <div class="col col-sm-3 flex-fill">
-                                                              <label for="text" class="form-label"><span
-                                                                      class="text-form">Ejecutivo cuentas</span>
-                                                              </label>
-                                                              <input type="text" class="form-control form-control-sm input-style"
-                                                                  id="name" placeholder="14101" name="contrato">
-                                                          </div>
-                          
-                                                          <div class="col col-sm-6 flex-fill">
-                                                              <label for="text" class="form-label"><span
-                                                                      class="text-form">-</span> </label>
-                                                              <input type="text" class="form-control form-control-sm input-style"
-                                                                  id="name" placeholder="NOMBRE EJECUTIVO"
-                                                                  name="contrato">
-                                                          </div>
-                                                      </div>
-                          
-                                                      <div class="row d-flex pos-center mb-3">
-                                                          <div class="col col-sm-3 flex-fill">
-                                                              <label for="text" class="form-label"><span
-                                                                      class="text-form">Anulacion</span> </label>
-                                                              <input type="date" class="form-control form-control-sm input-style"
-                                                                  id="name" placeholder="14101" name="contrato">
-                                                          </div>
-                          
-                                                          <div class="col col-sm-6 flex-fill">
-                                                              <label for="text" class="form-label"><span
-                                                                      class="text-form">Causa anulacion</span>
-                                                              </label>
-                                                              <select
-                                                                  class="form-select form-select-sm  align-self-start input-style">
-                                                                  <option>1</option>
-                                                                  <option>2</option>
-                                                                  <option>3</option>
-                                                                  <option>4</option>
-                                                              </select>
-                                                          </div>
-                                                      </div>
-                          
-                                                      <div class="row d-flex pos-center mb-3">
-                                                          <div class="col col-sm-4 flex-fill">
-                                                              <label for="text" class="form-label"><span
-                                                                      class="text-form">Forma de pago</span> </label>
-                                                              <select
-                                                                  class="form-select form-select-sm  align-self-start input-style">
-                                                                  <option>1</option>
-                                                                  <option>2</option>
-                                                                  <option>3</option>
-                                                                  <option>4</option>
-                                                              </select>
-                                                          </div>
-                          
-                                                          <div class="col col-sm-3 flex-fill">
-                                                              <label for="text" class="form-label"><span
-                                                                      class="text-form">Efecto</span> </label>
-                                                              <input type="date" class="form-control form-control-sm input-style"
-                                                                  id="name" placeholder="14101" name="contrato">
-                                                          </div>
-                          
-                                                          <div class="col col-sm-3 flex-fill">
-                                                              <label for="text" class="form-label"><span
-                                                                      class="text-form">Vencimiento</span> </label>
-                                                              <input type="date" class="form-control form-control-sm input-style"
-                                                                  id="name" placeholder="14101" name="contrato">
-                                                          </div>
-                                                      </div>
-                          
-                                                      <div class="row d-flex pos-center mb-3">
-                                                          <div class="col col-sm-3 flex-fill">
-                                                              <label for="text" class="form-label"><span
-                                                                      class="text-form">Alta</span> </label>
-                                                              <input type="date" class="form-control form-control-sm input-style"
-                                                                  id="name" placeholder="14101" name="contrato">
-                                                          </div>
-                          
-                                                          <div class="col col-sm-3 flex-fill">
-                                                              <label for="text" class="form-label"><span
-                                                                      class="text-form">Recepcion</span> </label>
-                                                              <input type="date" class="form-control form-control-sm input-style"
-                                                                  id="name" placeholder="14101" name="contrato">
-                                                          </div>
-                          
-                                                          <div class="col col-sm-4 flex-fill">
-                                                              <label for="text" class="form-label"><span
-                                                                      class="text-form">Vto. sig. Recibo</span>
-                                                              </label>
-                                                              <input type="date" class="form-control form-control-sm input-style"
-                                                                  id="name" placeholder="14101" name="contrato">
-                                                          </div>
-                                                      </div>
-                          
-                                                  </div>
-                                                  <!-- END CUADRO 2 CENTRO -->
-                          
-                          
-                          
-                                                  <!-- START CUANDRO 3 DERECHA -->
-                                                  <div class="col-lg-4 der border border-0 p-3 cuadro redondeado">
-                                                      <div class="row pos-center">
-                                                          <div class="col col-sm-10 flex-fill">
-                                                              <label for="text" class="form-label ">IBAN</label>
-                                                              <input type="text" class="form-control form-control-sm input-style"
-                                                                  id="name" placeholder="MANUEL ANDRADES FERNANDEZ"
-                                                                  name="tomador">
-                                                          </div>
-                          
-                                                          <!-- START FALTAN DOCUMENTOS -->
-                                                          <div class="d-flex">
-                                                              <div
-                                                                  class="p-2 bg-light d-flex flex-wrap align-content-center">
-                          
-                                                                  <div class="form-check">
-                                                                      <input type="radio" class="form-check-input input-style"
-                                                                          id="radio1" name="optradio" value="option1"
-                                                                          checked>
-                                                                      <label class="form-check-label "
-                                                                          for="radio1">
-                                                                          Faltan documentos
-                                                                      </label>
-                                                                  </div>
-                          
-                                                              </div>
-                          
-                                                              
-                          
-                                                          </div>
-                                                          <!-- END FALTAN DOCUMENTOS -->
-                          
-                          
-                                                          <!-- START DOCUMENTOS QUE FALTAN -->
-                                                          <div class="d-flex">
-                                                              <div
-                                                                  class="p-2 bg-light d-flex flex-wrap align-content-center ">
-                          
-                                                                  <div class="form-check">
-                                                                      <input type="radio" class="form-check-input input-style"
-                                                                          id="radio1" name="optradio" value="option1"
-                                                                          checked>
-                                                                      <label class="form-check-label text-form"
-                                                                          for="radio1">
-                                                                          Documentos que faltan
-                                                                      </label>
-                                                                  </div>
-                          
-                                                              </div>
-                          
-                                                             
-                          
-                          
-                                                          </div>
-                                                          <!-- END DOCUMENTOS QUE FALTAN -->
-                          
-                                                          <div class="col col-sm-10 mb-2 flex-fill">
-                                                              <label for="exampleFormControlTextarea1"
-                                                                  class="form-label text-form">Documentos que
-                                                                  faltan</label>
-                                                              <textarea class="form-control form-control-sm input-style"
-                                                                  id="exampleFormControlTextarea1"
-                                                                  rows="6">Lorem ipsum dolor sit amet consectetur.</textarea>
-                                                          </div>
-                          
-                                                          <div class="col col-sm-10 d-grid flex-fill mb-2">
-                                                              <button type="button"
-                                                                  class="btn btn-light  btn-block boton-hover"><i
-                                                                      class="bi bi-plus-circle "></i> <span
-                                                                      class="text-btn-der">Nuevo
-                                                                      recibo</span></button>
-                                                          </div>
-                                                          <div class="col col-sm-10 d-grid flex-fill btn-der">
-                                                              <button type="button"
-                                                                  class="btn btn-light  btn-block boton-hover"><i
-                                                                      class="bi bi-arrow-left-right "></i> Reemplazo
-                                                                  c&iacute;a
-                                                                  Pacc</button>
-                                                          </div>
-                          
-                                                          <div class="col col-sm-10 flex-fill mt-2">
-                                                              <div class="d-flex">
-                                                                  <div class="p-2  flex-fill">
-                                                                      <div class="form-check">
-                                                                          <input type="radio" class="form-check-input input-style"
-                                                                              id="radio1" name="optradio"
-                                                                              value="option1" checked>
-                                                                          <label class="form-check-label text-form"
-                                                                              for="radio1">
-                                                                              Informacion previa al cliente firmada
-                                                                          </label>
-                                                                      </div>
-                                                                  </div>
-                          
-                          
-                                                                  <!-- <div class="p-2 bg-warning flex-fill">Flex item 2</div> -->
-                                                                  <div class="p-2  flex-fill">
-                                                                      <button type="button"
-                                                                      class="btn btn-light  btn-block"><i
-                                                                          class="bi bi-printer impresora"></i></button>
-                                                                  </div>
+                                                            <div class="row  mb-3">
+
+                                                                <div class="col col-sm-3 flex-fill">
+                                                                    <label for="text" class="form-label"><span
+                                                                            class="text-form">Jefe de equipo</span>
+                                                                    </label>
+                                                                    <input type="text"
+                                                                        class="form-control form-control-sm input-style-dark text-into-input "
+                                                                        id="name" placeholder="14101" name="contrato">
                                                                 </div>
-                          
-                                                              
-                                                                
-                                                                <div class="d-flex">
-                                                                  <div class="p-2  flex-fill">
-                                                                      <div class="form-check">
-                                                                          <input type="radio" class="form-check-input input-style"
-                                                                              id="radio1" name="optradio"
-                                                                              value="option1" checked>
-                                                                          <label class="form-check-label text-form"
-                                                                              for="radio1">
-                                                                             Orden domiciliacion
-                                                                          </label>
-                                                                      </div>
-                                                                  </div>
-                          
-                                                                  
-                          
-                          
-                                                                  <!-- <div class="p-2 bg-warning flex-fill">Flex item 2</div> -->
-                                                                  <div class="p-2  flex-fill">
-                                                                      <button type="button"
-                                                                      class="btn btn-light btn-block"><i
-                                                                          class="bi bi-printer impresora"></i></button>
-                                                                  </div>
+
+                                                                <div class="col col-sm-6 flex-fill">
+                                                                    <label for="text" class="form-label"><span
+                                                                            class="text-form">-</span> </label>
+                                                                    <input type="text"
+                                                                        class="form-control form-control-sm input-style-dark text-into-input"
+                                                                        id="name" placeholder="54545121215"
+                                                                        name="contrato">
                                                                 </div>
-                          
-                          
-                          
+                                                            </div>
+
+                                                            <div class="row pos-center mb-3">
+                                                                <div class="col col-sm-3 flex-fill">
+                                                                    <label for="text" class="form-label"><span
+                                                                            class="text-form">Jefe comercio</span>
+                                                                    </label>
+                                                                    <input type="text"
+                                                                        class="form-control form-control-sm input-style-dark text-into-input "
+                                                                        id="name" placeholder="14101" name="contrato">
+                                                                </div>
+
+                                                                <div class="col col-sm-6 flex-fill">
+                                                                    <label for="text" class="form-label"><span
+                                                                            class="text-form">-</span> </label>
+                                                                    <input type="text"
+                                                                        class="form-control form-control-sm input-style-dark text-into-input"
+                                                                        id="name"
+                                                                        placeholder="ANTONIO JOSE PEREZ SANCHEZ"
+                                                                        name="contrato">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row pos-center mb-3">
+                                                                <div class="col col-sm-3 flex-fill">
+                                                                    <label for="text" class="form-label"><span
+                                                                            class="text-form">Ejecutivo cuentas</span>
+                                                                    </label>
+                                                                    <input type="text"
+                                                                        class="form-control form-control-sm input-style text-into-input "
+                                                                        id="name" placeholder="14101" name="contrato">
+                                                                </div>
+
+                                                                <div class="col col-sm-6 flex-fill">
+                                                                    <label for="text" class="form-label"><span
+                                                                            class="text-form">-</span> </label>
+                                                                    <input type="text"
+                                                                        class="form-control form-control-sm input-style text-into-input"
+                                                                        id="name" placeholder="NOMBRE EJECUTIVO"
+                                                                        name="contrato">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row d-flex pos-center mb-3">
+                                                                <div class="col col-sm-3 flex-fill">
+                                                                    <label for="text" class="form-label"><span
+                                                                            class="text-form">Anulacion</span> </label>
+                                                                    <input type="date"
+                                                                        class="form-control form-control-sm input-style text-into-input"
+                                                                        id="name" placeholder="14101" name="contrato">
+                                                                </div>
+
+                                                                <div class="col col-sm-6 flex-fill">
+                                                                    <label for="text" class="form-label"><span
+                                                                            class="text-form">Causa anulacion</span>
+                                                                    </label>
+                                                                    <select
+                                                                        class="form-select form-select-sm  align-self-start input-style text-into-input">
+                                                                        <option>1</option>
+                                                                        <option>2</option>
+                                                                        <option>3</option>
+                                                                        <option>4</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row d-flex pos-center mb-3">
+                                                                <div class="col col-sm-2 flex-fill">
+                                                                    <label for="text" class="form-label"><span
+                                                                            class="text-form">Forma de pago</span>
+                                                                    </label>
+                                                                    <select
+                                                                        class="form-select form-select-sm  align-self-start input-style text-into-input"
+                                                                        style="width: 70px;">
+                                                                        <option>1</option>
+                                                                        <option>2</option>
+                                                                        <option>3</option>
+                                                                        <option>4</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="col col-sm-3 flex-fill">
+                                                                    <label for="text" class="form-label"><span
+                                                                            class="text-form">Efecto</span> </label>
+                                                                    <input type="date"
+                                                                        class="form-control form-control-sm input-style text-into-input"
+                                                                        id="name" placeholder="14101" name="contrato">
+                                                                </div>
+
+                                                                <div class="col col-sm-3 flex-fill">
+                                                                    <label for="text" class="form-label"><span
+                                                                            class="text-form">Vencimiento</span>
+                                                                    </label>
+                                                                    <input type="date"
+                                                                        class="form-control form-control-sm input-style text-into-input"
+                                                                        id="name" placeholder="14101" name="contrato">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row d-flex pos-center mb-3">
+                                                                <div class="col col-sm-4 flex-fill">
+                                                                    <label for="text" class="form-label"><span
+                                                                            class="text-form">Alta</span> </label>
+                                                                    <input type="date"
+                                                                        class="form-control form-control-sm input-style text-into-input"
+                                                                        id="name" placeholder="14101" name="contrato"
+                                                                        style="width: 100px;">
+                                                                </div>
+
+                                                                <div class="col col-sm-4 flex-fill">
+                                                                    <label for="text" class="form-label"><span
+                                                                            class="text-form">Recepcion</span> </label>
+                                                                    <input type="date"
+                                                                        class="form-control form-control-sm input-style text-into-input"
+                                                                        id="name" placeholder="14101" name="contrato"
+                                                                        style="width: 100px;">
+                                                                </div>
+
+                                                                <div class="col col-sm-4 flex-fill">
+                                                                    <label for="text" class="form-label"><span
+                                                                            class="text-form">Vto. sig. Recibo</span>
+                                                                    </label>
+                                                                    <input type="date"
+                                                                        class="form-control form-control-sm input-style text-into-input"
+                                                                        id="name" placeholder="14101" name="contrato"
+                                                                        style="width: 100px;">
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- END CUADRO 2 CENTRO -->
+
+
+
+                                                        <!-- START CUANDRO 3 DERECHA -->
+                                                        <div class="col-lg-4 der border border-0 p-3 cuadro redondeado">
+                                                            <div class="row pos-center">
+                                                                <div class="col col-sm-10 flex-fill">
+                                                                    <label for="text" class="form-label ">IBAN</label>
+                                                                    <input type="text"
+                                                                        class="form-control form-control-sm input-style text-into-input"
+                                                                        id="name"
+                                                                        placeholder="MANUEL ANDRADES FERNANDEZ"
+                                                                        name="tomador">
+                                                                </div>
+
+                                                                <!-- START FALTAN DOCUMENTOS -->
                                                                 <div class="d-flex">
-                                                                  <div class="p-2 flex-fill">
-                                                                      <div class="form-check">
-                                                                          <input type="radio" class="form-check-input input-style"
-                                                                              id="radio1" name="optradio"
-                                                                              value="option1" checked>
-                                                                          <label class="form-check-label text-form"
-                                                                              for="radio1">
-                                                                             Financiacion
-                                                                          </label>
-                                                                      </div>
-                                                                  </div>
-                          
-                                                                  
-                          
-                          
-                                                                  <!-- <div class="p-2 bg-warning flex-fill">Flex item 2</div> -->
-                                                                  <div class="p-2  flex-fill">
-                                                                      <button type="button"
-                                                                      class="btn btn-light  btn-block"><i
-                                                                          class="bi bi-printer impresora"></i></button>
-                                                                  </div>
-                                                                </div>                                                                  
-                          
-                          
+                                                                    <div
+                                                                        class="p-2 bg-light d-flex flex-wrap align-content-center">
+
+                                                                        <div class="form-check">
+                                                                            <input type="radio"
+                                                                                class="form-check-input input-style text-into-input"
+                                                                                id="radio1" name="optradio"
+                                                                                value="option1" checked>
+                                                                            <label class="form-check-label "
+                                                                                for="radio1">
+                                                                                Faltan documentos
+                                                                            </label>
+                                                                        </div>
+
+                                                                    </div>
+
+
+
+                                                                </div>
+                                                                <!-- END FALTAN DOCUMENTOS -->
+
+
+                                                                <!-- START DOCUMENTOS QUE FALTAN -->
                                                                 <div class="d-flex">
-                                                                  <div class="p-2 flex-fill">
-                                                                      <div class="form-check  ">
-                                                                          <input type="radio" class="form-check-input input-style"
-                                                                              id="radio1" name="optradio"
-                                                                              value="option1" checked>
-                                                                          <label class="form-check-label text-check"
-                                                                              for="radio1">
-                                                                             Tarificador
-                                                                          </label>
-                                                                      </div>
-                                                                  </div>
-                          
-                                                                  
-                          
-                          
-                                                                  <!-- <div class="p-2 bg-warning flex-fill">Flex item 2</div> -->
-                                                                  <div class="p-2  flex-fill ">
-                                                                      <div class="form-check  ">
-                                                                          <input type="radio" class="form-check-input input-style"
-                                                                              id="radio1" name="optradio"
-                                                                              value="option1" checked>
-                                                                          <label class="form-check-label text-check"
-                                                                              for="radio1">
-                                                                             EIAC
-                                                                          </label>
-                                                                      </div>
-                                                                  </div>
-                                                                </div>  
-                                                          </div>
-                          
-                          
-                                                          <!-- <div class="col col-sm-10 d-grid flex-fill btn-der">
+                                                                    <div
+                                                                        class="p-2 bg-light d-flex flex-wrap align-content-center ">
+
+                                                                        <div class="form-check">
+                                                                            <input type="radio"
+                                                                                class="form-check-input input-style text-into-input"
+                                                                                id="radio1" name="optradio"
+                                                                                value="option1" checked>
+                                                                            <label class="form-check-label text-form"
+                                                                                for="radio1">
+                                                                                Documentos que faltan
+                                                                            </label>
+                                                                        </div>
+
+                                                                    </div>
+
+
+
+
+                                                                </div>
+                                                                <!-- END DOCUMENTOS QUE FALTAN -->
+
+                                                                <div class="col col-sm-10 mb-2 flex-fill">
+                                                                    <label for="exampleFormControlTextarea1"
+                                                                        class="form-label text-form">Documentos que
+                                                                        faltan</label>
+                                                                    <textarea
+                                                                        class="form-control form-control-sm input-style text-into-input"
+                                                                        id="exampleFormControlTextarea1"
+                                                                        rows="3">Lorem ipsum dolor sit amet consectetur.</textarea>
+                                                                </div>
+
+                                                                <div class="col col-sm-10 d-grid flex-fill mb-2">
+                                                                    <button type="button"
+                                                                        class="btn btn-light  btn-block boton-hover"><i
+                                                                            class="bi bi-plus-circle "></i> <span
+                                                                            class="text-btn-der">Nuevo
+                                                                            recibo</span></button>
+                                                                </div>
+                                                                <div class="col col-sm-10 d-grid flex-fill btn-der">
+                                                                    <button type="button"
+                                                                        class="btn btn-light  btn-block boton-hover"><i
+                                                                            class="bi bi-arrow-left-right "></i>
+                                                                        Reemplazo
+                                                                        c&iacute;a
+                                                                        Pacc</button>
+                                                                </div>
+
+                                                                <div class="col col-sm-10 flex-fill mt-2">
+                                                                    <div class="d-flex">
+                                                                        <div class="p-2  flex-fill">
+                                                                            <div class="form-check">
+                                                                                <input type="radio"
+                                                                                    class="form-check-input input-style text-into-input"
+                                                                                    id="radio1" name="optradio"
+                                                                                    value="option1" checked>
+                                                                                <label
+                                                                                    class="form-check-label text-form"
+                                                                                    for="radio1">
+                                                                                    Informacion previa al cliente
+                                                                                    firmada
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <!-- <div class="p-2 bg-warning flex-fill">Flex item 2</div> -->
+                                                                        <div class="p-2  flex-fill">
+                                                                            <button type="button"
+                                                                                class="btn btn-light  btn-block"><i
+                                                                                    class="bi bi-printer impresora"></i></button>
+                                                                        </div>
+                                                                    </div>
+
+
+
+                                                                    <div class="d-flex">
+                                                                        <div class="p-2  flex-fill">
+                                                                            <div class="form-check">
+                                                                                <input type="radio"
+                                                                                    class="form-check-input input-style text-into-input"
+                                                                                    id="radio1" name="optradio"
+                                                                                    value="option1" checked>
+                                                                                <label
+                                                                                    class="form-check-label text-form"
+                                                                                    for="radio1">
+                                                                                    Orden domiciliacion
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+
+
+
+                                                                        <!-- <div class="p-2 bg-warning flex-fill">Flex item 2</div> -->
+                                                                        <div class="p-2  flex-fill">
+                                                                            <button type="button"
+                                                                                class="btn btn-light btn-block"><i
+                                                                                    class="bi bi-printer impresora"></i></button>
+                                                                        </div>
+                                                                    </div>
+
+
+
+                                                                    <div class="d-flex">
+                                                                        <div class="p-2 flex-fill">
+                                                                            <div class="form-check">
+                                                                                <input type="radio"
+                                                                                    class="form-check-input input-style text-into-input"
+                                                                                    id="radio1" name="optradio"
+                                                                                    value="option1" checked>
+                                                                                <label
+                                                                                    class="form-check-label text-form"
+                                                                                    for="radio1">
+                                                                                    Financiacion
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+
+
+
+                                                                        <!-- <div class="p-2 bg-warning flex-fill">Flex item 2</div> -->
+                                                                        <div class="p-2  flex-fill">
+                                                                            <button type="button"
+                                                                                class="btn btn-light  btn-block"><i
+                                                                                    class="bi bi-printer impresora"></i></button>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    <div class="d-flex">
+                                                                        <div class="p-2 flex-fill">
+                                                                            <div class="form-check  ">
+                                                                                <input type="radio"
+                                                                                    class="form-check-input input-style text-into-input"
+                                                                                    id="radio1" name="optradio"
+                                                                                    value="option1" checked>
+                                                                                <label
+                                                                                    class="form-check-label text-check"
+                                                                                    for="radio1">
+                                                                                    Tarificador
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+
+
+
+                                                                        <!-- <div class="p-2 bg-warning flex-fill">Flex item 2</div> -->
+                                                                        <div class="p-2  flex-fill ">
+                                                                            <div class="form-check  ">
+                                                                                <input type="radio"
+                                                                                    class="form-check-input input-style text-into-input"
+                                                                                    id="radio1" name="optradio"
+                                                                                    value="option1" checked>
+                                                                                <label
+                                                                                    class="form-check-label text-check"
+                                                                                    for="radio1">
+                                                                                    EIAC
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <!-- <div class="col col-sm-10 d-grid flex-fill btn-der">
                                                           <button type="button"
                                                               class="btn btn-outline-primary btn-block"><i
                                                                   class="bi bi-printer"></i> Imprimir</button>
                                                       </div> -->
-                                                      </div>
-                                                  </div>
-                                                  <!-- END CUANDRO 3 DERECHA -->
-                          
-                          
-                                              </div>
-                                          </form>
-                          
-                                      </div>
-                                  </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- END CUANDRO 3 DERECHA -->
+
+
+                                                    </div>
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
 
+
+
+                        </div> <!-- end accordion accordion-flush -->
+
+
+
                     </div>
 
+                    <!-- sidebar -->
+                    <div class="col-lg-1 sidebar mt-2 ms-1">
 
+                        <!-- Start Tipos de clientes -->
+                        <div class="row d-grid gap-1 ">
+                            <div
+                                class="col-lg-12 d-flex justify-content-center flex-column align-items-center cuadro-sidebar ">
+                                <div><i class="bi bi-person icon-cli-sidebar"></i></div>
+                                <div class="color-text">Tipo de Cliente</div><br>
+
+
+                                <table class="table table-sm">
+                                    <tbody>
+                                        <tr>
+                                            <td class="color-text-gris">Fiel</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="color-text-gris">Autos</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+
+                                <div class="divider"></div>
+                            </div>
+                        </div>
+                        <!-- End Tipos de clientes -->
+
+                        <!-- Start Cliente de -->
+                        <div class="row d-grid gap-1">
+                            <div
+                                class="col-lg-12  d-flex justify-content-center flex-column align-items-center cuadro-sidebar ">
+                                <div><i class="bi bi-person-check icon-cli-sidebar"></i></div>
+                                <div class="color-text"> Cliente de</div><br>
+
+
+                                <table class="table table-sm">
+                                    <tbody>
+                                        <tr>
+                                            <td class="color-text-gris">Hogar</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="color-text-gris">Vida</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="color-text-gris">Salud</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="divider"></div>
+                            </div>
+                        </div>
+                        <!-- End Cliente de -->
+
+                        <!-- Start Codigo de importancia -->
+                        <div class="row d-grid gap-1">
+                            <div class="col-lg-12 d-flex justify-content-center flex-column align-items-center cuadro-sidebar"
+                                style="padding: 53px;">
+                                <span class="color-text">Codigo de importancia</span>
+                                <span class="color-text-gris">482.33</span>
+                            </div>
+                        </div>
+                        <!-- End Codigo de importancia -->
+
+                        <!-- Start Codigo de importancia master -->
+                        <div class="row d-grid gap-1">
+                            <div class="col-lg-12 d-flex justify-content-center flex-column align-items-center cuadro-sidebar"
+                                style="padding: 53px;">
+                                <span class="color-text">Codigo de importancia master</span>
+                                <span class="color-text-gris">482.33</span>
+                            </div>
+                        </div>
+                        <!-- End Codigo de importancia master -->
+
+                    </div>
 
                 </div>
-
-                <!-- sidebar -->
-                <div class="col-lg-1 ">
-
-                    <!-- Start Tipos de clientes -->
-                    <div class="row d-grid gap-1 " >
-                        <div class="col-lg-12 d-flex justify-content-center flex-column align-items-center cuadro-sidebar " 
-                    >
-                            <div><i class="bi bi-person-fill icon-cli-sidebar"></i></div>
-                            <div class="color-text">Tipo de Cliente</div><br>
-
-
-                            <table class="table table-sm">
-                                <tbody>
-                                    <tr>
-                                        <td>Fiel</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Autos</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-
-                            <div class="divider"></div>
-                        </div>
-                    </div>
-                    <!-- End Tipos de clientes -->
-
-                    <!-- Start Cliente de -->
-                    <div class="row ">
-                        <div class="col-lg-12  d-flex justify-content-center flex-column align-items-center cuadro-sidebar "
-                           >
-                            <div><i class="bi bi-person-check icon-cli-sidebar"></i></div>
-                            <div class="color-text"> Cliente de</div><br>
-
-
-                            <table class="table table-sm">
-                                <tbody>
-                                    <tr>
-                                        <td>Hogar</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Vida</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Salud</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                            <div class="divider"></div>
-                        </div>
-                    </div>
-                    <!-- End Cliente de -->
-
-                    <!-- Start Codigo de importancia -->
-                    <div class="row ">
-                        <div class="col-lg-12 d-flex justify-content-center flex-column align-items-center cuadro-sidebar"
-                            >
-                            <span class="color-text">Codigo de importancia</span>
-                            <span>482.33</span>
-                        </div>
-                    </div>
-                    <!-- End Codigo de importancia -->
-
-                    <!-- Start Codigo de importancia master -->
-                    <div class="row ">
-                        <div class="col-lg-12 d-flex justify-content-center flex-column align-items-center cuadro-sidebar"
-                            >
-                            <span class="color-text">Codigo de importancia master</span>
-                            <span>482.33</span>
-                        </div>
-                    </div>
-                    <!-- End Codigo de importancia master -->
-
-                </div>
-            </div>
         </section>
 
 
     </div>
 
-    <!-- <div class="container-fluid contenedor d-flex justify-content-center">
-        <div class="d-flex">
-            <header class="header d-flex justify-content-center mt-0 ">
-                <div class="p-2 bg-info flex-fill">
-                    <nav class="navbar navbar-expand-xl navbar-light  text-center ">
-                        <a class="navbar-brand" href="./index.html">
-                            <img src="icons/logo_pacc.png" width="200px" class="img-fluid float-end img-logo"
-                                alt="imagen logo">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        </div>
-
-                        <div class="p-2 bg-warning flex-fill">
-                            <ul class="navbar-nav  mx-auto d-flex justify-content-center ">
-                                <li class="nav-item dropdown ">
-                                    <a class="menu-letra nav-link active dropdown-toggle " data-bs-toggle="dropdown"
-                                        aria-current="page" href="#"  > Negocio</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item " href="#">Link 1</a></li>
-                                        <li><a class="dropdown-item" href="#">Link 2</a></li>
-                                        <li><a class="dropdown-item" href="#">Link 3</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown ">
-                                    <a class="nav-link active dropdown-toggle " data-bs-toggle="dropdown"
-                                        aria-current="page" href="#"> <span class="pipe">|</span> Informes</a>
-                                    <ul class="dropdown-menu ">
-                                        <li><a class="dropdown-item " href="#">Link 1</a></li>
-                                        <li><a class="dropdown-item " href="#">Link 2</a></li>
-                                        <li><a class="dropdown-item " href="#">Link 3</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown"
-                                        aria-current="page" href="#"> <span class="pipe">|</span> Gestion</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Link 1</a></li>
-                                        <li><a class="dropdown-item" href="#">Link 2</a></li>
-                                        <li><a class="dropdown-item" href="#">Link 3</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown"
-                                        aria-current="page" href="#"> <span class="pipe">|</span> Utilidades</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Link 1</a></li>
-                                        <li><a class="dropdown-item" href="#">Link 2</a></li>
-                                        <li><a class="dropdown-item" href="#">Link 3</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active"> <span class="pipe">|</span> Documentos</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown"
-                                        aria-current="page" href="#"> <span class="pipe">|</span> Formacion</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Link 1</a></li>
-                                        <li><a class="dropdown-item" href="#">Link 2</a></li>
-                                        <li><a class="dropdown-item" href="#">Link 3</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active"> <span class="pipe">|</span> Proyectos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active"> <span class="pipe">|</span> @Media</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="p-2 bg-primary flex-fill">
-                            <li class="nav-item dropdown d-flex usuario">
-
-                                <img src="icons/fotousuario.png" alt="foto usuario" class="img-user">
-
-                                <div>
-                                    <a class="nav-link active dropdown-toggle link-user" data-bs-toggle="dropdown"
-                                        aria-current="page" href="#">Usuario <span class="pipe">|</span> </a>
-
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Link 1</a></li>
-                                        <li><a class="dropdown-item" href="#">Link 2</a></li>
-                                        <li><a class="dropdown-item" href="#">Link 3</a></li>
-                                    </ul>
-
-                                </div>
-                                <div class="align-self-center">
-                                    <i class="bi bi-bell"></i>
-                                </div>
-                            </li>
-                        </div>
-                </div>
-        </div>
-        </nav>
-        </header>
-    </div> -->
 
 
 
