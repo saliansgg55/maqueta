@@ -35,7 +35,7 @@
   margin-top: -10px; }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link, .btn-primary, .bg-light-btn-salir, .btn-resumen-poliza, .btn-resumen-poliza:hover, .form-label,
-.form-check-label, .input-style, .text-into-input, .btn-light, .card-text, .icon-cli-sidebar, .color-text, .cuadro-sidebar {
+.form-check-label, .input-style, .btn-light, .card-text, .icon-cli-sidebar, .color-text, .cuadro-sidebar {
   font-family: "Montserrat", sans-serif;
   src: url("fonts/static/Montserrat-Black.ttf");
   src: url("fonts/Montserrat-Italic-VariableFont_wght.ttf");
@@ -70,7 +70,7 @@
 .img-icono {
   /* width: 80px; */
   margin: 1px auto;
-  height: 35px; }
+  height: 100px; }
 
 .bg-blanco {
   background-color: white;
@@ -84,14 +84,15 @@
 /* Iconos debajo de la barra azul */
 /* Fondo gris iconos */
 .iconos {
-  background-color: #f5f4f4;
-  padding: 10px;
+  background-color: #fcfcfc;
+  padding: 4px;
   border-radius: 15px; }
 
 .btn-primary {
   background-color: #151689;
   width: 300px;
-  border-radius: 50px; }
+  border-radius: 50px;
+  font-weight: bold; }
 
 .bg-light-btn-salir {
   border-radius: 5px;
@@ -120,8 +121,15 @@ button.accordion-button {
   /* Redondeado datos*/
   height: 5vh;
   font-weight: bold;
-  width: 103%;
-  margin-left: 28px; }
+  width: 110%;
+  margin-left: -30px;
+  border: none; }
+
+.accordion-button:focus {
+  z-index: 3;
+  border: none;
+  outline: 0;
+  /*box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);*/ }
 
 .accordion-button::after {
   flex-shrink: 0;
@@ -134,19 +142,27 @@ button.accordion-button {
   background-size: 1.25rem;
   transition: transform .2s ease-in-out;
   margin-left: 10px;
-  margin-right: 95%; }
+  margin-right: 95%;
+  border: none; }
 
 .accordion-button:not(.collapsed)::after {
   background-image: url("icons/minus.png");
   transform: rotate(-180deg);
   margin-left: 10px;
-  margin-right: 95%; }
+  margin-right: 95%;
+  border: none; }
+
+.accordion-button:not(.collapsed) {
+  color: #0c63e4;
+  background-color: #e7f1ff;
+  box-shadow: inset 0 -1px 0 rgba(3, 3, 3, 0.13);
+  border: none; }
 
 div.accordion-body {
-  background-color: #f5f4f4; }
+  background-color: #fcfcfc; }
 
 .accordion-header {
-  margin-left: 10px; }
+  margin-left: 30px; }
 
 /* .accordion-flush{
             border: solid 1px red;
@@ -195,9 +211,10 @@ div.accordion-body {
   border: none; }
 
 .card-body {
-  background-color: #f5f4f4;
+  background-color: #fcfcfc;
   width: 109%;
   margin-top: -18px;
+  margin-left: 1px;
   /* Color de fondo */ }
 
 .cuadro {
@@ -220,13 +237,16 @@ div.accordion-body {
   border-radius: 5px; }
 
 .text-into-input {
-  font-size: 11px; }
+  font-size: 11px;
+  color: black;
+  font-weight: bold; }
 
-/* input cuadro izquierdo */
 .input-style-dark {
   background-color: #ccc;
   border: 1px solid #ccc;
-  border-radius: 5px; }
+  border-radius: 5px;
+  color: black;
+  font-weight: bold; }
 
 .btn-light {
   color: #67aeff;
@@ -241,7 +261,7 @@ div.accordion-body {
   border: none; }
 
 .card {
-  background-color: #f5f4f4; }
+  background-color: #fcfcfc; }
 
 .titulo-card {
   color: black;
@@ -274,7 +294,8 @@ div.accordion-body {
 
 .sidebar {
   /* background-color: red; */
-  margin-right: -100px; }
+  margin-right: -100px;
+  background-color: #fcfcfc; }
 
 .icon-cli-sidebar {
   font-size: 25px;

@@ -2,7 +2,7 @@
 .img-icono {
     /* width: 80px; */
     margin: 1px auto;
-    height: 35px;
+    height: 100px;
 }
 
 .bg-blanco {
@@ -20,8 +20,8 @@
 
 /* Fondo gris iconos */
 .iconos {
-    background-color: #f5f4f4;
-    padding: 10px;
+    background-color: $color-fondo-web;
+    padding: 4px;
     border-radius: 15px;
 }
 
@@ -30,6 +30,7 @@
     width: 300px;
     border-radius: 50px;
     @extend %tipo-letra-monserrat;
+    font-weight: bold;
 }
 
 .bg-light-btn-salir {
@@ -37,6 +38,7 @@
     width: 110px;
     justify-content: flex-end;
     @extend %tipo-letra-monserrat;
+    
 }
 
 .fondo-color-btn {
