@@ -3,6 +3,9 @@
 // @import "./secciones/caca";
 /*@import "./secciones/estilo";*/
 @import "./secciones/header";
+@import "./secciones/barra-azul";
+@import "./secciones/iconos";
+@import "./secciones/datos";
 @import "./secciones/sidebar";
 
 * {
@@ -13,6 +16,7 @@
   
 }
 
-
-
-
+.contenedor {
+  /* background-color: #f5f4f4; */
+  background-color: white;
+}

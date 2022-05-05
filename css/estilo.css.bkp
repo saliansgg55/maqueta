@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* Variables SIDEBAR*/
+/* BARRA AZUL */
+/* FORMULARIOS INPUT ETC */
+/*@import "./secciones/estilo";*/
+.pipe {
+  color: #ccc; }
+
+/* Barra azul */
+.text-a-icon {
+  text-decoration: none;
+  color: #67aeff;
+  font-size: 0.9em;
+  text-align: center; }
+
+.img-user {
+  width: auto;
+  height: 35px; }
+
+@media (max-width: 1024px) {
+  .usuario {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-self: center; }
+  .tomador {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: stretch; }
+  .tom-input {
+    width: 100%; }
+  .boton {
+    margin: 10px auto;
+    width: 30%; }
+  .principal {
+    display: flex;
+    flex-direction: column; }
+  .cuadro1 {
+    margin: 10px auto;
+    width: 100%; }
+  .sidebar-der {
+    width: 30%;
+    margin-top: 15px; } }
+
+/* Color tamaño icono */
+.icon-cli-sidebar {
+  font-size: 25px;
+  color: #67aeff; }
+
+.color-text {
+  color: #67aeff;
+  font-weight: bold;
+  font-size: 10px; }
+
+.img-user {
+  width: auto;
+  height: 35px; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }

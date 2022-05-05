@@ -1,127 +1,41 @@
-// /* Menu header */
-// .navbar-light {
-//     background-color: white;
+// .header {
+//     /* background-color: orangered; */
+//     width: 110%;
+//     margin-left: -55px; 
+
 // }
+    /* letra negrita del menu central del header */
+    .nav-item {        
+        font-weight: bold;
+    }
+
+    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+        @extend %tipo-letra-monserrat;
+    }
 
 
-// .separador{
-//     padding: 30px;
-    
-// }
-
-// .resumen-fondo{
-//     background-color: rebeccapurple;
-// }
+// Imagen usuario
+.img-user {
+    @extend %img-user;
+}
 
 .pipe {
     color: #ccc;
 }
 
-// .nav-link, .dropdown-item {
-//     font-family: $monserrat;
-//     font-size: 14px;
-//     color: black;
-//     font-weight: 12px;
-// }
-
-
-// .hr{
-//     background-color: blue;
-    
-//     width: 94%;
-//     margin: 10px auto;
-// }
-
-
-/* Barra azul */
-// .barra-azul {
-//     @extend %barra-azul;
-// }
-
-
-// // /* Estilo Iconos que estan debajo de la barra azul */
-.text-a-icon {
-    text-decoration: none;
-    color: #67aeff;
-    font-size: 0.9em;
-    text-align: center;
+.letra-menu {
+        
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
 }
 
-
-
-// .card {
-//     padding: 4px;
-//     margin: 3px;
-
-// }
-
-
-
-
-
-// .form-label,
-// .form-check-label,
-// .form-check-label {
-//     font-family: $monserrat;
-//     font-size: 11px;
-//     color: #3552D1;
-// }
-
-
-.img-user{
-  width: auto;
-  height: 35px;
-  border: 2px solid grey;
+.letra-menu-user {
+    color: black;
+    font-family: 'Montserrat-Black', sans-serif;
+/* font-family:'Montserrat-Italic-VariableFont_wght';  */
+src: url('fonts/static/Montserrat-Black.ttf');
+src: url('fonts/Montserrat-Italic-VariableFont_wght.ttf');
+src: url('fonts/Montserrat-VariableFont_wght.ttf');
+src: url('fonts/static/Montserrat-Black.ttf'); 
 }
-
-
-// /* menor a 1024*/
-@media (max-width: 1024px) {
-
-    // .iconos{
-    //     display: none;
-    // }
-
-    .usuario{
-        margin: 10px auto;    
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        align-self: center;
-    }
-
-    .tomador {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        align-items: stretch;
-    }
-
-    .tom-input {
-        width: 100%;
-    }
-
-    .boton {
-        margin: 10px auto;
-        width: 30%;
-    }
-
-    .principal {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cuadro1 {
-        margin: 10px auto;
-        width: 100%;
-    }
-
-    .sidebar-der {
-        width: 30%;
-        margin-top: 15px;
-    }
-
-
-
-}
-

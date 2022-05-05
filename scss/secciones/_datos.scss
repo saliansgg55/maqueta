@@ -1,0 +1,193 @@
+.redondeado {
+    border-radius: 10px;
+}
+
+
+/* Accordion */
+button.accordion-button {
+    background-color: #e7eef6;
+    border-radius: 10px;
+    /* Redondeado datos*/
+    height: 5vh;
+    font-weight: bold;
+    width: 103%;
+    margin-left: 28px;
+
+}
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url('icons/plus.png');
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+    margin-left: 10px;
+    margin-right: 95%;
+    
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url('icons/minus.png');
+    transform: rotate(-180deg);
+    margin-left: 10px;
+    margin-right: 95%;
+}
+
+div.accordion-body {
+    background-color: #f5f4f4;
+}
+
+.accordion-header {
+    margin-left: 10px;
+}
+
+/* .accordion-flush{
+            border: solid 1px red;
+            border-radius: 15px;
+        } */
+
+
+
+.accordion-datos {
+    margin-left: -110px;
+    ;
+
+}
+
+/* Accordion */
+
+/* boton icono impresora */
+.impresora {
+    font-size: 20px;
+}
+
+.impresora:hover {
+    color: blue;
+}
+/* boton icono impresora */
+
+
+.boton-hover:hover {
+    color: blue;
+}
+
+.color-text {
+    color: $color-celeste-sidebar;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.color-text-gris {
+    color: grey;
+}
+
+
+.btn-resumen-poliza {
+    background-color: white;
+    border-radius: 20px;
+    -webkit-box-shadow: 4px 4px 5px 0px #ccc;
+    -moz-box-shadow: 4px 4px 5px 0px #ccc;
+    box-shadow: 4px 4px 5px 0px #ccc;
+    width: 200px;
+    font-size: 16px;
+    margin-bottom: -10px;
+    @extend %tipo-letra-monserrat;
+
+}
+
+.btn-resumen-poliza:hover {
+    color: blue;
+    @extend %tipo-letra-monserrat;
+}
+
+.text-btn-der {
+    margin: 10px auto;
+}
+
+.principal {
+    border: none;
+}
+
+.card-body {
+    background-color: #f5f4f4;
+    width: 109%;
+    margin-top: -18px;
+    /* Color de fondo */
+}
+
+.cuadro {
+    background-color: white;
+    border-radius: 5px;
+    margin-right: -5px;
+    
+}
+
+
+
+.form-label,
+.form-check-label {    
+    @extend %tipo-letra-monserrat;
+    font-size: 11px;
+    color: rgb(157, 156, 156);
+    width: 150px;
+    font-weight: bold;
+}
+
+/* gris claro*/
+
+
+/* INPUT ESTILOS*/
+.input-style {
+    @extend %tipo-letra-monserrat;
+    background-color: rgb(231, 231, 231);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.text-into-input {
+    @extend %tipo-letra-monserrat;
+    font-size: 11px;
+}
+
+/* input cuadro izquierdo */
+
+
+.input-style-dark {
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-light {
+    color: #67aeff;
+    font-weight: bold;
+    @extend %tipo-letra-monserrat;
+}
+
+/***************************/
+
+.card-header {
+    /*background: transparent;*/
+    background-color: #eeeeee;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+}
+
+.card {
+    background-color: #f5f4f4;
+}
+
+.titulo-card {
+    color: black;
+    margin-top: -8px;
+}
+
+.card-text {
+    font-weight: bold;
+    @extend %tipo-letra-monserrat;
+}

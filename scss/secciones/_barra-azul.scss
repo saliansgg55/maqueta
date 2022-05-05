@@ -1,0 +1,15 @@
+
+
+
+
+.barra-azul{
+    @extend %barra-azul;
+}
+
+
+
+
+/* Tipo de letra tamaño y grosor */
+.tipografia-barra-azul {
+    @extend %tipografia-barra-azul;
+}

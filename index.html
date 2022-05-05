@@ -21,304 +21,6 @@
 </head>
 
 <style>
-    .contenedor {
-        /* background-color: #f5f4f4; */
-        background-color: white;
-    }
-
-    .img-user {
-        width: auto;
-        height: 35px;
-        border: 2px solid grey;
-        border-radius: 50px;
-        -webkit-box-shadow: 4px 4px 5px 0px #ccc;
-        -moz-box-shadow: 4px 4px 5px 0px #ccc;
-        box-shadow: 4px 4px 5px 0px #ccc;
-    }
-
-
-
-
-    /* .campana{
-    background-color: red;
-    font-weight: bold;
-} */
-
-
-
-    /*
-    .barra-azul {
-        max-width: 1185px;
-    }*/
-
-    .icon-campana {
-        font-size: 20px;
-        font-weight: bold;
-
-    }
-
-    /* Iconos debajo de la barra azul */
-    .img-icono {
-        width: 30px;
-        margin: 1px auto;
-        height: 30px;
-    }
-
-    .bg-blanco {
-        background-color: white;
-        border-radius: 5px;
-        width: 800px;
-    }
-
-    .bg-light {
-        border-radius: 5px;
-        width: 94px;
-    }
-
-
-
-    /* Iconos debajo de la barra azul */
-
-    /* Fondo gris iconos */
-    .iconos {
-        background-color: #f5f4f4;
-        padding: 10px;
-        border-radius: 15px;
-    }
-
-    .btn-primary {
-        background-color: #151689;
-        width: 300px;
-        border-radius: 50px;
-    }
-
-    .bg-light-btn-salir {
-        border-radius: 5px;
-        width: 110px;
-        justify-content: flex-end;
-    }
-
-    .fondo-color-btn {
-        background-color: white;
-
-    }
-
-    .card-header {
-        /*background: transparent;*/
-        background-color: #eeeeee;
-        height: 40px;
-        border-radius: 30px;
-        border: none;
-    }
-
-    .card {
-        background-color: #f5f4f4;
-    }
-
-    .titulo-card {
-        color: black;
-        margin-top: -8px;
-    }
-
-    .card-text {
-        font-weight: bold;
-    }
-
-
-    .form-label,
-    .form-check-label {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 11px;
-        color: rgb(180, 180, 180);
-        width: 150px;
-        font-weight: bold;
-    }
-
-    /* gris claro*/
-    .input-style {
-        background-color: rgb(231, 231, 231);
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-
-    .text-into-input {
-        font-size: 11px;
-    }
-
-    /* input cuadro izquierdo */
-
-    /* input primer cuadro margen izquierdo tamaño de largo */
-    /* .input-style{
-    background-color: rgb(231, 231, 231);
-    border: 1px solid #ccc;
-    border-radius: 5px;
- } */
-
-    .input-style-dark {
-        background-color: #ccc;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-
-    .btn-light {
-        color: #67aeff;
-        font-weight: bold;
-    }
-
-    .btn-resumen-poliza {
-        background-color: white;
-        border-radius: 20px;
-        -webkit-box-shadow: 4px 4px 5px 0px #ccc;
-        -moz-box-shadow: 4px 4px 5px 0px #ccc;
-        box-shadow: 4px 4px 5px 0px #ccc;
-        width: 200px;
-        font-size: 16px;
-
-    }
-
-    .btn-resumen-poliza:hover {
-        color: blue;
-
-    }
-
-    .text-btn-der {
-        margin: 10px auto;
-    }
-
-    .principal {
-        border: none;
-    }
-
-    .card-body {
-        background-color: #f5f4f4;
-        /* Color de fondo */
-    }
-
-    .cuadro {
-        background-color: white;
-        border-radius: 5px;
-    }
-
-
-    /* .cont-sidebar{
-    padding: 20px;
-    border: 0;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 12px;
-} */
-
-    .cuadro-sidebar {
-        background-color: white;
-        /*padding: 60px;*/
-        padding-top: 5px;
-        padding-bottom: 5px;
-        border-radius: 15px;
-        margin-bottom: 5px;
-        text-align: center;
-        font-size: 12px;
-        margin-left: -30px;    
-        width: 160px;
-
-    }
-
-    .impresora {
-        font-size: 20px;
-    }
-
-    .impresora:hover {
-        color: blue;
-
-    }
-
-
-    .boton-hover:hover {
-        color: blue;
-
-    }
-
-    .icon-cli-sidebar {
-        font-size: 25px;
-        color: #67aeff;
-    }
-
-    .color-text {
-        color: #67aeff;
-        font-weight: bold;
-        font-size: 10px;
-    }
-
-    .color-text-gris {
-        color: grey;
-    }
-
-    .barra-azul {
-        margin: 10px;
-        background-color: #151689;
-        color: white;
-        font-size: 16px;        
-        /* font-family: 'Montserrat', sans-serif;
-        src: url('fonts/static/Montserrat-Black.ttf'); */
-        font-style: normal;
-        font-weight: normal;
-        width: 100%;
-        border-radius: 15px;        
-        height: 4vh;
-    }
-
-    .tipografia-barra-azul {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
-        font-size: 14px;
-        margin-top: -10px;
-    }
-
-    .header {
-        /* background-color: orangered; */
-        width: 100%;
-        /* margin-left: -55px; */
-
-    }
-
-    /* letra negrita del menu central del header */
-    .nav-item {
-        font-weight: bold;
-    }
-
-    /* .img-logo {
-        /* background-color: red; */
-    margin-right: 100px;
-    margin-left: -30px;
-    display: flex;
-    justify-content: start;
-
-    }
-
-    .letra-menu {
-        
-        font-size: 14px;
-        font-weight: bold;
-        color: black;
-    }
-
-    .letra-menu-user {
-        color: black;
-        font-family: 'Montserrat-Black', sans-serif;
-    /* font-family:'Montserrat-Italic-VariableFont_wght';  */
-    src: url('fonts/static/Montserrat-Black.ttf');
-    src: url('fonts/Montserrat-Italic-VariableFont_wght.ttf');
-    src: url('fonts/Montserrat-VariableFont_wght.ttf');
-    src: url('fonts/static/Montserrat-Black.ttf'); 
-    }
-
-    button.accordion-button{
-    background-color: #CDDFE6;
-    border-radius: 10px; /* Redondeado datos*/
-    height: 5vh;
-   font-weight: bold;
-
-}
 
 .accordion-button::after {
     flex-shrink: 0;
@@ -330,57 +32,51 @@
     background-repeat: no-repeat;
     background-size: 1.25rem;
     transition: transform .2s ease-in-out;
-    margin-left: 10px;
+    margin-left: -64px;
     margin-right: 95%;
-;
+
 }
 
 .accordion-button:not(.collapsed)::after {
     background-image: url('icons/minus.png');
     transform: rotate(-180deg);
-    margin-left: 10px;
+    margin-left: -64px;
     margin-right: 95%;
 }
 
-div.accordion-body{
-    background-color: #f5f4f4;
-}
+.header {
+        /* background-color: orangered; */
+        width: 100%;
+        /* margin-left: -55px; */
 
-.accordion-header{
-    margin-left: 10px;
-}
-    /* .accordion-flush{
-        border: solid 1px red;
-        border-radius: 15px;
+    }
+
+    /* letra negrita del menu central del header */
+    .nav-item {
+        font-weight: bold;
+    }
+
+/* 
+    margin-right: 100px;
+    margin-left: -30px;
+    display: flex;
+    justify-content: start;
+
     } */
 
-    .redondeado {
-        border-radius: 10px;
-    }
 
-    .accordion-datos {
-        margin-left: -110px;        ;
+div.bg-basic.logo{
+    /* background-color: red; */
+    width: 15vw;
+    display: flex;
+    justify-content:center;
+    margin-left: -5px;
+}
 
-    }
-
-    
-
-
-
-    /************************************/
-    .sidebar {
-        /* background-color: red; */
-        margin-right: -100px;
-    }
-
-    
- /* h1.caca{
-    font-family: 'Montserrat-Black', sans-serif;
-    src: url('fonts/static/Montserrat-Black.ttf');
-    src: url('fonts/Montserrat-Italic-VariableFont_wght.ttf');
-    src: url('fonts/Montserrat-VariableFont_wght.ttf');
-    src: url('fonts/static/Montserrat-Black.ttf'); 
- }    */
+.bg-basic-menu{
+    /* background-color: yellow; */
+    width: 57vw;
+}
 </style>
 
 <body>
@@ -393,14 +89,6 @@ div.accordion-body{
             <nav class="navbar navbar-expand-xl navbar-light  text-center ">
                 <!-- Logo Pacc -->
                 <div class="d-flex">
-                    <!-- <div class="row bg-secondary">
-                        <div class="col-lg-4 bg-success">
-                            <a class="navbar-brand" href="./index.html">
-                                <img src="icons/logo_pacc.png" width="220px" class=""
-                                    alt="imagen logo">
-                            </a>
-                        </div>
-                    </div> -->
                     <div class="p-1 bg-basic logo">
                         <a class="navbar-brand" href="./index.html">
                             <img src="icons/logo_pacc.png" width="220px" class="" alt="imagen logo">
@@ -414,7 +102,7 @@ div.accordion-body{
 
                     <!-- Menu del centro -->
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <div class="p-2 bg-basic">
+                        <div class="p-2 bg-basic-menu">
                             <ul class="navbar-nav  mx-auto d-flex justify-content-center ">
                                 <li class="nav-item dropdown ">
                                     <a class="nav-link active dropdown-toggle letra-menu" data-bs-toggle="dropdown"
@@ -515,7 +203,7 @@ div.accordion-body{
             <div class="p-2 bg-blanco me-2 d-flex flex-column justify-content-center">
                 <div class="d-flex flex-column">
                     <div class="p-1 bg-basic d-flex  justify-content-center">
-                        <img class="mb-0 img-icono" src="icons/imprimir.png" alt="Imprimir">
+                        <img class="mb-0 img-icono" src="icons/imprimir.png" alt="Imprimir" height="40px">
                     </div>
                     <div class="p-0 bg-basic">
                         <a href="#" class="text-a-icon">
@@ -671,23 +359,66 @@ div.accordion-body{
                         <div class="accordion accordion-flush accordion-datos mt-2 " id="accordionFlushExample">
                             <div class="col-11 " > <!-- accordion-item  -->
                                 <h2 class="accordion-header " id="flush-headingOne">
-                                    <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+                                    <button class="accordion-button collapsed mt-1 " type="button" data-bs-toggle="collapse"
                                         data-bs-target="#flush-collapseOne" aria-expanded="false"
                                         aria-controls="flush-collapseOne" >
-                                        Datos
+                                        <div class="text-datos"><span >Datos</span></div>
                                     </button>
                                 </h2>
 
-                                <div id="flush-collapseOne" class="accordion-collapse collapse mt-0"
-                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div id="flush-collapseOne" class="accordion-collapse  collapse mt-0"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample"> <!-- collapse -->
                                     <div class="accordion-body">
                                         <div class="card-body redondeado">
 
-
+                                            
                                             <div class="p-2 ms-1 col d-flex flex-fill justify-content-end cuadro redondeado"
                                                 style="padding: 10px; ">
-                                                <button type="button" class="btn btn-light   btn-resumen-poliza"><i
-                                                        class="bi bi-card-text "></i> Resumen Poliza</button>
+
+                                                <div class="d-flex col-lg-12">
+                                                    <div class="p-2  flex-fill">
+                                                        <div class="col">
+                                                            <label for="text"
+                                                                class="form-label text-form">Tomador y
+                                                                Asegurado:</label>
+                                                            <input type="text"
+                                                                class="form-control form-control-sm input-style-dark text-into-input"
+                                                                id="name"
+                                                                placeholder="MANUEL ANDRADES FERNANDEZ"
+                                                                name="tomador">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="p-2 flex-fill align-self-center">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <label for="text" class="form-label"><span
+                                                                    class="text-form">N&deg;
+                                                                    de Contrato</span> </label>
+                                                            <input type="text"
+                                                                class="form-control form-control-sm input-style-dark text-into-input "
+                                                                id="name" placeholder="140100865095" name="contrato">
+                                                            </div>
+
+                                                            <div class="col">
+                                                                <label for="text" class="form-label"><span
+                                                                    class="text-form">N&deg;
+                                                                    de Poliza</span> </label>
+                                                            <input type="text"
+                                                                class="form-control form-control-sm input-style-dark text-into-input"
+                                                                id="name" placeholder="G3H14007572"
+                                                                name="contrato">
+                                                            </div>
+                                                          </div>
+                                                    </div>
+                                                    
+                                                    <div class="p-2 col  justify-content-end align-self-center">
+                                                        <button type="button" class="btn btn-light   btn-resumen-poliza"><i
+                                                            class="bi bi-card-text "></i> Resumen Poliza</button>
+                                                    </div>
+                                                  </div>
+
+                                     
                                             </div>
 
 
@@ -730,7 +461,7 @@ div.accordion-body{
                                                                         </label>
                                                                         <input type="text"
                                                                             class="form-control form-control-sm input-style-dark text-into-input "
-                                                                            id="name" placeholder="General seguros"
+                                                                            id="name" placeholder="GENERALI SEGUROS"
                                                                             name="contrato">
                                                                     </div>
                                                                 </div>
@@ -751,7 +482,7 @@ div.accordion-body{
                                                                                 class="text-form">-</span> </label>
                                                                         <input type="text"
                                                                             class="form-control form-control-sm input-style-dark text-into-input "
-                                                                            id="name" placeholder="Hogar"
+                                                                            id="name" placeholder="HOGAR"
                                                                             name="contrato">
                                                                     </div>
                                                                 </div>
@@ -773,7 +504,7 @@ div.accordion-body{
                                                                                 class="text-form">-</span> </label>
                                                                         <input type="text"
                                                                             class="form-control form-control-sm input-style-dark text-into-input "
-                                                                            id="name" placeholder="IGALPA GESTION S.L"
+                                                                            id="name" placeholder="IGALPA GESTION, S.L"
                                                                             name="contrato">
                                                                     </div>
                                                                 </div>
@@ -782,7 +513,7 @@ div.accordion-body{
                                                                     <!-- Canal de cobro -->
                                                                     <div class="col col-sm-3 flex-fill">
                                                                         <label for="text" class="form-label"><span
-                                                                                class="text-form">Colaborador</span>
+                                                                                class="text-form">Canal de cobro</span>
                                                                         </label>
                                                                         <input type="text"
                                                                             class="form-control form-control-sm input-style text-into-input "
@@ -795,7 +526,7 @@ div.accordion-body{
                                                                         <input type="text"
                                                                             class="form-control form-control-sm input-style-dark text-into-input "
                                                                             id="name"
-                                                                            placeholder="COBRO DIRECTO COMPAÑIA"
+                                                                            placeholder="COBRO DIRECTO COMPANIA"
                                                                             name="contrato">
                                                                     </div>
                                                                 </div>
@@ -804,7 +535,7 @@ div.accordion-body{
                                                                     <!-- Situacion -->
                                                                     <div class="col col-sm-3 flex-fill">
                                                                         <label for="text" class="form-label"><span
-                                                                                class="text-form">Colaborador</span>
+                                                                                class="text-form">Situacion</span>
                                                                         </label>
                                                                         <input type="text"
                                                                             class="form-control form-control-sm input-style text-into-input "
@@ -825,7 +556,7 @@ div.accordion-body{
                                                                     <!-- Situacion -->
                                                                     <div class="col col-sm-3 flex-fill">
                                                                         <label for="text" class="form-label"><span
-                                                                                class="text-form">Colaborador</span>
+                                                                                class="text-form">Poliza reemplazada</span>
                                                                         </label>
                                                                         <input type="text"
                                                                             class="form-control form-control-sm input-style text-into-input "
@@ -898,7 +629,7 @@ div.accordion-body{
                                                                     </label>
                                                                     <input type="text"
                                                                         class="form-control form-control-sm input-style-dark text-into-input "
-                                                                        id="name" placeholder="14101" name="contrato">
+                                                                        id="name" placeholder="" name="contrato">
                                                                 </div>
 
                                                                 <div class="col col-sm-6 flex-fill">
@@ -906,7 +637,7 @@ div.accordion-body{
                                                                             class="text-form">-</span> </label>
                                                                     <input type="text"
                                                                         class="form-control form-control-sm input-style-dark text-into-input"
-                                                                        id="name" placeholder="54545121215"
+                                                                        id="name" placeholder=""
                                                                         name="contrato">
                                                                 </div>
                                                             </div>
@@ -914,7 +645,7 @@ div.accordion-body{
                                                             <div class="row pos-center mb-3">
                                                                 <div class="col col-sm-3 flex-fill">
                                                                     <label for="text" class="form-label"><span
-                                                                            class="text-form">Jefe comercio</span>
+                                                                            class="text-form">Jefe comercial</span>
                                                                     </label>
                                                                     <input type="text"
                                                                         class="form-control form-control-sm input-style-dark text-into-input "
@@ -935,7 +666,7 @@ div.accordion-body{
                                                             <div class="row pos-center mb-3">
                                                                 <div class="col col-sm-3 flex-fill">
                                                                     <label for="text" class="form-label"><span
-                                                                            class="text-form">Ejecutivo cuentas</span>
+                                                                            class="text-form">Ejecutivo de cuentas</span>
                                                                     </label>
                                                                     <input type="text"
                                                                         class="form-control form-control-sm input-style text-into-input "
@@ -947,7 +678,7 @@ div.accordion-body{
                                                                             class="text-form">-</span> </label>
                                                                     <input type="text"
                                                                         class="form-control form-control-sm input-style text-into-input"
-                                                                        id="name" placeholder="NOMBRE EJECUTIVO"
+                                                                        id="name" placeholder="EVA M&ordf; GARCIA PALACIOS"
                                                                         name="contrato">
                                                                 </div>
                                                             </div>
@@ -976,17 +707,17 @@ div.accordion-body{
                                                             </div>
 
                                                             <div class="row d-flex pos-center mb-3">
-                                                                <div class="col col-sm-2 flex-fill">
+                                                                <div class="col col-sm-2 flex-fill me-5">
                                                                     <label for="text" class="form-label"><span
                                                                             class="text-form">Forma de pago</span>
                                                                     </label>
                                                                     <select
                                                                         class="form-select form-select-sm  align-self-start input-style text-into-input"
-                                                                        style="width: 70px;">
-                                                                        <option>1</option>
-                                                                        <option>2</option>
+                                                                        style="width: 110px;">
+                                                                        <option>ANU-Anual</option>
+                                                                        <!-- <option>2</option>
                                                                         <option>3</option>
-                                                                        <option>4</option>
+                                                                        <option>4</option> -->
                                                                     </select>
                                                                 </div>
 
@@ -1110,7 +841,7 @@ div.accordion-body{
                                                                     <textarea
                                                                         class="form-control form-control-sm input-style text-into-input"
                                                                         id="exampleFormControlTextarea1"
-                                                                        rows="3">Lorem ipsum dolor sit amet consectetur.</textarea>
+                                                                        rows="3"> </textarea>
                                                                 </div>
 
                                                                 <div class="col col-sm-10 d-grid flex-fill mb-2">
@@ -1279,7 +1010,7 @@ div.accordion-body{
                     <div class="col-lg-1 sidebar mt-2 ms-1">
 
                         <!-- Start Tipos de clientes -->
-                        <div class="row d-grid gap-1 ">
+                        <div class="row d-grid gap-1 " >
                             <div
                                 class="col-lg-12 d-flex justify-content-center flex-column align-items-center cuadro-sidebar ">
                                 <div><i class="bi bi-person icon-cli-sidebar"></i></div>

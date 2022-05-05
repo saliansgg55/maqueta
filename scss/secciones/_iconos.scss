@@ -1,0 +1,56 @@
+/* Iconos debajo de la barra azul */
+.img-icono {
+    /* width: 80px; */
+    margin: 1px auto;
+    height: 35px;
+}
+
+.bg-blanco {
+    background-color: white;
+    border-radius: 5px;
+    width: 800px;
+}
+
+.bg-light {
+    border-radius: 5px;
+    width: 94px;
+}
+
+/* Iconos debajo de la barra azul */
+
+/* Fondo gris iconos */
+.iconos {
+    background-color: #f5f4f4;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.btn-primary {
+    background-color: #151689;
+    width: 300px;
+    border-radius: 50px;
+    @extend %tipo-letra-monserrat;
+}
+
+.bg-light-btn-salir {
+    border-radius: 5px;
+    width: 110px;
+    justify-content: flex-end;
+    @extend %tipo-letra-monserrat;
+}
+
+.fondo-color-btn {
+    background-color: white;
+
+}
+
+/* Fondo gris iconos */
+
+/* Texto debajo de los iconos */
+.text-a-icon {
+    text-decoration: none;
+    color: #67aeff;
+    font-size: 0.9em;
+    text-align: center;
+    font-weight: bold;
+}
