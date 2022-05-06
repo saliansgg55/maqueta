@@ -427,61 +427,121 @@ form-check-financiacion{
 }
     /* ACORDION  asegurado ESTILO */
 
-    .header .navbar {
-  background-color: white;
-  height: 85px; 
-  width: 86%;
-    margin: 10px auto;}
-  .header .navbar .form-control:focus {
-    border: none; }
-  .header .navbar .nav-item {
-    padding: 10px; }
-    .header .navbar .nav-item .nav-link {
-      position: relative;
-      display: block;
-      justify-content: center;
-      text-decoration: none;
-      color: #313437;
-      font-size: 0.8rem;
-      font-weight: bold; }
-      .header .navbar .nav-item .nav-link::before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 50%;
-        height: 2px;
-        background: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
-        color: transparent;
-        z-index: -1;
-        transform: scaleX(0);
-        transform-origin: center;
-        transition: transform 0.5s ease-in-out; }
-      .header .navbar .nav-item .nav-link:hover::before {
-        transform: scaleX(1); }
-    .header .navbar .nav-item .nav-item[data-animation="center"] .nav-link::before {
-      transform-origin: center; }
 
-.header .navbar-collapse {
-  background-color: transparent;
-  padding: 7px; 
-  z-index: -200;
-    margin-left: -50px;
-
-}
 .print {
     margin-left: auto;
     --bs-bg-opacity: 1;
    /* background-color: rgba(var(--bs-warning-rgb),var(--bs-bg-opacity))!important;*/
 }
 
+.bg-dark {
+    --bs-bg-opacity: 0;
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+}
+
+.navbar-expand-sm .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    margin-left: 100px;
+}
 </style>
 
 <body>
 
     <div class="container contenedor">
 
-        <header class="header">
+<header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)"><img src="icons/logo_pacc.png" alt="" width="180" height="auto" ></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item dropdown ">
+                    <a class="nav-link active dropdown-toggle letra-menu" data-bs-toggle="dropdown"
+                        aria-current="page" href="#" style="color: black;"> Negocio</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item " href="#"style="color: black;">Link 1</a></li>
+                        <li><a class="dropdown-item" href="#"style="color: black;">Link 2</a></li>
+                        <li><a class="dropdown-item" href="#"style="color: black;">Link 3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link active dropdown-toggle letra-menu" data-bs-toggle="dropdown"
+                        aria-current="page" href="#"style="color: black;">  Informes</a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item " href="#"style="color: black;">Link 1</a></li>
+                        <li><a class="dropdown-item " href="#"style="color: black;">Link 2</a></li>
+                        <li><a class="dropdown-item " href="#"style="color: black;">Link 3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle letra-menu" data-bs-toggle="dropdown"
+                        aria-current="page" href="#"style="color: black;">  Gestion</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"style="color: black;">Link 1</a></li>
+                        <li><a class="dropdown-item" href="#"style="color: black;">Link 2</a></li>
+                        <li><a class="dropdown-item" href="#"style="color: black;">Link 3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle letra-menu" data-bs-toggle="dropdown"
+                        aria-current="page" href="#"style="color: black;">  Utilidades</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"style="color: black;">Link 1</a></li>
+                        <li><a class="dropdown-item" href="#"style="color: black;">Link 2</a></li>
+                        <li><a class="dropdown-item" href="#"style="color: black;">Link 3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active letra-menu" style="color: black;"> 
+                        Documentos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle letra-menu" data-bs-toggle="dropdown"
+                        aria-current="page" href="#"style="color: black;">  Formacion</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Link 1</a></li>
+                        <li><a class="dropdown-item" href="#">Link 2</a></li>
+                        <li><a class="dropdown-item" href="#">Link 3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active letra-menu" style="color: black;">  Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active letra-menu" style="color: black;">  @Media</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <li class="nav-item dropdown d-flex usuario">
+
+                    <img src="icons/img-user.png" alt="foto usuario" class="img-user">
+
+                    <div>
+                        <a class="nav-link active dropdown-toggle letra-menu-user" data-bs-toggle="dropdown"
+                            aria-current="page" href="#">Usuario  </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Link 1</a></li>
+                            <li><a class="dropdown-item" href="#">Link 2</a></li>
+                            <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="align-self-center">
+                        <i class="bi bi-bell  icon-campana "></i>
+                    </div>
+                </li>
+            </form>
+          </div>
+        </div>
+      </nav>
+</header>
+
+        <!-- <header class="header">
             <nav class="navbar navbar-expand-sm navbar-light fixed-top text-center">
                 <div class="container">
                     <a class="navbar-brand" href="./index.html">
@@ -505,7 +565,7 @@ form-check-financiacion{
                             </li>
                             <li class="nav-item dropdown ">
                                 <a class="nav-link active dropdown-toggle letra-menu" data-bs-toggle="dropdown"
-                                    aria-current="page" href="#"> <span class="pipe">|</span> Informes</a>
+                                    aria-current="page" href="#">  Informes</a>
                                 <ul class="dropdown-menu ">
                                     <li><a class="dropdown-item " href="#">Link 1</a></li>
                                     <li><a class="dropdown-item " href="#">Link 2</a></li>
@@ -514,7 +574,7 @@ form-check-financiacion{
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link active dropdown-toggle letra-menu" data-bs-toggle="dropdown"
-                                    aria-current="page" href="#"> <span class="pipe">|</span> Gestion</a>
+                                    aria-current="page" href="#">  Gestion</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Link 1</a></li>
                                     <li><a class="dropdown-item" href="#">Link 2</a></li>
@@ -523,7 +583,7 @@ form-check-financiacion{
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link active dropdown-toggle letra-menu" data-bs-toggle="dropdown"
-                                    aria-current="page" href="#"> <span class="pipe">|</span> Utilidades</a>
+                                    aria-current="page" href="#">  Utilidades</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Link 1</a></li>
                                     <li><a class="dropdown-item" href="#">Link 2</a></li>
@@ -531,12 +591,12 @@ form-check-financiacion{
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active letra-menu"> <span class="pipe">|</span>
+                                <a class="nav-link active letra-menu"> 
                                     Documentos</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link active dropdown-toggle letra-menu" data-bs-toggle="dropdown"
-                                    aria-current="page" href="#"> <span class="pipe">|</span> Formacion</a>
+                                    aria-current="page" href="#">  Formacion</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Link 1</a></li>
                                     <li><a class="dropdown-item" href="#">Link 2</a></li>
@@ -544,10 +604,10 @@ form-check-financiacion{
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active letra-menu"> <span class="pipe">|</span> Proyectos</a>
+                                <a class="nav-link active letra-menu">  Proyectos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active letra-menu"> <span class="pipe">|</span> @Media</a>
+                                <a class="nav-link active letra-menu">  @Media</a>
                             </li>
                         </ul>
                          <form class="d-flex">
@@ -557,7 +617,7 @@ form-check-financiacion{
     
                                 <div>
                                     <a class="nav-link active dropdown-toggle letra-menu-user" data-bs-toggle="dropdown"
-                                        aria-current="page" href="#">Usuario <span class="pipe">|</span> </a>
+                                        aria-current="page" href="#">Usuario  </a>
     
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">Link 1</a></li>
@@ -574,14 +634,14 @@ form-check-financiacion{
                     </div>
                 </div>
             </nav>
-        </header>
+        </header> -->
 
 
  
 
         <!-- Barra azul -->
         <section class="blue" >
-            <div class=" d-flex justify-content-center " style="margin-top: 90px">
+            <div class=" d-flex justify-content-center " >
                 <div class="col-xl-10 p-3 ms-0 me-0 mt-1 mb-3 barra-azul border border-0 ">
                     <span class="tipografia-barra-azul d-flex align-items-center ">Home > Polizas Hogar</span>
                 </div>
@@ -1154,7 +1214,7 @@ form-check-financiacion{
                                                                 </div>
 
                                                                 <!-- START FALTAN DOCUMENTOS -->
-                                                                <div class="d-flex mt-2">
+                                                                <div class="d-flex mt-2 mb-1">
                                                                     <div class="p-1  flex-fill">
                                                                         <div class="form-check">
                                                                             <input type="checkbox"
@@ -1195,7 +1255,7 @@ form-check-financiacion{
                                                                     <textarea
                                                                         class="form-control form-control-sm input-style text-into-input"
                                                                         id="exampleFormControlTextarea1"
-                                                                        rows="3"> </textarea>
+                                                                        rows="2"> </textarea>
                                                                 </div>
 
                                                                 <div class="col col-sm-10 d-grid flex-fill mb-1">
