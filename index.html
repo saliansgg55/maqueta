@@ -396,7 +396,7 @@
         margin-right: -64px;
     }
 
-    form-check-info {
+    /* form-check-info {
         display: block;
         min-height: 1.5rem;
         padding-left: 1.5em;
@@ -426,7 +426,7 @@
         padding-left: 1.5em;
         margin-bottom: 0.125rem;
         margin-right: -64px;
-    }
+    } */
 
     /* ACORDION  asegurado ESTILO */
 
@@ -448,11 +448,15 @@
         text-align: left;
         /* margin-left: 60px; */
     }
+
+.contenedor{
+    width: 100%;
+}
 </style>
 
 <body>
 
-    <div class="container contenedor">
+    <div class="container-fluid contenedor">
 
         <header>
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
@@ -1250,10 +1254,10 @@
 
 
                                                         <!-- START CUANDRO 3 DERECHA -->
-                                                        <div class="col-lg-5 der border border-0 p-2 cuadro redondeado">
+                                                        <div class="col-lg-5 der border border-0 p-2 cuadro redondeado" >
                                                             <div class="row pos-center">
 
-                                                                <div class="col col-sm-6 flex-fill mb-3">
+                                                                <div class="col col-lg-8 mb-3">
                                                                     <label for="text" class="form-label"><span
                                                                             class="text-form">Tipo p&oacute;liza </span>
                                                                     </label>
@@ -1264,7 +1268,7 @@
                                                                     </select>
                                                                 </div>
 
-                                                                <div class="col col-sm-10 flex-fill">
+                                                                <div class="col col-lg- flex-fill">
                                                                     <label for="text" class="form-label ">IBAN</label>
                                                                     <input type="text"
                                                                         class="form-control form-control-sm input-style text-into-input"
