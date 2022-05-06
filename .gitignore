@@ -1,4 +1,5 @@
 /node_modules
+/utilidad
 package-lock.json
 package.json
 indexbkp.html

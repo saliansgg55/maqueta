@@ -50,12 +50,18 @@ button.accordion-button {
     border: none;
 }
 
+
 .accordion-button:not(.collapsed) {
     color: #0c63e4;
     background-color: #e7f1ff;
     box-shadow: inset 0 -1px 0 rgba(3, 3, 3, 0.13);
     border: none;
 }
+
+
+
+
+
 
 div.accordion-body {
     background-color: $color-fondo-web;
