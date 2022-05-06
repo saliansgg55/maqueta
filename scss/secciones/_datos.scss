@@ -89,7 +89,7 @@ div.accordion-body {
 
 /* boton icono impresora */
 .impresora {
-    font-size: 20px;
+    font-size: 12px;
 }
 
 .impresora:hover {
@@ -199,6 +199,7 @@ div.accordion-body {
 .btn-light {
     color: #67aeff;
     font-weight: bold;
+    
     @extend %tipo-letra-monserrat;
 }
 

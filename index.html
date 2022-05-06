@@ -16,39 +16,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap" rel="stylesheet"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
 
 
 
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 
 <style>
+    .accordion-button::after {
+        flex-shrink: 0;
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-left: auto;
+        content: "";
+        background-image: url('icons/plus.png');
+        background-repeat: no-repeat;
+        background-size: 1.25rem;
+        transition: transform .2s ease-in-out;
+        margin-left: -64px;
+        margin-right: 95%;
 
-.accordion-button::after {
-    flex-shrink: 0;
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-left: auto;
-    content: "";
-    background-image: url('icons/plus.png');
-    background-repeat: no-repeat;
-    background-size: 1.25rem;
-    transition: transform .2s ease-in-out;
-    margin-left: -64px;
-    margin-right: 95%;
+    }
 
-}
+    .accordion-button:not(.collapsed)::after {
+        background-image: url('icons/minus.png');
+        transform: rotate(-180deg);
+        margin-left: -64px;
+        margin-right: 95%;
+    }
 
-.accordion-button:not(.collapsed)::after {
-    background-image: url('icons/minus.png');
-    transform: rotate(-180deg);
-    margin-left: -64px;
-    margin-right: 95%;
-}
-
-.header {
+    .header {
         /* background-color: orangered; */
         width: 100%;
         /* margin-left: -55px; */
@@ -60,7 +59,7 @@
         font-weight: bold;
     }
 
-/* 
+    /* 
     margin-right: 100px;
     margin-left: -30px;
     display: flex;
@@ -69,26 +68,26 @@
     } */
 
 
-div.bg-basic.logo{
-    /* background-color: red; */
-    width: 15vw;
-    display: flex;
-    justify-content:center;
-    margin-left: -5px;
-}
+    div.bg-basic.logo {
+        /* background-color: red; */
+        width: 15vw;
+        display: flex;
+        justify-content: center;
+        margin-left: -5px;
+    }
 
-.bg-basic-menu{
-    /* background-color: yellow; */
-    width: 57vw;
-}
+    .bg-basic-menu {
+        /* background-color: yellow; */
+        width: 57vw;
+    }
 
-.img-icono {
-    /* width: 80px; */
-    margin: 1px auto;
-    height: 50px;
-}
+    .img-icono {
+        /* width: 80px; */
+        margin: 1px auto;
+        height: 50px;
+    }
 
-/* .form-check-input{
+    /* .form-check-input{
     padding: 7px;
     border-radius: 15px;
     margin-right: 5px;
@@ -96,21 +95,23 @@ div.bg-basic.logo{
 
 
 
-.form-check-input[type=checkbox] {
-    padding: 7px;
-    border-radius: 6px;
-    
-}
+    .form-check-input[type=checkbox] {
+        padding: 7px;
+        border-radius: 6px;
 
-.form-label, .form-check-label {
-    font-size: 11px;
-    color: #9d9c9c;
-    width: 150px;
-    font-weight: bold;
-    margin-left: 2px;
-    
-}
-/* 
+    }
+
+    .form-label,
+    .form-check-label {
+        font-size: 11px;
+        color: #9d9c9c;
+        width: 150px;
+        font-weight: bold;
+        margin-left: 2px;
+
+    }
+
+    /* 
 .text-into-input {
      
      font-size: 11px;
@@ -121,7 +122,7 @@ div.bg-basic.logo{
  /* input cuadro izquierdo */
 
 
- /* .input-style-dark {
+    /* .input-style-dark {
      background-color: #ccc;
      border: 1px solid #ccc;
      border-radius: 5px;
@@ -129,383 +130,458 @@ div.bg-basic.logo{
      font-weight: bold;
  }  */
 
-/* ACORDION  TOMADOR ESTILO */
-.accordion-button.tomador::after {
-    flex-shrink: 0;
-    width: 1.25rem;
-    height: 1.25rem;
+    /* ACORDION  TOMADOR ESTILO */
+    .accordion-button.tomador::after {
+        flex-shrink: 0;
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-left: auto;
+        content: "";
+        background-image: url('icons/plus.png');
+        background-repeat: no-repeat;
+        background-size: 1.25rem;
+        transition: transform .2s ease-in-out;
+        margin-left: -86px;
+        margin-right: 95%;
+        border: none;
+
+    }
+
+    .accordion-button.tomador:not(.collapsed)::after {
+        background-image: url('icons/minus.png');
+        transform: rotate(-180deg);
+        margin-left: -86px;
+        margin-right: 95%;
+        border: none;
+    }
+
+
+    .accordion-button.tomador:not(.collapsed) {
+        color: #0c63e4;
+        background-color: #e7f1ff;
+        box-shadow: inset 0 -1px 0 rgba(3, 3, 3, 0.13);
+        border: none;
+    }
+
+    /* ACORDION  TOMADOR ESTILO */
+
+
+
+
+
+    /* ACORDION  garantias ESTILO */
+    .accordion-button.garantias::after {
+        flex-shrink: 0;
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-left: auto;
+        content: "";
+        background-image: url('icons/plus.png');
+        background-repeat: no-repeat;
+        background-size: 1.25rem;
+        transition: transform .2s ease-in-out;
+        margin-left: -93px;
+        margin-right: 95%;
+        border: none;
+
+    }
+
+    .accordion-button.garantias:not(.collapsed)::after {
+        background-image: url('icons/minus.png');
+        transform: rotate(-180deg);
+        margin-left: -93px;
+        margin-right: 95%;
+        border: none;
+    }
+
+
+    .accordion-button.garantias:not(.collapsed) {
+        color: #0c63e4;
+        background-color: #e7f1ff;
+        box-shadow: inset 0 -1px 0 rgba(3, 3, 3, 0.13);
+        border: none;
+    }
+
+    /* ACORDION  garantias ESTILO */
+
+
+
+    /* ACORDION  MantCliente ESTILO */
+    .accordion-button.mancliente::after {
+        flex-shrink: 0;
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-left: auto;
+        content: "";
+        background-image: url('icons/plus.png');
+        background-repeat: no-repeat;
+        background-size: 1.25rem;
+        transition: transform .2s ease-in-out;
+        margin-left: -114px;
+        margin-right: 95%;
+        border: none;
+
+    }
+
+    .accordion-button.mancliente:not(.collapsed)::after {
+        background-image: url('icons/minus.png');
+        transform: rotate(-180deg);
+        margin-left: -114px;
+        margin-right: 95%;
+        border: none;
+    }
+
+
+    .accordion-button.mancliente:not(.collapsed) {
+        color: #0c63e4;
+        background-color: #e7f1ff;
+        box-shadow: inset 0 -1px 0 rgba(3, 3, 3, 0.13);
+        border: none;
+    }
+
+    /* ACORDION  MantCliente ESTILO */
+
+
+
+    /* ACORDION  suplemento ESTILO */
+    .accordion-button.suplemento::after {
+        flex-shrink: 0;
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-left: auto;
+        content: "";
+        background-image: url('icons/plus.png');
+        background-repeat: no-repeat;
+        background-size: 1.25rem;
+        transition: transform .2s ease-in-out;
+        margin-left: -110px;
+        margin-right: 95%;
+        border: none;
+
+    }
+
+    .accordion-button.suplemento:not(.collapsed)::after {
+        background-image: url('icons/minus.png');
+        transform: rotate(-180deg);
+        margin-left: -110px;
+        margin-right: 95%;
+        border: none;
+    }
+
+
+    .accordion-button.suplemento:not(.collapsed) {
+        color: #0c63e4;
+        background-color: #e7f1ff;
+        box-shadow: inset 0 -1px 0 rgba(3, 3, 3, 0.13);
+        border: none;
+    }
+
+    /* ACORDION  suplemento ESTILO */
+
+
+
+
+
+    /* ACORDION  comentarios ESTILO */
+    .accordion-button.comentarios::after {
+        flex-shrink: 0;
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-left: auto;
+        content: "";
+        background-image: url('icons/plus.png');
+        background-repeat: no-repeat;
+        background-size: 1.25rem;
+        transition: transform .2s ease-in-out;
+        margin-left: -115px;
+        margin-right: 95%;
+        border: none;
+
+    }
+
+    .accordion-button.comentarios:not(.collapsed)::after {
+        background-image: url('icons/minus.png');
+        transform: rotate(-180deg);
+        margin-left: -115px;
+        margin-right: 95%;
+        border: none;
+    }
+
+
+    .accordion-button.comentarios:not(.collapsed) {
+        color: #0c63e4;
+        background-color: #e7f1ff;
+        box-shadow: inset 0 -1px 0 rgba(3, 3, 3, 0.13);
+        border: none;
+    }
+
+    /* ACORDION  comentarios ESTILO */
+
+
+    /* ACORDION  riesgo ESTILO */
+    .accordion-button.riesgo::after {
+        flex-shrink: 0;
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-left: auto;
+        content: "";
+        background-image: url('icons/plus.png');
+        background-repeat: no-repeat;
+        background-size: 1.25rem;
+        transition: transform .2s ease-in-out;
+        margin-left: -71px;
+        margin-right: 95%;
+        border: none;
+
+    }
+
+    .accordion-button.riesgo:not(.collapsed)::after {
+        background-image: url('icons/minus.png');
+        transform: rotate(-180deg);
+        margin-left: -71px;
+        margin-right: 95%;
+        border: none;
+    }
+
+
+    .accordion-button.riesgo:not(.collapsed) {
+        color: #0c63e4;
+        background-color: #e7f1ff;
+        box-shadow: inset 0 -1px 0 rgba(3, 3, 3, 0.13);
+        border: none;
+    }
+
+    /* ACORDION  riesgo ESTILO */
+
+    /* ACORDION  asegurado ESTILO */
+    .accordion-button.asegurado::after {
+        flex-shrink: 0;
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-left: auto;
+        content: "";
+        background-image: url('icons/plus.png');
+        background-repeat: no-repeat;
+        background-size: 1.25rem;
+        transition: transform .2s ease-in-out;
+        margin-left: -100px;
+        margin-right: 95%;
+        border: none;
+
+    }
+
+    .accordion-button.asegurado:not(.collapsed)::after {
+        background-image: url('icons/minus.png');
+        transform: rotate(-180deg);
+        margin-left: -100px;
+        margin-right: 95%;
+        border: none;
+    }
+
+
+    .accordion-button.asegurado:not(.collapsed) {
+        color: #0c63e4;
+        background-color: #e7f1ff;
+        box-shadow: inset 0 -1px 0 rgba(3, 3, 3, 0.13);
+        border: none;
+    }
+
+
+
+
+    .form-check-eiac {
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: 0.125rem;
+    margin-right: -64px;
+}
+
+form-check-info{
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: 0.125rem;
+    margin-right: -64px;
+}
+form-check-domiciliacion{
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: 0.125rem;
+    margin-right: -64px;
+}
+form-check-tarifador{
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: 0.125rem;
+    margin-right: -64px;
+}
+form-check-financiacion{
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: 0.125rem;
+    margin-right: -64px;
+}
+    /* ACORDION  asegurado ESTILO */
+
+    .header .navbar {
+  background-color: white;
+  height: 85px; 
+  width: 86%;
+    margin: 10px auto;}
+  .header .navbar .form-control:focus {
+    border: none; }
+  .header .navbar .nav-item {
+    padding: 10px; }
+    .header .navbar .nav-item .nav-link {
+      position: relative;
+      display: block;
+      justify-content: center;
+      text-decoration: none;
+      color: #313437;
+      font-size: 0.8rem;
+      font-weight: bold; }
+      .header .navbar .nav-item .nav-link::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        height: 2px;
+        background: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
+        color: transparent;
+        z-index: -1;
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 0.5s ease-in-out; }
+      .header .navbar .nav-item .nav-link:hover::before {
+        transform: scaleX(1); }
+    .header .navbar .nav-item .nav-item[data-animation="center"] .nav-link::before {
+      transform-origin: center; }
+
+.header .navbar-collapse {
+  background-color: transparent;
+  padding: 7px; 
+  z-index: -200;
+    margin-left: -50px;
+
+}
+.print {
     margin-left: auto;
-    content: "";
-    background-image: url('icons/plus.png');
-    background-repeat: no-repeat;
-    background-size: 1.25rem;
-    transition: transform .2s ease-in-out;
-    margin-left: -86px;
-    margin-right: 95%;
-    border: none;
-    
+    --bs-bg-opacity: 1;
+   /* background-color: rgba(var(--bs-warning-rgb),var(--bs-bg-opacity))!important;*/
 }
 
-.accordion-button.tomador:not(.collapsed)::after {
-    background-image: url('icons/minus.png');
-    transform: rotate(-180deg);
-    margin-left: -86px;
-    margin-right: 95%;
-    border: none;
-}
-
-
-.accordion-button.tomador:not(.collapsed) {
-    color: #0c63e4;
-    background-color: #e7f1ff;
-    box-shadow: inset 0 -1px 0 rgba(3, 3, 3, 0.13);
-    border: none;
-}
-/* ACORDION  TOMADOR ESTILO */
-
-
-
-
-
-/* ACORDION  garantias ESTILO */
-.accordion-button.garantias::after {
-    flex-shrink: 0;
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-left: auto;
-    content: "";
-    background-image: url('icons/plus.png');
-    background-repeat: no-repeat;
-    background-size: 1.25rem;
-    transition: transform .2s ease-in-out;
-    margin-left: -93px;
-    margin-right: 95%;
-    border: none;
-    
-}
-
-.accordion-button.garantias:not(.collapsed)::after {
-    background-image: url('icons/minus.png');
-    transform: rotate(-180deg);
-    margin-left: -93px;
-    margin-right: 95%;
-    border: none;
-}
-
-
-.accordion-button.garantias:not(.collapsed) {
-    color: #0c63e4;
-    background-color: #e7f1ff;
-    box-shadow: inset 0 -1px 0 rgba(3, 3, 3, 0.13);
-    border: none;
-}
-/* ACORDION  garantias ESTILO */
-
-
-
-/* ACORDION  MantCliente ESTILO */
-.accordion-button.mancliente::after {
-    flex-shrink: 0;
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-left: auto;
-    content: "";
-    background-image: url('icons/plus.png');
-    background-repeat: no-repeat;
-    background-size: 1.25rem;
-    transition: transform .2s ease-in-out;
-    margin-left: -114px;
-    margin-right: 95%;
-    border: none;
-    
-}
-
-.accordion-button.mancliente:not(.collapsed)::after {
-    background-image: url('icons/minus.png');
-    transform: rotate(-180deg);
-    margin-left: -114px;
-    margin-right: 95%;
-    border: none;
-}
-
-
-.accordion-button.mancliente:not(.collapsed) {
-    color: #0c63e4;
-    background-color: #e7f1ff;
-    box-shadow: inset 0 -1px 0 rgba(3, 3, 3, 0.13);
-    border: none;
-}
-/* ACORDION  MantCliente ESTILO */
-
-
-
-/* ACORDION  suplemento ESTILO */
-.accordion-button.suplemento::after {
-    flex-shrink: 0;
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-left: auto;
-    content: "";
-    background-image: url('icons/plus.png');
-    background-repeat: no-repeat;
-    background-size: 1.25rem;
-    transition: transform .2s ease-in-out;
-    margin-left: -110px;
-    margin-right: 95%;
-    border: none;
-    
-}
-
-.accordion-button.suplemento:not(.collapsed)::after {
-    background-image: url('icons/minus.png');
-    transform: rotate(-180deg);
-    margin-left: -110px;
-    margin-right: 95%;
-    border: none;
-}
-
-
-.accordion-button.suplemento:not(.collapsed) {
-    color: #0c63e4;
-    background-color: #e7f1ff;
-    box-shadow: inset 0 -1px 0 rgba(3, 3, 3, 0.13);
-    border: none;
-}
-/* ACORDION  suplemento ESTILO */
-
-
-
-
-
-/* ACORDION  comentarios ESTILO */
-.accordion-button.comentarios::after {
-    flex-shrink: 0;
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-left: auto;
-    content: "";
-    background-image: url('icons/plus.png');
-    background-repeat: no-repeat;
-    background-size: 1.25rem;
-    transition: transform .2s ease-in-out;
-    margin-left: -115px;
-    margin-right: 95%;
-    border: none;
-    
-}
-
-.accordion-button.comentarios:not(.collapsed)::after {
-    background-image: url('icons/minus.png');
-    transform: rotate(-180deg);
-    margin-left: -115px;
-    margin-right: 95%;
-    border: none;
-}
-
-
-.accordion-button.comentarios:not(.collapsed) {
-    color: #0c63e4;
-    background-color: #e7f1ff;
-    box-shadow: inset 0 -1px 0 rgba(3, 3, 3, 0.13);
-    border: none;
-}
-/* ACORDION  comentarios ESTILO */
-
-
-/* ACORDION  riesgo ESTILO */
-.accordion-button.riesgo::after {
-    flex-shrink: 0;
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-left: auto;
-    content: "";
-    background-image: url('icons/plus.png');
-    background-repeat: no-repeat;
-    background-size: 1.25rem;
-    transition: transform .2s ease-in-out;
-    margin-left: -71px;
-    margin-right: 95%;
-    border: none;
-    
-}
-
-.accordion-button.riesgo:not(.collapsed)::after {
-    background-image: url('icons/minus.png');
-    transform: rotate(-180deg);
-    margin-left: -71px;
-    margin-right: 95%;
-    border: none;
-}
-
-
-.accordion-button.riesgo:not(.collapsed) {
-    color: #0c63e4;
-    background-color: #e7f1ff;
-    box-shadow: inset 0 -1px 0 rgba(3, 3, 3, 0.13);
-    border: none;
-}
-/* ACORDION  riesgo ESTILO */
-
-/* ACORDION  asegurado ESTILO */
-.accordion-button.asegurado::after {
-    flex-shrink: 0;
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-left: auto;
-    content: "";
-    background-image: url('icons/plus.png');
-    background-repeat: no-repeat;
-    background-size: 1.25rem;
-    transition: transform .2s ease-in-out;
-    margin-left: -100px;
-    margin-right: 95%;
-    border: none;
-    
-}
-
-.accordion-button.asegurado:not(.collapsed)::after {
-    background-image: url('icons/minus.png');
-    transform: rotate(-180deg);
-    margin-left: -100px;
-    margin-right: 95%;
-    border: none;
-}
-
-
-.accordion-button.asegurado:not(.collapsed) {
-    color: #0c63e4;
-    background-color: #e7f1ff;
-    box-shadow: inset 0 -1px 0 rgba(3, 3, 3, 0.13);
-    border: none;
-}
-
-.header{
-    width: 80vw;
-}
-/* ACORDION  asegurado ESTILO */
 </style>
 
 <body>
 
     <div class="container contenedor">
-        <header class="d-flex  justify-content-between" > <!-- bg-primary -->
-            <div class="p-2  align-self-center"> <!-- bg-danger -->
-            <nav className=" navbar navbar-expand-sm navbar-light git ">
-                <div class="d-flex justify-content-start">
+
+        <header class="header">
+            <nav class="navbar navbar-expand-sm navbar-light fixed-top text-center">
+                <div class="container">
                     <a class="navbar-brand" href="./index.html">
-                        <img src="icons/logo_pacc.png" width="130" height="auto" class="" alt="imagen logo">
+                        <img src="icons/logo_pacc.png" alt="" width="180" height="auto" >
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                </div>
-            </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav  mx-auto ">
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link active dropdown-toggle letra-menu" data-bs-toggle="dropdown"
+                                    aria-current="page" href="#"> Negocio</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item " href="#">Link 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Link 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link active dropdown-toggle letra-menu" data-bs-toggle="dropdown"
+                                    aria-current="page" href="#"> <span class="pipe">|</span> Informes</a>
+                                <ul class="dropdown-menu ">
+                                    <li><a class="dropdown-item " href="#">Link 1</a></li>
+                                    <li><a class="dropdown-item " href="#">Link 2</a></li>
+                                    <li><a class="dropdown-item " href="#">Link 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle letra-menu" data-bs-toggle="dropdown"
+                                    aria-current="page" href="#"> <span class="pipe">|</span> Gestion</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Link 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle letra-menu" data-bs-toggle="dropdown"
+                                    aria-current="page" href="#"> <span class="pipe">|</span> Utilidades</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Link 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active letra-menu"> <span class="pipe">|</span>
+                                    Documentos</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle letra-menu" data-bs-toggle="dropdown"
+                                    aria-current="page" href="#"> <span class="pipe">|</span> Formacion</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Link 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active letra-menu"> <span class="pipe">|</span> Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active letra-menu"> <span class="pipe">|</span> @Media</a>
+                            </li>
+                        </ul>
+                         <form class="d-flex">
+                            <li class="nav-item dropdown d-flex usuario">
 
-
-            <div class="p-2   align-self-center" > <!-- bg-info -->
-                <div class="d-flex justify-content-center"> 
-                    <nav class="navbar navbar-expand-xl navbar-light  text-center ">
-                                            <!-- Menu del centro -->
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <div class="p-2 bg-basic-menu">
-                            <ul class="navbar-nav  mx-auto d-flex justify-content-center ">
-                                <li class="nav-item dropdown ">
-                                    <a class="nav-link active dropdown-toggle letra-menu" data-bs-toggle="dropdown"
-                                        aria-current="page" href="#"> Negocio</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item " href="#">Link 1</a></li>
-                                        <li><a class="dropdown-item" href="#">Link 2</a></li>
-                                        <li><a class="dropdown-item" href="#">Link 3</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown ">
-                                    <a class="nav-link active dropdown-toggle letra-menu" data-bs-toggle="dropdown"
-                                        aria-current="page" href="#"> <span class="pipe">|</span> Informes</a>
-                                    <ul class="dropdown-menu ">
-                                        <li><a class="dropdown-item " href="#">Link 1</a></li>
-                                        <li><a class="dropdown-item " href="#">Link 2</a></li>
-                                        <li><a class="dropdown-item " href="#">Link 3</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link active dropdown-toggle letra-menu" data-bs-toggle="dropdown"
-                                        aria-current="page" href="#"> <span class="pipe">|</span> Gestion</a>
+                                <img src="icons/img-user.png" alt="foto usuario" class="img-user">
+    
+                                <div>
+                                    <a class="nav-link active dropdown-toggle letra-menu-user" data-bs-toggle="dropdown"
+                                        aria-current="page" href="#">Usuario <span class="pipe">|</span> </a>
+    
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">Link 1</a></li>
                                         <li><a class="dropdown-item" href="#">Link 2</a></li>
                                         <li><a class="dropdown-item" href="#">Link 3</a></li>
                                     </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link active dropdown-toggle letra-menu" data-bs-toggle="dropdown"
-                                        aria-current="page" href="#"> <span class="pipe">|</span> Utilidades</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Link 1</a></li>
-                                        <li><a class="dropdown-item" href="#">Link 2</a></li>
-                                        <li><a class="dropdown-item" href="#">Link 3</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active letra-menu"> <span class="pipe">|</span> Documentos</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link active dropdown-toggle letra-menu" data-bs-toggle="dropdown"
-                                        aria-current="page" href="#"> <span class="pipe">|</span> Formacion</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Link 1</a></li>
-                                        <li><a class="dropdown-item" href="#">Link 2</a></li>
-                                        <li><a class="dropdown-item" href="#">Link 3</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active letra-menu"> <span class="pipe">|</span> Proyectos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active letra-menu"> <span class="pipe">|</span> @Media</a>
-                                </li>
-                            </ul>
-                        </div>
+    
+                                </div>
+                                <div class="align-self-center">
+                                    <i class="bi bi-bell  icon-campana "></i>
+                                </div>
+                            </li>
+                        </form> 
                     </div>
-                    
                 </div>
-            </div>
+            </nav>
+        </header>
 
-            <div class="p-2  ">
-                <div class="d-flex justify-content-end" >
-                                                        <!-- Usuario campana -->
-                                                        <div class="p-2 bg-basic flex-grow-1 mt-2">
-                                                            <li class="nav-item dropdown d-flex usuario">
-                                    
-                                                                <img src="icons/img-user.png" alt="foto usuario" class="img-user">
-                                    
-                                                                <div>
-                                                                    <a class="nav-link active dropdown-toggle letra-menu-user" data-bs-toggle="dropdown"
-                                                                        aria-current="page" href="#">Usuario <span class="pipe">|</span> </a>
-                                    
-                                                                    <ul class="dropdown-menu">
-                                                                        <li><a class="dropdown-item" href="#">Link 1</a></li>
-                                                                        <li><a class="dropdown-item" href="#">Link 2</a></li>
-                                                                        <li><a class="dropdown-item" href="#">Link 3</a></li>
-                                                                    </ul>
-                                    
-                                                                </div>
-                                                                <div class="align-self-center">
-                                                                    <i class="bi bi-bell  icon-campana "></i>
-                                                                </div>
-                                                            </li>
-                                                        </div>
-                                                    </nav>
-                </div>
 
-            </div>
-          </header>
-
+ 
 
         <!-- Barra azul -->
-        <section class="blue">
-            <div class=" d-flex justify-content-center ">
+        <section class="blue" >
+            <div class=" d-flex justify-content-center " style="margin-top: 90px">
                 <div class="col-xl-10 p-3 ms-0 me-0 mt-1 mb-3 barra-azul border border-0 ">
                     <span class="tipografia-barra-azul d-flex align-items-center ">Home > Polizas Hogar</span>
                 </div>
@@ -669,38 +745,38 @@ div.bg-basic.logo{
                 <div class="row d-flex justify-content-center ">
 
                     <div class="col-lg-10  redondeado ">
-                        
 
-<!-- DESPLEGABLE DATOS -->
-<div class="accordion accordion-flush accordion-datos mt-2 " id="accordionFlushExample">
-                            <div class="col-11 " > <!-- accordion-item  -->
+
+                        <!-- DESPLEGABLE DATOS -->
+                        <div class="accordion accordion-flush accordion-datos mt-2 " id="accordionFlushExample">
+                            <div class="col-11 ">
+                                <!-- accordion-item  -->
                                 <h2 class="accordion-header " id="flush-headingOne">
-                                    <button class="accordion-button collapsed mt-1 " type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                        aria-controls="flush-collapseOne" >
-                                        <div class="text-datos"><span >Datos</span></div>
+                                    <button class="accordion-button collapsed mt-1 " type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <div class="text-datos"><span>Datos</span></div>
                                     </button>
                                 </h2>
 
                                 <div id="flush-collapseOne" class="accordion-collapse collapse  mt-0"
-                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample"> <!-- collapse -->
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <!-- collapse -->
                                     <div class="accordion-body">
                                         <div class="card-body redondeado">
 
-                                            
+
                                             <div class="p-2 ms-1 col d-flex flex-fill justify-content-end cuadro redondeado"
                                                 style="padding: 10px; ">
 
                                                 <div class="d-flex col-lg-12">
                                                     <div class="p-2  flex-fill" style="margin-left: -50px;">
                                                         <div class="col">
-                                                            <label for="text"
-                                                                class="form-label text-form">Tomador y
+                                                            <label for="text" class="form-label text-form">Tomador y
                                                                 Asegurado:</label>
                                                             <input type="text"
                                                                 class="form-control form-control-sm input-style-dark text-into-input"
-                                                                id="name"
-                                                                placeholder="MANUEL ANDRADES FERNANDEZ"
+                                                                id="name" placeholder="MANUEL ANDRADES FERNANDEZ"
                                                                 name="tomador">
                                                         </div>
                                                     </div>
@@ -709,32 +785,33 @@ div.bg-basic.logo{
                                                         <div class="row">
                                                             <div class="col">
                                                                 <label for="text" class="form-label"><span
-                                                                    class="text-form">N&deg;
-                                                                    de Contrato</span> </label>
-                                                            <input type="text"
-                                                                class="form-control form-control-sm input-style-dark text-into-input "
-                                                                id="name" placeholder="140100865095" name="contrato">
+                                                                        class="text-form">N&deg;
+                                                                        de Contrato</span> </label>
+                                                                <input type="text"
+                                                                    class="form-control form-control-sm input-style-dark text-into-input "
+                                                                    id="name" placeholder="140100865095"
+                                                                    name="contrato">
                                                             </div>
 
                                                             <div class="col">
                                                                 <label for="text" class="form-label"><span
-                                                                    class="text-form">N&deg;
-                                                                    de Poliza</span> </label>
-                                                            <input type="text"
-                                                                class="form-control form-control-sm input-style-dark text-into-input"
-                                                                id="name" placeholder="G3H14007572"
-                                                                name="contrato">
+                                                                        class="text-form">N&deg;
+                                                                        de Poliza</span> </label>
+                                                                <input type="text"
+                                                                    class="form-control form-control-sm input-style-dark text-into-input"
+                                                                    id="name" placeholder="G3H14007572" name="contrato">
                                                             </div>
-                                                          </div>
+                                                        </div>
                                                     </div>
-                                                    
-                                                    <div class="p-2 col  justify-content-end align-self-center">
-                                                        <button type="button" class="btn btn-light   btn-resumen-poliza"><i
-                                                            class="bi bi-card-text "></i> Resumen Poliza</button>
-                                                    </div>
-                                                  </div>
 
-                                     
+                                                    <div class="p-2 col  justify-content-end align-self-center">
+                                                        <button type="button"
+                                                            class="btn btn-light   btn-resumen-poliza"><i
+                                                                class="bi bi-card-text "></i> Resumen Poliza</button>
+                                                    </div>
+                                                </div>
+
+
                                             </div>
 
 
@@ -744,14 +821,14 @@ div.bg-basic.logo{
 
                                                     <div class="d-flex  principal redondeado">
                                                         <!-- START CUADRO 1 -->
-                                                        <div
-                                                            class=" col-lg-4  d-flex align-items-stretch me-2 redondeado" style="margin-left: -48px;">
+                                                        <div class=" col-lg-4  d-flex align-items-stretch me-2 redondeado"
+                                                            style="margin-left: -48px;">
 
                                                             <div class="cont-form-izq border border-0 p-2 cuadro">
 
 
                                                                 <div class="row pos-center mb-3 ">
-                                 
+
                                                                     <!-- Compania -->
                                                                     <div class="col col-sm-3 flex-fill">
                                                                         <label for="text" class="form-label"><span
@@ -759,7 +836,7 @@ div.bg-basic.logo{
                                                                         </label>
                                                                         <input type="text"
                                                                             class="form-control form-control-sm input-style text-into-input "
-                                                                            id="name" placeholder="8" name="contrato" >
+                                                                            id="name" placeholder="8" name="contrato">
                                                                     </div>
                                                                     <!-- Compania -->
                                                                     <div class="col col-sm-6 flex-fill">
@@ -863,7 +940,8 @@ div.bg-basic.logo{
                                                                     <!-- Situacion -->
                                                                     <div class="col col-sm-3 flex-fill">
                                                                         <label for="text" class="form-label"><span
-                                                                                class="text-form">Poliza reemplazada</span>
+                                                                                class="text-form">Poliza
+                                                                                reemplazada</span>
                                                                         </label>
                                                                         <input type="text"
                                                                             class="form-control form-control-sm input-style text-into-input "
@@ -875,7 +953,7 @@ div.bg-basic.logo{
                                                                             <input type="checkbox"
                                                                                 class="form-check-input input-style text-into-input"
                                                                                 id="radio1" name="optradio"
-                                                                                value="option1" ><span
+                                                                                value="option1"><span
                                                                                 class="text-form form-label">Cartera</span>
                                                                             <label class="form-check-label"
                                                                                 for="radio1"></label>
@@ -884,7 +962,7 @@ div.bg-basic.logo{
                                                                             <input type="checkbox"
                                                                                 class="form-check-input input-style text-into-input "
                                                                                 id="radio2" name="optradio"
-                                                                                value="option2" ><span
+                                                                                value="option2"><span
                                                                                 class="text-form form-label">Carta
                                                                                 nombramiento</span>
                                                                             <label class="form-check-label"
@@ -905,7 +983,7 @@ div.bg-basic.logo{
 
 
 
-                              
+
                                                             <!-- Jefe
                                                           de equipo -->
                                                             <div class="row  mb-3">
@@ -924,8 +1002,7 @@ div.bg-basic.logo{
                                                                             class="text-form">-</span> </label>
                                                                     <input type="text"
                                                                         class="form-control form-control-sm input-style-dark text-into-input"
-                                                                        id="name" placeholder=""
-                                                                        name="contrato">
+                                                                        id="name" placeholder="" name="contrato">
                                                                 </div>
                                                             </div>
 
@@ -953,7 +1030,8 @@ div.bg-basic.logo{
                                                             <div class="row pos-center mb-3">
                                                                 <div class="col col-sm-3 flex-fill">
                                                                     <label for="text" class="form-label"><span
-                                                                            class="text-form">Ejecutivo de cuentas</span>
+                                                                            class="text-form">Ejecutivo de
+                                                                            cuentas</span>
                                                                     </label>
                                                                     <input type="text"
                                                                         class="form-control form-control-sm input-style text-into-input "
@@ -965,7 +1043,8 @@ div.bg-basic.logo{
                                                                             class="text-form">-</span> </label>
                                                                     <input type="text"
                                                                         class="form-control form-control-sm input-style text-into-input"
-                                                                        id="name" placeholder="EVA M&ordf; GARCIA PALACIOS"
+                                                                        id="name"
+                                                                        placeholder="EVA M&ordf; GARCIA PALACIOS"
                                                                         name="contrato">
                                                                 </div>
                                                             </div>
@@ -1062,8 +1141,9 @@ div.bg-basic.logo{
 
 
                                                         <!-- START CUANDRO 3 DERECHA -->
-                                                        <div class="col-lg-4 der border border-0 p-3 cuadro redondeado" style="width: 400px">
-                                                            <div class="row pos-center" >
+                                                        <div class="col-lg-4 der border border-0 p-3 cuadro redondeado"
+                                                            style="width: 400px">
+                                                            <div class="row pos-center">
                                                                 <div class="col col-sm-10 flex-fill">
                                                                     <label for="text" class="form-label ">IBAN</label>
                                                                     <input type="text"
@@ -1075,39 +1155,40 @@ div.bg-basic.logo{
 
                                                                 <!-- START FALTAN DOCUMENTOS -->
                                                                 <div class="d-flex mt-2">
-                                                                    <div class="p-2  flex-fill">
+                                                                    <div class="p-1  flex-fill">
                                                                         <div class="form-check">
                                                                             <input type="checkbox"
                                                                                 class="form-check-input input-style text-into-input"
                                                                                 id="radio1" name="optradio"
-                                                                                value="option1" >
+                                                                                value="option1">
                                                                             <label class="form-check-label "
                                                                                 for="radio1">
                                                                                 Faltan documentos
                                                                             </label>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="p-2  flex-fill">
+                                                                    <div class="p-1 flex-fill">
                                                                         <div class="form-check">
                                                                             <input type="checkbox"
                                                                                 class="form-check-input input-style text-into-input"
                                                                                 id="radio1" name="optradio"
-                                                                                value="option1" >
+                                                                                value="option1">
                                                                             <label class="form-check-label text-form"
                                                                                 for="radio1">
                                                                                 Documentos que faltan
                                                                             </label>
                                                                         </div>
                                                                     </div>
-                                                      
-                                                                  </div>
+
+                                                                </div>
 
                                                                 <!-- END FALTAN DOCUMENTOS -->
 
 
 
 
-                                                                <div class="col col-sm-10 mb-2 flex-fill">
+                                                                <div class="col col-sm-10 mb-2 flex-fill falta_doc"
+                                                                    style="margin-top: -12px;">
                                                                     <label for="exampleFormControlTextarea1"
                                                                         class="form-label text-form">Documentos que
                                                                         faltan</label>
@@ -1117,14 +1198,14 @@ div.bg-basic.logo{
                                                                         rows="3"> </textarea>
                                                                 </div>
 
-                                                                <div class="col col-sm-10 d-grid flex-fill mb-2">
+                                                                <div class="col col-sm-10 d-grid flex-fill mb-1">
                                                                     <button type="button"
                                                                         class="btn btn-light  btn-block boton-hover"><i
                                                                             class="bi bi-plus-circle "></i> <span
                                                                             class="text-btn-der">Nuevo
                                                                             recibo</span></button>
                                                                 </div>
-                                                                <div class="col col-sm-10 d-grid flex-fill btn-der">
+                                                                <div class="col col-sm-10 d-grid flex-fill btn-der mb-1">
                                                                     <button type="button"
                                                                         class="btn btn-light  btn-block boton-hover"><i
                                                                             class="bi bi-arrow-left-right "></i>
@@ -1133,14 +1214,14 @@ div.bg-basic.logo{
                                                                         Pacc</button>
                                                                 </div>
 
-                                                                <div class="col col-sm-10 flex-fill mt-2">
+                                                                <div class="d-flex justify-content-center flex-column " >
                                                                     <div class="d-flex">
-                                                                        <div class="p-2  flex-fill">
-                                                                            <div class="form-check">
+                                                                        <div class="p-2  " >
+                                                                            <div class="form-check form-check-info">
                                                                                 <input type="checkbox"
                                                                                     class="form-check-input input-style text-into-input"
                                                                                     id="radio1" name="optradio"
-                                                                                    value="option1" >
+                                                                                    value="option1">
                                                                                 <label
                                                                                     class="form-check-label text-form"
                                                                                     for="radio1">
@@ -1149,53 +1230,61 @@ div.bg-basic.logo{
                                                                                 </label>
                                                                             </div>
                                                                         </div>
-
-
-                                                                        <!-- <div class="p-2 bg-warning flex-fill">Flex item 2</div> -->
-                                                                        <div class="p-2  flex-fill">
+                                                                        <div class="p-0  print " >
                                                                             <button type="button"
-                                                                                class="btn btn-light  btn-block"><i
-                                                                                    class="bi bi-printer impresora"></i></button>
+                                                                            class="btn btn-light  btn-block"><i
+                                                                                class="bi bi-printer impresora"></i></button>
                                                                         </div>
                                                                     </div>
-
-
-
+                                                                
                                                                     <div class="d-flex">
-                                                                        <div class="p-2  flex-fill">
+                                                                        <div class="p-2  ">            
                                                                             <div class="form-check">
+                                                                            <input type="checkbox"
+                                                                                class="form-check-input input-style text-into-input"
+                                                                                id="radio1" name="optradio"
+                                                                                value="option1">
+                                                                            <label class="form-check-label text-form"
+                                                                                for="radio1">
+                                                                                Documentos que faltan
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                        <div class="p-0 print">
+                                                                            <button type="button"
+                                                                            class="btn btn-light  btn-block"><i
+                                                                                class="bi bi-printer impresora"></i></button>
+                                                                        </div>
+                                                                    </div>
+                                                                
+                                                                    <div class="d-flex">
+                                                                        <div class="p-2  ">
+                                                                            <div class="form-check form-check-domiciliacion">
                                                                                 <input type="checkbox"
                                                                                     class="form-check-input input-style text-into-input"
                                                                                     id="radio1" name="optradio"
-                                                                                    value="option1" >
+                                                                                    value="option1">
                                                                                 <label
                                                                                     class="form-check-label text-form"
                                                                                     for="radio1">
                                                                                     Orden domiciliacion
                                                                                 </label>
-                                                                            </div>
+                                                                            </div>            
                                                                         </div>
-
-
-
-
-                                                                        <!-- <div class="p-2 bg-warning flex-fill">Flex item 2</div> -->
-                                                                        <div class="p-2  flex-fill">
+                                                                        <div class="p-0  print">
                                                                             <button type="button"
-                                                                                class="btn btn-light btn-block"><i
-                                                                                    class="bi bi-printer impresora"></i></button>
+                                                                            class="btn btn-light btn-block"><i
+                                                                                class="bi bi-printer impresora"></i></button>
                                                                         </div>
-                                                                    </div>
-
-
-
+                                                                    </div>    
+                                                                
                                                                     <div class="d-flex">
-                                                                        <div class="p-2 flex-fill">
-                                                                            <div class="form-check">
+                                                                        <div class="p-2  ">
+                                                                            <div class="form-check form-check-financiacion">
                                                                                 <input type="checkbox"
                                                                                     class="form-check-input input-style text-into-input"
                                                                                     id="radio1" name="optradio"
-                                                                                    value="option1" >
+                                                                                    value="option1">
                                                                                 <label
                                                                                     class="form-check-label text-form"
                                                                                     for="radio1">
@@ -1203,52 +1292,13 @@ div.bg-basic.logo{
                                                                                 </label>
                                                                             </div>
                                                                         </div>
-
-
-
-
-                                                                        <!-- <div class="p-2 bg-warning flex-fill">Flex item 2</div> -->
-                                                                        <div class="p-2  flex-fill">
+                                                                        <div class="p-0 print">
                                                                             <button type="button"
-                                                                                class="btn btn-light  btn-block"><i
-                                                                                    class="bi bi-printer impresora"></i></button>
+                                                                            class="btn btn-light btn-block"><i
+                                                                                class="bi bi-printer impresora"></i></button>
                                                                         </div>
-                                                                    </div>
-
-
-                                                                    <div class="d-flex">
-                                                                        <div class="p-2 flex-fill">
-                                                                            <div class="form-check  ">
-                                                                                <input type="checkbox"
-                                                                                    class="form-check-input input-style text-into-input"
-                                                                                    id="radio1" name="optradio"
-                                                                                    value="option1" >
-                                                                                <label
-                                                                                    class="form-check-label text-check"
-                                                                                    for="radio1">
-                                                                                    Tarificador
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-
-
-
-
-                                                                        <!-- <div class="p-2 bg-warning flex-fill">Flex item 2</div> -->
-                                                                        <div class="p-2  flex-fill ">
-                                                                            <div class="form-check  ">
-                                                                                <input type="checkbox"
-                                                                                    class="form-check-input input-style text-into-input"
-                                                                                    id="radio1" name="optradio"
-                                                                                    value="option1" checked>
-                                                                                <label
-                                                                                    class="form-check-label text-check"
-                                                                                    for="radio1">
-                                                                                    EIAC
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
+                                                                    </div>    
+                                                                
                                                                 </div>
 
 
@@ -1273,29 +1323,30 @@ div.bg-basic.logo{
 
 
 
-</div> <!-- end accordion accordion-flush -->
-<!-- DESPLEGABLE DATOS -->
+                        </div> <!-- end accordion accordion-flush -->
+                        <!-- DESPLEGABLE DATOS -->
 
 
-<!-- DESPLEGABLE TOMADOR -->
-<div class="accordion accordion-flush accordion-datos mt-2 " id="accordionFlushTomador">
-    <div class="col-11 ">
-        <!-- accordion-item  -->
-        <h2 class="accordion-header " id="flush-headingOne">
-            <button class="accordion-button tomador collapsed mt-1 " type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-tomador" aria-expanded="false" aria-controls="flush-tomador">
-                <div class="text-datos"><span>Tomador</span></div>
-            </button>
-        </h2>
+                        <!-- DESPLEGABLE TOMADOR -->
+                        <div class="accordion accordion-flush accordion-datos mt-2 " id="accordionFlushTomador">
+                            <div class="col-11 ">
+                                <!-- accordion-item  -->
+                                <h2 class="accordion-header " id="flush-headingOne">
+                                    <button class="accordion-button tomador collapsed mt-1 " type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-tomador" aria-expanded="false"
+                                        aria-controls="flush-tomador">
+                                        <div class="text-datos"><span>Tomador</span></div>
+                                    </button>
+                                </h2>
 
-        <div id="flush-tomador" class="accordion-collapse collapse  mt-0" aria-labelledby="flush-headingOne"
-            data-bs-parent="#accordionFlushTomador">
-            <!-- collapse -->
-            <div class="accordion-body">
-                <div class="card-body redondeado">
+                                <div id="flush-tomador" class="accordion-collapse collapse  mt-0"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushTomador">
+                                    <!-- collapse -->
+                                    <div class="accordion-body">
+                                        <div class="card-body redondeado">
 
 
-                    <!-- <div class="p-2 ms-1 col d-flex flex-fill justify-content-end cuadro redondeado"
+                                            <!-- <div class="p-2 ms-1 col d-flex flex-fill justify-content-end cuadro redondeado"
                         style="padding: 10px; ">
 
                         <div class="d-flex col-lg-12">
@@ -1306,39 +1357,40 @@ div.bg-basic.logo{
                     </div> -->
 
 
-                    <div class="p-2 color-fondo d-flex fix-fill redondeado">
+                                            <div class="p-2 color-fondo d-flex fix-fill redondeado">
 
-                    </div>
-                    <!---->
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-</div> <!-- end accordion accordion-flush -->
-<!-- DESPLEGABLE TOMADOR -->
-
-<!-- DESPLEGABLE asegurado -->
-<div class="accordion accordion-flush accordion-datos mt-2 " id="accordionFlushasegurado">
-    <div class="col-11 ">
-        <!-- accordion-item  -->
-        <h2 class="accordion-header " id="flush-headingOne">
-            <button class="accordion-button asegurado collapsed mt-1 " type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-asegurado" aria-expanded="false" aria-controls="flush-asegurado">
-                <div class="text-datos"><span class="">Asegurado</div>
-            </button>
-        </h2>
-
-        <div id="flush-asegurado" class="accordion-collapse  collapse mt-0" aria-labelledby="flush-headingOne"
-            data-bs-parent="#accordionFlushasegurado">
-            <!-- collapse -->
-            <div class="accordion-body">
-                <div class="card-body redondeado">
+                                            </div>
+                                            <!---->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
 
-                    <!-- <div class="p-2 ms-1 col d-flex flex-fill justify-content-end cuadro redondeado"
+
+                        </div> <!-- end accordion accordion-flush -->
+                        <!-- DESPLEGABLE TOMADOR -->
+
+                        <!-- DESPLEGABLE asegurado -->
+                        <div class="accordion accordion-flush accordion-datos mt-2 " id="accordionFlushasegurado">
+                            <div class="col-11 ">
+                                <!-- accordion-item  -->
+                                <h2 class="accordion-header " id="flush-headingOne">
+                                    <button class="accordion-button asegurado collapsed mt-1 " type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-asegurado"
+                                        aria-expanded="false" aria-controls="flush-asegurado">
+                                        <div class="text-datos"><span class="">Asegurado</div>
+                                    </button>
+                                </h2>
+
+                                <div id="flush-asegurado" class="accordion-collapse  collapse mt-0"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushasegurado">
+                                    <!-- collapse -->
+                                    <div class="accordion-body">
+                                        <div class="card-body redondeado">
+
+
+                                            <!-- <div class="p-2 ms-1 col d-flex flex-fill justify-content-end cuadro redondeado"
                         style="padding: 10px; ">
 
                         <div class="d-flex col-lg-12">
@@ -1349,39 +1401,40 @@ div.bg-basic.logo{
                     </div> -->
 
 
-                    <div class="p-2 color-fondo d-flex fix-fill redondeado">
+                                            <div class="p-2 color-fondo d-flex fix-fill redondeado">
 
-                    </div>
-                    <!---->
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-</div> <!-- end accordion accordion-flush -->
-<!-- DESPLEGABLE asegurado -->
-
-<!-- DESPLEGABLE riesgo -->
-<div class="accordion accordion-flush accordion-datos mt-2 " id="accordionFlushriesgo">
-    <div class="col-11 ">
-        <!-- accordion-item  -->
-        <h2 class="accordion-header " id="flush-headingOne">
-            <button class="accordion-button riesgo collapsed mt-1 " type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-riesgo" aria-expanded="false" aria-controls="flush-riesgo">
-                <div class="text-datos"><span class="">Riesgo</div>
-            </button>
-        </h2>
-
-        <div id="flush-riesgo" class="accordion-collapse  collapse mt-0" aria-labelledby="flush-headingOne"
-            data-bs-parent="#accordionFlushriesgo">
-            <!-- collapse -->
-            <div class="accordion-body">
-                <div class="card-body redondeado">
+                                            </div>
+                                            <!---->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
 
-                    <!-- <div class="p-2 ms-1 col d-flex flex-fill justify-content-end cuadro redondeado"
+
+                        </div> <!-- end accordion accordion-flush -->
+                        <!-- DESPLEGABLE asegurado -->
+
+                        <!-- DESPLEGABLE riesgo -->
+                        <div class="accordion accordion-flush accordion-datos mt-2 " id="accordionFlushriesgo">
+                            <div class="col-11 ">
+                                <!-- accordion-item  -->
+                                <h2 class="accordion-header " id="flush-headingOne">
+                                    <button class="accordion-button riesgo collapsed mt-1 " type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-riesgo" aria-expanded="false"
+                                        aria-controls="flush-riesgo">
+                                        <div class="text-datos"><span class="">Riesgo</div>
+                                    </button>
+                                </h2>
+
+                                <div id="flush-riesgo" class="accordion-collapse  collapse mt-0"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushriesgo">
+                                    <!-- collapse -->
+                                    <div class="accordion-body">
+                                        <div class="card-body redondeado">
+
+
+                                            <!-- <div class="p-2 ms-1 col d-flex flex-fill justify-content-end cuadro redondeado"
                         style="padding: 10px; ">
 
                         <div class="d-flex col-lg-12">
@@ -1392,40 +1445,41 @@ div.bg-basic.logo{
                     </div> -->
 
 
-                    <div class="p-2 color-fondo d-flex fix-fill redondeado">
+                                            <div class="p-2 color-fondo d-flex fix-fill redondeado">
 
-                    </div>
-                    <!---->
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-</div> <!-- end accordion accordion-flush -->
-<!-- DESPLEGABLE riesgo -->
+                                            </div>
+                                            <!---->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
 
-<!-- DESPLEGABLE garantias -->
-<div class="accordion accordion-flush accordion-datos mt-2 " id="accordionFlushgarantias">
-    <div class="col-11 ">
-        <!-- accordion-item  -->
-        <h2 class="accordion-header " id="flush-headingOne">
-            <button class="accordion-button garantias collapsed mt-1 " type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-garantias" aria-expanded="false" aria-controls="flush-garantias">
-                <div class="text-datos"><span class="">Garantias</div>
-            </button>
-        </h2>
 
-        <div id="flush-garantias" class="accordion-collapse  collapse mt-0" aria-labelledby="flush-headingOne"
-            data-bs-parent="#accordionFlushgarantias">
-            <!-- collapse -->
-            <div class="accordion-body">
-                <div class="card-body redondeado">
+                        </div> <!-- end accordion accordion-flush -->
+                        <!-- DESPLEGABLE riesgo -->
 
 
-                    <!-- <div class="p-2 ms-1 col d-flex flex-fill justify-content-end cuadro redondeado"
+                        <!-- DESPLEGABLE garantias -->
+                        <div class="accordion accordion-flush accordion-datos mt-2 " id="accordionFlushgarantias">
+                            <div class="col-11 ">
+                                <!-- accordion-item  -->
+                                <h2 class="accordion-header " id="flush-headingOne">
+                                    <button class="accordion-button garantias collapsed mt-1 " type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-garantias"
+                                        aria-expanded="false" aria-controls="flush-garantias">
+                                        <div class="text-datos"><span class="">Garantias</div>
+                                    </button>
+                                </h2>
+
+                                <div id="flush-garantias" class="accordion-collapse  collapse mt-0"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushgarantias">
+                                    <!-- collapse -->
+                                    <div class="accordion-body">
+                                        <div class="card-body redondeado">
+
+
+                                            <!-- <div class="p-2 ms-1 col d-flex flex-fill justify-content-end cuadro redondeado"
                         style="padding: 10px; ">
 
                         <div class="d-flex col-lg-12">
@@ -1436,39 +1490,40 @@ div.bg-basic.logo{
                     </div> -->
 
 
-                    <div class="p-2 color-fondo d-flex fix-fill redondeado">
+                                            <div class="p-2 color-fondo d-flex fix-fill redondeado">
 
-                    </div>
-                    <!---->
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-</div> <!-- end accordion accordion-flush -->
-<!-- DESPLEGABLE garantias -->
-
-<!-- DESPLEGABLE suplemento -->
-<div class="accordion accordion-flush accordion-datos mt-2 " id="accordionFlushsuplemento">
-    <div class="col-11 ">
-        <!-- accordion-item  -->
-        <h2 class="accordion-header " id="flush-headingOne">
-            <button class="accordion-button suplemento collapsed mt-1 " type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-suplemento" aria-expanded="false" aria-controls="flush-suplemento">
-                <div class="text-datos"><span class="">Suplemento</div>
-            </button>
-        </h2>
-
-        <div id="flush-suplemento" class="accordion-collapse  collapse mt-0" aria-labelledby="flush-headingOne"
-            data-bs-parent="#accordionFlushsuplemento">
-            <!-- collapse -->
-            <div class="accordion-body">
-                <div class="card-body redondeado">
+                                            </div>
+                                            <!---->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
 
-                    <!-- <div class="p-2 ms-1 col d-flex flex-fill justify-content-end cuadro redondeado"
+
+                        </div> <!-- end accordion accordion-flush -->
+                        <!-- DESPLEGABLE garantias -->
+
+                        <!-- DESPLEGABLE suplemento -->
+                        <div class="accordion accordion-flush accordion-datos mt-2 " id="accordionFlushsuplemento">
+                            <div class="col-11 ">
+                                <!-- accordion-item  -->
+                                <h2 class="accordion-header " id="flush-headingOne">
+                                    <button class="accordion-button suplemento collapsed mt-1 " type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-suplemento"
+                                        aria-expanded="false" aria-controls="flush-suplemento">
+                                        <div class="text-datos"><span class="">Suplemento</div>
+                                    </button>
+                                </h2>
+
+                                <div id="flush-suplemento" class="accordion-collapse  collapse mt-0"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushsuplemento">
+                                    <!-- collapse -->
+                                    <div class="accordion-body">
+                                        <div class="card-body redondeado">
+
+
+                                            <!-- <div class="p-2 ms-1 col d-flex flex-fill justify-content-end cuadro redondeado"
                         style="padding: 10px; ">
 
                         <div class="d-flex col-lg-12">
@@ -1479,40 +1534,41 @@ div.bg-basic.logo{
                     </div> -->
 
 
-                    <div class="p-2 color-fondo d-flex fix-fill redondeado">
+                                            <div class="p-2 color-fondo d-flex fix-fill redondeado">
 
-                    </div>
-                    <!---->
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-</div> <!-- end accordion accordion-flush -->
-<!-- DESPLEGABLE suplemento -->
+                                            </div>
+                                            <!---->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
 
-<!-- DESPLEGABLE mancliente -->
-<div class="accordion accordion-flush accordion-datos mt-2 " id="accordionFlushmancliente">
-    <div class="col-11 ">
-        <!-- accordion-item  -->
-        <h2 class="accordion-header " id="flush-headingOne">
-            <button class="accordion-button mancliente collapsed mt-1 " type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-mancliente" aria-expanded="false" aria-controls="flush-mancliente">
-                <div class="text-datos"><span class="">Man. Cliente</div>
-            </button>
-        </h2>
 
-        <div id="flush-mancliente" class="accordion-collapse  collapse mt-0" aria-labelledby="flush-headingOne"
-            data-bs-parent="#accordionFlushmancliente">
-            <!-- collapse -->
-            <div class="accordion-body">
-                <div class="card-body redondeado">
+                        </div> <!-- end accordion accordion-flush -->
+                        <!-- DESPLEGABLE suplemento -->
 
 
-                    <!-- <div class="p-2 ms-1 col d-flex flex-fill justify-content-end cuadro redondeado"
+                        <!-- DESPLEGABLE mancliente -->
+                        <div class="accordion accordion-flush accordion-datos mt-2 " id="accordionFlushmancliente">
+                            <div class="col-11 ">
+                                <!-- accordion-item  -->
+                                <h2 class="accordion-header " id="flush-headingOne">
+                                    <button class="accordion-button mancliente collapsed mt-1 " type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-mancliente"
+                                        aria-expanded="false" aria-controls="flush-mancliente">
+                                        <div class="text-datos"><span class="">Man. Cliente</div>
+                                    </button>
+                                </h2>
+
+                                <div id="flush-mancliente" class="accordion-collapse  collapse mt-0"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushmancliente">
+                                    <!-- collapse -->
+                                    <div class="accordion-body">
+                                        <div class="card-body redondeado">
+
+
+                                            <!-- <div class="p-2 ms-1 col d-flex flex-fill justify-content-end cuadro redondeado"
                         style="padding: 10px; ">
 
                         <div class="d-flex col-lg-12">
@@ -1523,39 +1579,40 @@ div.bg-basic.logo{
                     </div> -->
 
 
-                    <div class="p-2 color-fondo d-flex fix-fill redondeado">
+                                            <div class="p-2 color-fondo d-flex fix-fill redondeado">
 
-                    </div>
-                    <!---->
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-</div> <!-- end accordion accordion-flush -->
-<!-- DESPLEGABLE mancliente -->
-
-<!-- DESPLEGABLE comentarios -->
-<div class="accordion accordion-flush accordion-datos mt-2 " id="accordionFlushcomentarios">
-    <div class="col-11 ">
-        <!-- accordion-item  -->
-        <h2 class="accordion-header " id="flush-headingOne">
-            <button class="accordion-button comentarios collapsed mt-1 " type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-comentarios" aria-expanded="false" aria-controls="flush-comentarios">
-                <div class="text-datos"><span class="">Comentarios</div>
-            </button>
-        </h2>
-
-        <div id="flush-comentarios" class="accordion-collapse   mt-0" aria-labelledby="flush-headingOne"
-            data-bs-parent="#accordionFlushcomentarios">
-            <!-- collapse -->
-            <div class="accordion-body">
-                <div class="card-body redondeado">
+                                            </div>
+                                            <!---->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
 
-                    <!-- <div class="p-2 ms-1 col d-flex flex-fill justify-content-end cuadro redondeado"
+
+                        </div> <!-- end accordion accordion-flush -->
+                        <!-- DESPLEGABLE mancliente -->
+
+                        <!-- DESPLEGABLE comentarios -->
+                        <div class="accordion accordion-flush accordion-datos mt-2 " id="accordionFlushcomentarios">
+                            <div class="col-11 ">
+                                <!-- accordion-item  -->
+                                <h2 class="accordion-header " id="flush-headingOne">
+                                    <button class="accordion-button comentarios collapsed mt-1 " type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-comentarios"
+                                        aria-expanded="false" aria-controls="flush-comentarios">
+                                        <div class="text-datos"><span class="">Comentarios</div>
+                                    </button>
+                                </h2>
+
+                                <div id="flush-comentarios" class="accordion-collapse   mt-0"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushcomentarios">
+                                    <!-- collapse -->
+                                    <div class="accordion-body">
+                                        <div class="card-body redondeado">
+
+
+                                            <!-- <div class="p-2 ms-1 col d-flex flex-fill justify-content-end cuadro redondeado"
                         style="padding: 10px; ">
 
                         <div class="d-flex col-lg-12">
@@ -1566,31 +1623,31 @@ div.bg-basic.logo{
                     </div> -->
 
 
-                    <div class="p-2 color-fondo d-flex fix-fill redondeado">
+                                            <div class="p-2 color-fondo d-flex fix-fill redondeado">
+
+                                            </div>
+                                            <!---->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div> <!-- end accordion accordion-flush -->
+                        <!-- DESPLEGABLE comentarios -->
+
+
 
                     </div>
-                    <!---->
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 
-</div> <!-- end accordion accordion-flush -->
-<!-- DESPLEGABLE comentarios -->
-
-
-
-                    </div>
-
-
-                    
                     <!-- sidebar -->
                     <div class="col-lg-1 sidebar mt-2 ms-1">
 
                         <!-- Start Tipos de clientes -->
-                        <div class="row d-grid gap-1 " >
+                        <div class="row d-grid gap-1 ">
                             <div
                                 class="col-lg-12 d-flex justify-content-center flex-column align-items-center cuadro-sidebar ">
                                 <div><img src="icons/cliente.png"></div>
@@ -1669,7 +1726,7 @@ div.bg-basic.logo{
 
 
 
-  
+
 
     </div>
 
