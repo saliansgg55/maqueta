@@ -378,20 +378,22 @@ div.bg-basic.logo{
     box-shadow: inset 0 -1px 0 rgba(3, 3, 3, 0.13);
     border: none;
 }
+
+.header{
+    width: 80vw;
+}
 /* ACORDION  asegurado ESTILO */
 </style>
 
 <body>
 
     <div class="container contenedor">
-
-
-        <header class="d-flex">
-            <div class="p-2  " style="width:250px;">
+        <header class="d-flex  justify-content-between" > <!-- bg-primary -->
+            <div class="p-2  align-self-center"> <!-- bg-danger -->
             <nav className=" navbar navbar-expand-sm navbar-light git ">
                 <div class="d-flex justify-content-start">
                     <a class="navbar-brand" href="./index.html">
-                        <img src="icons/logo_pacc.png" width="220px" class="" alt="imagen logo">
+                        <img src="icons/logo_pacc.png" width="130" height="auto" class="" alt="imagen logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -402,7 +404,7 @@ div.bg-basic.logo{
             </div>
 
 
-            <div class="p-2 flex-fill" style="width:800px;">
+            <div class="p-2   align-self-center" > <!-- bg-info -->
                 <div class="d-flex justify-content-center"> 
                     <nav class="navbar navbar-expand-xl navbar-light  text-center ">
                                             <!-- Menu del centro -->
@@ -470,8 +472,8 @@ div.bg-basic.logo{
                 </div>
             </div>
 
-            <div class="p-2 flex-fill">
-                <div class="d-flex justify-content-end" style="margin-left:40px">
+            <div class="p-2  ">
+                <div class="d-flex justify-content-end" >
                                                         <!-- Usuario campana -->
                                                         <div class="p-2 bg-basic flex-grow-1 mt-2">
                                                             <li class="nav-item dropdown d-flex usuario">
@@ -499,6 +501,7 @@ div.bg-basic.logo{
 
             </div>
           </header>
+
 
         <!-- Barra azul -->
         <section class="blue">
