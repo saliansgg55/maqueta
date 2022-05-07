@@ -1,14 +1,33 @@
+        /* Estilo del desplegable */
+        button.accordion-button {
+            background-color: #e7eef6;
+            border-radius: 10px;            
+            height: 10px; 
+            font-weight: bold;
+            border: none;
+            width: 100%;
+    
+        } 
+        button.accordion-button.tomador {
+            background-color: #e7eef6;
+            border-radius: 10px;            
+            height: 10px; 
+            font-weight: bold;
+            border: none;
+            width: 100%;
+    
+        } 
+        
     /* Estilo del desplegable */
-    button.accordion-button {
-        background-color: #e7eef6;
-        border-radius: 10px;
-        /* Redondeado datos*/
-        height: 10px;
-        font-weight: bold;
-        border: none;
+    // button.accordion-button {
+    //     background-color: #e7eef6;
+    //     border-radius: 10px;
+    //     height: 0px;
+    //     font-weight: bold;
+    //     border: none;
         
 
-    }
+    // }
 
     // button.accordion-button {
 //     background-color: #e7eef6;
