@@ -256,13 +256,6 @@ div.accordion-body {
   /* background-color: $color-fondo-web; */
   background-color: #fcfcfc; }
 
-button.accordion-button {
-  background-color: #e7eef6;
-  border-radius: 10px;
-  height: 5vh;
-  width: 85vw;
-  border: none; }
-
 /* ACORDION  TOMADOR ESTILO */
 .accordion-button.tomador::after {
   flex-shrink: 0;
