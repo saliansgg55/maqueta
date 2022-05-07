@@ -122,16 +122,14 @@ button.accordion-button {
   border-radius: 10px;
   height: 10px;
   font-weight: bold;
-  border: none;
-  width: 100%; }
+  border: none; }
 
 button.accordion-button.tomador {
   background-color: #e7eef6;
   border-radius: 10px;
   height: 10px;
   font-weight: bold;
-  border: none;
-  width: 100%; }
+  border: none; }
 
 /* Estilo del desplegable */
 .accordion-button:focus {
