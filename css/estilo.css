@@ -11,7 +11,6 @@
   box-shadow: 4px 4px 5px 0px #ccc; }
 
 .barra-azul {
-  margin: 10px;
   background-color: #151689;
   color: white;
   font-size: 16px;
@@ -20,8 +19,7 @@
   font-style: normal;
   font-weight: normal;
   width: 100%;
-  border-radius: 5px;
-  height: 4vh; }
+  border-radius: 5px; }
 
 .tipografia-barra-azul {
   font-family: "Montserrat", sans-serif;
@@ -34,8 +32,7 @@
   font-size: 14px;
   margin-top: -10px; }
 
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link, .btn-primary, .bg-light-btn-salir, .btn-resumen-poliza, .btn-resumen-poliza:hover, .form-label,
-.form-check-label, .input-style, .btn-light, .card-text, .icon-cli-sidebar, .color-text, .cuadro-sidebar {
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link, .btn-primary, .bg-light-btn-salir, .icon-cli-sidebar, .color-text, .cuadro-sidebar {
   font-family: "Montserrat", sans-serif;
   src: url("fonts/static/Montserrat-Black.ttf");
   src: url("fonts/Montserrat-Italic-VariableFont_wght.ttf");
@@ -44,6 +41,14 @@
 
 /* estilo header */
 /*@import "./secciones/estilo";*/
+.navbar-expand-sm {
+  flex-wrap: nowrap;
+  /* justify-content: flex-start; */ }
+
+.navbar-expand-lg {
+  flex-wrap: nowrap;
+  /* justify-content: flex-start; */ }
+
 /* letra negrita del menu central del header */
 .nav-item {
   font-weight: bold; }
@@ -111,18 +116,13 @@
   text-align: center;
   font-weight: bold; }
 
-.redondeado {
-  border-radius: 10px; }
-
-/* Accordion */
+/* Estilo del desplegable */
 button.accordion-button {
   background-color: #e7eef6;
   border-radius: 10px;
   /* Redondeado datos*/
   height: 5vh;
   font-weight: bold;
-  width: 110%;
-  margin-left: -30px;
   border: none; }
 
 .accordion-button:focus {
@@ -141,14 +141,14 @@ button.accordion-button {
   background-repeat: no-repeat;
   background-size: 1.25rem;
   transition: transform .2s ease-in-out;
-  margin-left: 10px;
+  margin-left: -65px;
   margin-right: 95%;
   border: none; }
 
 .accordion-button:not(.collapsed)::after {
   background-image: url("icons/minus.png");
   transform: rotate(-180deg);
-  margin-left: 10px;
+  margin-left: -65px;
   margin-right: 95%;
   border: none; }
 
@@ -161,17 +161,6 @@ button.accordion-button {
 div.accordion-body {
   background-color: #fcfcfc; }
 
-.accordion-header {
-  margin-left: 30px; }
-
-/* .accordion-flush{
-            border: solid 1px red;
-            border-radius: 15px;
-        } */
-.accordion-datos {
-  margin-left: -110px; }
-
-/* Accordion */
 /* boton icono impresora */
 .impresora {
   font-size: 14px; }
@@ -180,6 +169,9 @@ div.accordion-body {
   color: blue; }
 
 /* boton icono impresora */
+.boton-hover:hover {
+  color: blue; }
+
 .boton-hover:hover {
   color: blue; }
 
@@ -197,55 +189,42 @@ div.accordion-body {
   -webkit-box-shadow: 4px 4px 5px 0px #ccc;
   -moz-box-shadow: 4px 4px 5px 0px #ccc;
   box-shadow: 4px 4px 5px 0px #ccc;
-  width: 200px;
-  font-size: 14px;
-  margin-bottom: -10px; }
+  width: 230px;
+  font-size: 4px;
+  margin-bottom: -10px;
+  font-family: 'Montserrat', sans-serif;
+  /* @extend %tipo-letra-monserrat; */ }
 
 .btn-resumen-poliza:hover {
-  color: blue; }
+  color: blue;
+  font-family: 'Montserrat', sans-serif;
+  /*@extend %tipo-letra-monserrat;*/ }
 
-.text-btn-der {
-  margin: 10px auto; }
-
-.principal {
-  border: none; }
-
+/**********/
 .card-body {
   background-color: #fcfcfc;
-  width: 100%;
-  margin-top: -18px;
-  margin-left: 1px;
+  /* background-color: $color-fondo-web; */
+  /* width: 100%;
+    margin-top: -18px;
+    margin-left: 1px; */
   /* Color de fondo */ }
 
-.cuadro {
-  background-color: white;
-  border-radius: 5px;
-  margin-right: -5px; }
-
-.cuadro-poliza {
-  background-color: white;
-  border-radius: 5px;
-  margin-right: -5px; }
-
-.form-label,
-.form-check-label {
-  font-size: 11px;
-  color: #9d9c9c;
-  width: 150px;
-  font-weight: bold; }
-
-/* gris claro*/
 /* INPUT ESTILOS*/
 .input-style {
+  font-family: 'Montserrat', sans-serif;
+  /* @extend %tipo-letra-monserrat; */
   background-color: #e7e7e7;
   border: 1px solid #ccc;
   border-radius: 5px; }
 
 .text-into-input {
+  font-family: 'Montserrat', sans-serif;
+  /* @extend %tipo-letra-monserrat; */
   font-size: 11px;
   color: black;
   font-weight: bold; }
 
+/* input cuadro izquierdo */
 .input-style-dark {
   background-color: #ccc;
   border: 1px solid #ccc;
@@ -255,26 +234,245 @@ div.accordion-body {
 
 .btn-light {
   color: #67aeff;
-  font-weight: bold; }
-
-/***************************/
-.card-header {
-  /*background: transparent;*/
-  background-color: #eeeeee;
-  height: 40px;
-  border-radius: 30px;
-  border: none; }
-
-.card {
-  background-color: #fcfcfc; }
-
-.titulo-card {
-  color: black;
-  margin-top: -8px; }
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  /* @extend %tipo-letra-monserrat; */ }
 
 .card-text {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  /* @extend %tipo-letra-monserrat; */ }
+
+.form-label,
+.form-check-label {
+  font-family: 'Montserrat', sans-serif;
+  /* @extend %tipo-letra-monserrat; */
+  font-size: 11px;
+  color: #9d9c9c;
+  width: 150px;
   font-weight: bold; }
 
+div.accordion-body {
+  /* background-color: $color-fondo-web; */
+  background-color: #fcfcfc; }
+
+button.accordion-button {
+  background-color: #e7eef6;
+  border-radius: 10px;
+  height: 5vh;
+  width: 85vw;
+  border: none; }
+
+/* ACORDION  TOMADOR ESTILO */
+.accordion-button.tomador::after {
+  flex-shrink: 0;
+  width: 85vw;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image: url("icons/plus.png");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform .2s ease-in-out;
+  margin-left: -86px;
+  margin-right: 95%;
+  border: none; }
+
+.accordion-button.tomador:not(.collapsed)::after {
+  background-image: url("icons/minus.png");
+  transform: rotate(-180deg);
+  margin-left: -86px;
+  margin-right: 95%;
+  border: none; }
+
+.accordion-button.tomador:not(.collapsed) {
+  color: #0c63e4;
+  background-color: #e7f1ff;
+  box-shadow: inset 0 -1px 0 rgba(3, 3, 3, 0.13);
+  border: none; }
+
+/* ACORDION  TOMADOR ESTILO */
+/* ACORDION  garantias ESTILO */
+.accordion-button.garantias::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image: url("icons/plus.png");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform .2s ease-in-out;
+  margin-left: -93px;
+  margin-right: 95%;
+  border: none; }
+
+.accordion-button.garantias:not(.collapsed)::after {
+  background-image: url("icons/minus.png");
+  transform: rotate(-180deg);
+  margin-left: -93px;
+  margin-right: 95%;
+  border: none; }
+
+.accordion-button.garantias:not(.collapsed) {
+  color: #0c63e4;
+  background-color: #e7f1ff;
+  box-shadow: inset 0 -1px 0 rgba(3, 3, 3, 0.13);
+  border: none; }
+
+/* ACORDION  garantias ESTILO */
+/* ACORDION  MantCliente ESTILO */
+.accordion-button.mancliente::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image: url("icons/plus.png");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform .2s ease-in-out;
+  margin-left: -114px;
+  margin-right: 95%;
+  border: none; }
+
+.accordion-button.mancliente:not(.collapsed)::after {
+  background-image: url("icons/minus.png");
+  transform: rotate(-180deg);
+  margin-left: -114px;
+  margin-right: 95%;
+  border: none; }
+
+.accordion-button.mancliente:not(.collapsed) {
+  color: #0c63e4;
+  background-color: #e7f1ff;
+  box-shadow: inset 0 -1px 0 rgba(3, 3, 3, 0.13);
+  border: none; }
+
+/* ACORDION  MantCliente ESTILO */
+/* ACORDION  suplemento ESTILO */
+.accordion-button.suplemento::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image: url("icons/plus.png");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform .2s ease-in-out;
+  margin-left: -110px;
+  margin-right: 95%;
+  border: none; }
+
+.accordion-button.suplemento:not(.collapsed)::after {
+  background-image: url("icons/minus.png");
+  transform: rotate(-180deg);
+  margin-left: -110px;
+  margin-right: 95%;
+  border: none; }
+
+.accordion-button.suplemento:not(.collapsed) {
+  color: #0c63e4;
+  background-color: #e7f1ff;
+  box-shadow: inset 0 -1px 0 rgba(3, 3, 3, 0.13);
+  border: none; }
+
+/* ACORDION  suplemento ESTILO */
+/* ACORDION  comentarios ESTILO */
+.accordion-button.comentarios::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image: url("icons/plus.png");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform .2s ease-in-out;
+  margin-left: -115px;
+  margin-right: 95%;
+  border: none; }
+
+.accordion-button.comentarios:not(.collapsed)::after {
+  background-image: url("icons/minus.png");
+  transform: rotate(-180deg);
+  margin-left: -115px;
+  margin-right: 95%;
+  border: none; }
+
+.accordion-button.comentarios:not(.collapsed) {
+  color: #0c63e4;
+  background-color: #e7f1ff;
+  box-shadow: inset 0 -1px 0 rgba(3, 3, 3, 0.13);
+  border: none; }
+
+/* ACORDION  comentarios ESTILO */
+/* ACORDION  riesgo ESTILO */
+.accordion-button.riesgo::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image: url("icons/plus.png");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform .2s ease-in-out;
+  margin-left: -71px;
+  margin-right: 95%;
+  border: none; }
+
+.accordion-button.riesgo:not(.collapsed)::after {
+  background-image: url("icons/minus.png");
+  transform: rotate(-180deg);
+  margin-left: -71px;
+  margin-right: 95%;
+  border: none; }
+
+.accordion-button.riesgo:not(.collapsed) {
+  color: #0c63e4;
+  background-color: #e7f1ff;
+  box-shadow: inset 0 -1px 0 rgba(3, 3, 3, 0.13);
+  border: none; }
+
+/* ACORDION  riesgo ESTILO */
+/* ACORDION  asegurado ESTILO */
+.accordion-button.asegurado::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image: url("icons/plus.png");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform .2s ease-in-out;
+  margin-left: -100px;
+  margin-right: 95%;
+  border: none; }
+
+.accordion-button.asegurado:not(.collapsed)::after {
+  background-image: url("icons/minus.png");
+  transform: rotate(-180deg);
+  margin-left: -100px;
+  margin-right: 95%;
+  border: none; }
+
+.accordion-button.asegurado:not(.collapsed) {
+  color: #0c63e4;
+  background-color: #e7f1ff;
+  box-shadow: inset 0 -1px 0 rgba(3, 3, 3, 0.13);
+  border: none; }
+
+.form-check-eiac {
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 1.5em;
+  margin-bottom: 0.125rem;
+  margin-right: -64px; }
+
+/***************************/
 /* Color tamaño icono */
 .icon-cli-sidebar {
   font-size: 25px;
@@ -311,6 +509,5 @@ div.accordion-body {
   margin: 0;
   box-sizing: border-box; }
 
-.contenedor {
-  /* background-color: #f5f4f4; */
-  background-color: white; }
+html {
+  height: 100vh; }

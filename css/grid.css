@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) .5fr;
+    grid-template-rows:  min-content min-content min-content min-content min-content min-content;
+    grid-template-areas: 
+    "nav nav nav nav nav nav"
+    "barra barra barra barra barra barra"
+    "iconos iconos iconos iconos iconos iconos"
+    "main main main main main aside"
+    "main main main main main aside"    
+    ;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.nav {
+    /* background-color: cadetblue; */
+    grid-area: nav;
+    
+}
+
+.barra {
+    display: -ms-inline-grid;
+    /* background-color: blueviolet; */
+    grid-area: barra;
+    height: 10vh;
+    white-space: nowrap;
+}
+
+.iconos {
+    /* background-color: aquamarine; */
+    grid-area: iconos;
+    height: fit-content;
+    grid-column-gap:20px;
+}
+
+.main {
+    /* background-color: crimson; */
+    grid-area: main;
+}
+
+.aside {
+    /* background-color: coral; */
+    grid-area: aside;
+}
+
+/*<NAV>*/
+/* color letra del menu */
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+    color: black;
+}
+
+/* color letra "usuario" */
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: black;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+/*<NAV>*/
+
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    }
+
+
+    .grilla{	
+        position : absolute;
+        width : 100%;
+        height : 100%;
+    }
+/* .accordion-datos {
+    margin-left: -14px;
+    ;
+
+} */

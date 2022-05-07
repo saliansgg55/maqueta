@@ -4,6 +4,17 @@
 //     margin-left: -55px; 
 
 // }
+
+
+.navbar-expand-sm {
+    flex-wrap: nowrap;
+    /* justify-content: flex-start; */
+}
+
+.navbar-expand-lg {
+    flex-wrap: nowrap;
+    /* justify-content: flex-start; */
+}
     /* letra negrita del menu central del header */
     .nav-item {        
         font-weight: bold;
